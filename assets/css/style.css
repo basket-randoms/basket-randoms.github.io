@@ -4952,3 +4952,12 @@ a:hover {
     color: #c4c4c4
         /* Hover color */
 }
+ .ad-center { display: flex; justify-content: center; align-items: center; margin: 20px 0; }
+  .ad-desktop { display: none; }
+  .ad-mobile { display: none; }
+  @media (min-width: 768px) {
+    .ad-desktop { display: flex; }
+  }
+  @media (max-width: 767px) {
+    .ad-mobile { display: flex; }
+  }

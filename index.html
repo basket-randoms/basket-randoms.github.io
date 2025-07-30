@@ -3,13 +3,13 @@
 
 <head>
     <!-- Clarity tracking code for https://faf-gamezs.github.io -->
-<script>
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "rakqy51om6");
-</script>
+    <script>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "rakqy51om6");
+    </script>
     <meta name="publisher" content="Sarkar Games">
     <meta name="copyright" content="Sarkar Games">
     <meta charset="UTF-8">
@@ -20,253 +20,370 @@
         a:hover {
             color: #c4c4c4;
         }
+
         .game-iframe-container {
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                min-height: 75vh;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 75vh;
+        }
+
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .FG-splash-button {
+            border-bottom-color: #ffb53d !important;
+            color: #000;
+            background: linear-gradient(140deg, #fbde04, #e2c803)
+        }
+
+        .FG-splash-button:hover {
+            border-bottom-color: #ff5e00 !important;
+            color: #fff;
+            background: linear-gradient(140deg, #ff9214, #fa8500)
+        }
+
+        .FG-splash-button:active {
+            border-bottom-color: #ff7e33 !important;
+            background: linear-gradient(140deg, #ff5e00, #ff5e00)
+        }
+
+        .SP-splash-button {
+            width: 290px;
+            height: 60px;
+            margin-top: 2.5rem;
+            border-radius: 290486px !important;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border: 3px solid #fff !important;
+            color: #0a0a0a;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #001aff, #002fff);
+            box-shadow: 12px 14px 15px -1px rgba(0, 0, 0, .2)
+        }
+
+        .SP-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background: linear-gradient(180deg, #af39b9, #c815d7);
+            transform: scale(0);
+            transform-origin: 50% 100%;
+            will-change: transform;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .SP-splash-top>div>button:active {
+            transform: translateY(0)
+        }
+
+        .SP-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .SP-splash-top>div>button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35)
+        }
+
+        .HG-splash-button {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: none !important;
+            border-radius: 5px !important;
+            color: #f06000;
+            background: #fff
+        }
+
+        .HG-splash-button:hover {
+            color: #fff;
+            background: #f06000
+        }
+
+        .BG-splash-button,
+        .BG-splash-button:active {
+            box-shadow: inset 0 3px 0 0 #00fcff,
+                inset 20px 0 50px rgba(8, 238, 225, .3),
+                inset 20px 0 300px rgba(0, 200, 187, .05),
+                inset 0 20px 50px rgba(8, 238, 225, .3),
+                inset 0 0 10px #affffa, 4px 4px 4px 0 rgba(10, 10, 10, .5) !important;
+            background-color: rgba(9, 81, 105, .5);
+            border: 0;
+            color: #affffa;
+            width: 290px;
+            height: 4rem;
+            border-radius: 290486px !important;
+            font-size: 1.25rem !important;
+            border: 2px solid #5258b5 !important;
+            opacity: .7
+        }
+
+        .BG-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background-color: #fff;
+            box-shadow: inset 0 0 7px 0 rgba(223, 180, 170, .53) !important;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            will-change: transform;
+            transition: transform 172ms cubic-bezier(.25, .46, .45, .94), opacity 172ms cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .BG-splash-button:hover {
+            color: rgba(0, 0, 0, .7) !important;
+            border: 2px solid #098c9c !important
+        }
+
+        .BG-splash-button:active {
+            border-color: transparent !important;
+            color: rgba(0, 0, 0, .7);
+            transform: translateY(0)
+        }
+
+        .BG-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .BG-splash-button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35) !important
+        }
+
+        body {
+            position: inherit
+        }
+
+        .talpa-splash-background-container {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden
+        }
+
+        .talpa-splash-background-image {
+            box-sizing: border-box;
+            position: absolute;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            background-image: var(--thumb);
+            background-size: cover;
+            filter: blur(50px) brightness(1.5)
+        }
+
+        .talpa-splash-container {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-top {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            flex: 1;
+            align-self: center;
+            justify-content: center;
+            padding: 20px
+        }
+
+        .talpa-splash-top>div {
+            text-align: center
+        }
+
+        .talpa-splash-top>div>button {
+            position: relative;
+            min-width: 180px;
+            min-height: 45px;
+            line-height: 45px;
+            border: 0;
+            border-radius: 25px;
+            border-bottom: 5px solid grey;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+            font-family: Roboto Condensed, Helvetica Neue, Arial, "sans-serif";
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            box-shadow: inset 0 -1px 1px hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 100%, .2);
+            will-change: transform;
+            transition: transform .15s linear
+        }
+
+        .talpa-splash-top>div>button:focus {
+            outline: none
+        }
+
+        .talpa-splash-top>div>button:active {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .13);
+            transform: translateY(-5px)
+        }
+
+        .talpa-loader,
+        .talpa-loader:after {
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em
+        }
+
+        .talpa-loader {
+            box-sizing: content-box;
+            margin: 0 auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border: 1.1em solid hsla(0, 0%, 100%, .2);
+            border-left-color: #fff;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: talpa-load8 1.1s linear infinite;
+            animation: talpa-load8 1.1s linear infinite;
+            display: none
+        }
+
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-bottom {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 0 20px
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent,
+        .talpa-splash-bottom>.talpa-splash-title {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, .5) 50%, transparent);
+            color: #fff;
+            text-align: left;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(0, 0, 0, .7);
+            line-height: 150%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-title {
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            line-height: 100%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent a {
+            color: #fff
+        }
+
+        @-webkit-keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
             }
-            .game-iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
             }
-                    .FG-splash-button{
-                        border-bottom-color:#ffb53d!important;
-                        color:#000;background:linear-gradient(140deg,#fbde04,#e2c803)}
-                    .FG-splash-button:hover{
-                        border-bottom-color:#ff5e00!important;
-                        color:#fff;
-                        background:linear-gradient(140deg,#ff9214,#fa8500)}
-                    .FG-splash-button:active{
-                        border-bottom-color:#ff7e33!important;
-                        background:linear-gradient(140deg,#ff5e00,#ff5e00)}
-                    .SP-splash-button{
-                        width:290px;
-                        height:60px;
-                        margin-top:2.5rem;
-                        border-radius:290486px!important;
-                        padding-left:2rem;
-                        padding-right:2rem;
-                        border:3px solid #fff!important;
-                        color:#0a0a0a;
-                        text-transform:uppercase;
-                        background:linear-gradient(180deg,#001aff,#002fff);
-                        box-shadow:12px 14px 15px -1px rgba(0,0,0,.2)}
-                    .SP-splash-button:before{
-                        content:"";
-                        position:absolute;
-                        left:0;top:1px;
-                        width:100%;
-                        height:100%;
-                        border-radius:290486px!important;
-                        opacity:0;
-                        background: linear-gradient(180deg,#af39b9,#c815d7);
-                        transform:scale(0);
-                        transform-origin:50% 100%;
-                        will-change:transform;
-                        transition:transform .3s cubic-bezier(.25,.46,.45,.94),opacity .2s cubic-bezier(.25,.46,.45,.94);
-                        z-index:-1}
-                    .SP-splash-top>div>button:active{transform:translateY(0)}
-                    .SP-splash-button:hover:before{
-                        top:0;
-                        opacity:1;
-                        transform:scale(1)}
-                    .SP-splash-top>div>button:active:before{
-                        box-shadow:inset 0 0 7px 0 rgba(224,71,36,.53),inset 0 0 7px 0 rgba(0,0,0,.35)}
-                    .HG-splash-button{
-                        height:35px;
-                        line-height:35px;
-                        border-bottom:none!important;
-                        border-radius:5px!important;
-                        color:#f06000;
-                        background:#fff}
-                    .HG-splash-button:hover{
-                        color:#fff;
-                        background:#f06000}
-                    .BG-splash-button,.BG-splash-button:active{
-                        box-shadow:inset 0 3px 0 0 #00fcff,
-                        inset 20px 0 50px rgba(8,238,225,.3),
-                        inset 20px 0 300px rgba(0,200,187,.05),
-                        inset 0 20px 50px rgba(8,238,225,.3),
-                        inset 0 0 10px #affffa,4px 4px 4px 0 rgba(10,10,10,.5)!important;
-                        background-color:rgba(9,81,105,.5);
-                        border:0;
-                        color:#affffa;
-                        width:290px;
-                        height:4rem;
-                        border-radius:290486px!important;
-                        font-size:1.25rem!important;
-                        border:2px solid #5258b5!important;
-                        opacity:.7}
-                    .BG-splash-button:before{
-                        content:"";
-                        position:absolute;
-                        left:0;top:1px;
-                        width:100%;
-                        height:100%;
-                        border-radius:290486px!important;
-                        opacity:0;
-                        background-color:#fff;box-shadow:inset 0 0 7px 0 rgba(223,180,170,.53)!important;transform:scale(0);
-                        transform-origin:50% 50%;will-change:transform;
-                        transition:transform 172ms cubic-bezier(.25,.46,.45,.94),opacity 172ms cubic-bezier(.25,.46,.45,.94);
-                        z-index:-1}
-                    .BG-splash-button:hover{
-                        color:rgba(0,0,0,.7)!important;border:2px solid #098c9c!important}
-                    .BG-splash-button:active{
-                        border-color:transparent!important;
-                        color:rgba(0,0,0,.7);transform:translateY(0)}
-                    .BG-splash-button:hover:before{
-                        top:0;
-                        opacity:1;
-                        transform:scale(1)}
-                    .BG-splash-button:active:before{
-                        box-shadow:inset 0 0 7px 0 rgba(224,71,36,.53),inset 0 0 7px 0 rgba(0,0,0,.35)!important}body{position:inherit}
-                    .talpa-splash-background-container{
-                        box-sizing:border-box;
-                        position:absolute;
-                        top:0;
-                        left:0;
-                        width:100%;
-                        height:100%;
-                        background-color:#000;
-                        overflow:hidden}
-                    .talpa-splash-background-image{
-                        box-sizing:border-box;
-                        position:absolute;
-                        top:-25%;
-                        left:-25%;
-                        width:150%;
-                        height:150%;
-                        background-image:var(--thumb);
-                        background-size:cover;
-                        filter:blur(50px) brightness(1.5)}
-                    .talpa-splash-container{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        position:absolute;
-                        bottom:0;
-                        width:100%;
-                        height:100%}
-                    .talpa-splash-top{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        flex:1;
-                        align-self:center;
-                        justify-content:center;
-                        padding:20px}
-                    .talpa-splash-top>div{text-align:center}
-                    .talpa-splash-top>div>button{
-                        position:relative;
-                        min-width:180px;
-                        min-height:45px;
-                        line-height:45px;
-                        border:0;
-                        border-radius:25px;
-                        border-bottom:5px solid grey;
-                        white-space:nowrap;
-                        text-overflow:ellipsis;
-                        text-align:center;
-                        text-transform:uppercase;
-                        text-shadow:1px 1px 1px rgba(0,0,0,.004);
-                        font-family:Roboto Condensed,Helvetica Neue,Arial,"sans-serif";
-                        font-size:16px;
-                        font-weight:400;
-                        cursor:pointer;
-                        box-shadow:inset 0 -1px 1px hsla(0,0%,100%,.1),inset 0 1px 1px hsla(0,0%,100%,.2);
-                        will-change:transform;
-                        transition:transform .15s linear}
-                    .talpa-splash-top>div>button:focus{outline:none}
-                    .talpa-splash-top>div>button:active{
-                        box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.13);
-                        transform:translateY(-5px)}
-                    .talpa-loader,.talpa-loader:after{
-                        border-radius:50%;
-                        width:1.5em;
-                        height:1.5em}
-                    .talpa-loader{
-                        box-sizing:content-box;
-                        margin:0 auto;
-                        font-size:10px;
-                        position:relative;
-                        text-indent:-9999em;
-                        border:1.1em solid hsla(0,0%,100%,.2);
-                        border-left-color:#fff;
-                        -webkit-transform:translateZ(0);
-                        -ms-transform:translateZ(0);
-                        transform:translateZ(0);
-                        -webkit-animation:talpa-load8 1.1s linear infinite;
-                        animation:talpa-load8 1.1s linear infinite;
-                        display:none}
-                    .talpa-splash-top>div>div:first-child{
-                        position:relative;
-                        width:150px;
-                        height:150px;
-                        margin:auto auto 20px;
-                        border-radius:10px;
-                        overflow:hidden;
-                        border:2px solid hsla(0,0%,100%,.8);
-                        box-shadow:inset 0 5px 5px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.3);
-                        background-image:var(--thumb);
-                        background-position:50%;
-                        background-size:cover}
-                    .talpa-splash-top>div>div>img{
-                        width:100%;
-                        height:100%}
-                    .talpa-splash-bottom{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        align-self:center;
-                        justify-content:center;
-                        width:100%;
-                        padding:0 0 20px}
-                    .talpa-splash-bottom>.talpa-splash-consent,.talpa-splash-bottom>.talpa-splash-title{
-                        box-sizing:border-box;
-                        width:100%;
-                        padding:20px;
-                        background:linear-gradient(90deg,transparent,rgba(0,0,0,.5) 50%,transparent);
-                        color:#fff;
-                        text-align:left;
-                        font-size:12px;
-                        font-family:Arial;
-                        font-weight:400;
-                        text-shadow:0 0 1px rgba(0,0,0,.7);
-                        line-height:150%}
-                    .talpa-splash-bottom>.talpa-splash-title{
-                        padding:15px 0;
-                        text-align:center;
-                        font-size:18px;
-                        font-family:Helvetica,Arial,sans-serif;
-                        font-weight:700;
-                        line-height:100%}
-                    .talpa-splash-bottom>.talpa-splash-consent a{
-                        color:#fff}
-                        @-webkit-keyframes talpa-load8{0%{-webkit-transform:rotate(0deg);
-                        transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);
-                        transform:rotate(1turn)}}
-                        @keyframes talpa-load8{0%{-webkit-transform:rotate(0deg);
-                        transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);
-                        transform:rotate(1turn)}}
-                        @keyframes talpa-gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}
-                    .iframeloader {
-                        background: url(./images/loadinggif.gif) center center no-repeat;
-                        background-size: 5vw;}
-            .article-header {
-                width: 100%;
-                float: left;
-                border-bottom: 1px solid rgba(255,255,255,.1);
-                padding-bottom: 20px;
-                margin-bottom: 30px;
-                margin-top: 20px
+        }
+
+        @keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
             }
-            
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes talpa-gradient {
+            0% {
+                background-position: 0 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            to {
+                background-position: 0 50%
+            }
+        }
+
+        .iframeloader {
+            background: url(./images/loadinggif.gif) center center no-repeat;
+            background-size: 5vw;
+        }
+
+        .article-header {
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px
+        }
     </style>
 
     </script>
@@ -300,153 +417,136 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Responsive css-->
     <link rel="stylesheet" href="assets/css/responsive.css">
-   
+
     <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
         {
-            "@context": "https://schema.org",
-            "@graph": [
+            "@type": "WebSite",
+            "name": "Basket Random",
+            "url": "https://basket-randoms.github.io/",
+            "description": "Basket Random is a free online gaming platform offering a wide variety of fun and engaging games for all types of players. Enjoy endless hours of entertainment with no downloads required.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Basket Random"
+            }
+        },
+        {
+            "@type": "VideoGame",
+            "name": "Basket Random",
+            "url": "https://basket-randoms.github.io/",
+            "description": "Basket Random is a free online gaming platform offering a wide variety of fun and engaging games for all types of players. Enjoy endless hours of entertainment with no downloads required.",
+            "applicationCategory": "Game",
+            "operatingSystem": "Web Browser",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "8.5",
+                "bestRating": "10",
+                "worstRating": "0",
+                "ratingCount": "5000"
+            },
+            "genre": [
+                "Action",
+                "Puzzle",
+                "Casual"
+            ],
+            "gamePlatform": "Web Browser",
+            "playMode": [
+                "SinglePlayer",
+                "MultiPlayer"
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Basket Random"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
                 {
-                    "@type": "WebSite",
-                    "name": "Basket Random",
-                    "url": "https://basket-randoms.github.io/",
-                    "description": "Basket Random is a free online gaming platform offering a wide variety of fun and engaging games for all types of players. Enjoy endless hours of entertainment with no downloads required.",
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Basket Random"
-                    }
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://basket-randoms.github.io/"
+                }
+            ]
+        },
+        {
+            "@type": "ItemList",
+            "name": "Popular Games",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://basket-randoms.github.io/game/your-game.html",
+                    "name": "Your Game"
                 },
                 {
-                    "@type": "VideoGame",
-                    "name": "Basket Random",
-                    "url": "https://basket-randoms.github.io/",
-                    "description": "Basket Random is a free online gaming platform offering a wide variety of fun and engaging games for all types of players. Enjoy endless hours of entertainment with no downloads required.",
-                    "applicationCategory": "Game",
-                    "operatingSystem": "Web Browser",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "0",
-                        "priceCurrency": "USD"
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "8.5",
-                        "bestRating": "10",
-                        "worstRating": "0",
-                        "ratingCount": "5000"
-                    },
-                    "gameFramework": "HTML5",
-                    "genre": [
-                        "Action",
-                        "Puzzle",
-                        "Casual"
-                    ]
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://basket-randoms.github.io/game/1v1lol.html",
+                    "name": "1v1.lol"
                 },
                 {
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://basket-randoms.github.io/"
-                        }
-                    ]
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://basket-randoms.github.io/game/drive-mad.html",
+                    "name": "Drive Mad"
                 },
                 {
-                    "@type": "VideoGame",
-                    "name": "Basket Random",
-                    "description": "Basket Random is a free online gaming platform offering a wide variety of fun and engaging games for all types of players. Enjoy endless hours of entertainment with no downloads required.",
-                    "applicationCategory": "Game",
-                    "gameFramework": "HTML5",
-                    "availableOnDevice": [
-                        "Desktop",
-                        "Tablet",
-                        "Mobile"
-                    ],
-                    "playMode": [
-                        "SinglePlayer",
-                        "Multiplayer"
-                    ],
-                    "genre": [
-                        "Action",
-                        "Puzzle",
-                        "Casual"
-                    ],
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Basket Random"
-                    }
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://basket-randoms.github.io/action/index.html",
+                    "name": "Action Games"
                 },
                 {
-                    "@type": "ItemList",
-                    "name": "Popular Games",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "url": "https://basket-randoms.github.io/game/your-game.html",
-                            "name": "Your Game"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "url": "https://basket-randoms.github.io/game/1v1lol.html",
-                            "name": "1v1.lol"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 3,
-                            "url": "https://basket-randoms.github.io/game/drive-mad.html",
-                            "name": "Drive Mad"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 4,
-                            "url": "https://basket-randoms.github.io/action/index.html",
-                            "name": "Action Games"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 5,
-                            "url": "https://basket-randoms.github.io/adventure/index.html",
-                            "name": "Adventure Games"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 6,
-                            "url": "https://basket-randoms.github.io/bike/index.html",
-                            "name": "Bike Games"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 7,
-                            "url": "https://basket-randoms.github.io/car/index.html",
-                            "name": "Car Games"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 8,
-                            "url": "https://basket-randoms.github.io/shooting/index.html",
-                            "name": "Shooting Games"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 9,
-                            "url": "https://basket-randoms.github.io/sport/index.html",
-                            "name": "Sport Games"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 10,
-                            "url": "https://basket-randoms.github.io/skill/index.html",
-                            "name": "Skill Games"
-                        }
-                    ]
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://basket-randoms.github.io/adventure/index.html",
+                    "name": "Adventure Games"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "url": "https://basket-randoms.github.io/bike/index.html",
+                    "name": "Bike Games"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "url": "https://basket-randoms.github.io/car/index.html",
+                    "name": "Car Games"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "url": "https://basket-randoms.github.io/shooting/index.html",
+                    "name": "Shooting Games"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "url": "https://basket-randoms.github.io/sport/index.html",
+                    "name": "Sport Games"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 10,
+                    "url": "https://basket-randoms.github.io/skill/index.html",
+                    "name": "Skill Games"
                 }
             ]
         }
-        </script>
-     
+    ]
+}
+</script>
+
 
 </head>
 
@@ -514,83 +614,167 @@
 
 
     <!-- Games Area Strat -->
-    <br><br><br><br>
+    <br><br>
     <section class="faf-games-area section_140">
         <div class="container">
 
             <div class="row">
                 <div class="col-12">
-
+                    <div class="ad-center">
+                        <!-- Desktop Ad (728x90) -->
+                        <div class="ad-desktop">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key': 'cdbc2799ec0a8aabde5cb9ba973cfc1f',
+                                    'format': 'iframe',
+                                    'height': 90,
+                                    'width': 728,
+                                    'params': {}
+                                };
+                            </script>
+                            <script type="text/javascript"
+                                src="//www.highperformanceformat.com/cdbc2799ec0a8aabde5cb9ba973cfc1f/invoke.js"></script>
+                        </div>
+                        <!-- Mobile Ad (300x250) -->
+                        <div class="ad-mobile">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key': '2c4eee8d537a0e7bfd2db490140d223c',
+                                    'format': 'iframe',
+                                    'height': 250,
+                                    'width': 300,
+                                    'params': {}
+                                };
+                            </script>
+                            <script type="text/javascript"
+                                src="//www.highperformanceformat.com/2c4eee8d537a0e7bfd2db490140d223c/invoke.js"></script>
+                        </div>
+                    </div>
                     <div class="site-heading">
                         <h1 class="heading_animation"><span>Basket Random</span></h1>
                         <br>
-                        <p>Why Should You Play Basket Random? <br>Basket Random is a fun basketball game that you can play anytime, whether you're at school or just taking a break. It’s easy to jump into, with simple controls and exciting gameplay. The game lets you challenge yourself or even compete with friends. Whether you’re practicing your shots or just having fun, Basket Random is a great way to pass the time. Plus, you can play it on any device with an internet connection. Just remember to stay balanced—schoolwork comes first, so be sure to finish your tasks before diving into the game!</p>
-                        
+                        <p>Why Should You Play Basket Random? <br>Basket Random is a fun basketball game that you can
+                            play anytime, whether you're at school or just taking a break. It’s easy to jump into, with
+                            simple controls and exciting gameplay. The game lets you challenge yourself or even compete
+                            with friends. Whether you’re practicing your shots or just having fun, Basket Random is a
+                            great way to pass the time. Plus, you can play it on any device with an internet connection.
+                            Just remember to stay balanced—schoolwork comes first, so be sure to finish your tasks
+                            before diving into the game!</p>
+
                     </div>
                 </div>
             </div>
-  <!-- games Details Page Start -->
-  <hr>
-      <!-- contest-details-section start -->
-      <section class="pb-120 mt-minus-300">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="contest-details__slider-area">
-                <div class="contest-details__thumb-slider">
-                  <div class="game-iframe-container" id="loadgame">
-                    <div class="talpa-splash-container" style="background: var(--color2);"><div class="talpa-splash-top"><div>
-                         <div style="--thumb:url(../assets/img/basketrandom/basket-random.png);" alt="Stylish Crop Top Trends"></div>
-                         <button id="talpa-splash-button" class="SP-splash-button" onclick="loadMainGame()" style="display: block;">PLAY NOW</button>
-                         <div class="talpa-loader" style="display: none;">Loading...</div></div></div><div class="talpa-splash-bottom"></div>
+            <!-- games Details Page Start -->
+            <hr>
+            <!-- contest-details-section start -->
+            <section class="pb-120 mt-minus-300">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="contest-details__slider-area">
+                                <div class="contest-details__thumb-slider">
+                                    <div class="game-iframe-container" id="loadgame">
+                                        <div class="talpa-splash-container" style="background: var(--color2);">
+                                            <div class="talpa-splash-top">
+                                                <div>
+                                                    <div style="--thumb:url(../assets/img/basketrandom/basket-random.png);"
+                                                        alt="Stylish Crop Top Trends"></div>
+                                                    <button id="talpa-splash-button" class="SP-splash-button"
+                                                        onclick="loadMainGame()" style="display: block;">PLAY
+                                                        NOW</button>
+                                                    <div class="talpa-loader" style="display: none;">Loading...</div>
+                                                </div>
+                                            </div>
+                                            <div class="talpa-splash-bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- row end -->
                     </div>
-                  </div>
-              </div>
+            </section>
+            <!-- contest-details-section end  -->
+            <h2 class="heading_animation" style="text-align: center; color:black">
+                <div id="loadgame" style="text-align: center; color:black">
+                    <!-- Button to trigger fullscreen -->
+                    <button onclick="open_fullscreen()">Go Fullscreen</button>
+                </div>
+            </h2> <br>
+            <hr>
+<div class="ad-center">
+                        <!-- Desktop Ad (728x90) -->
+                        <div class="ad-desktop">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key': 'cdbc2799ec0a8aabde5cb9ba973cfc1f',
+                                    'format': 'iframe',
+                                    'height': 90,
+                                    'width': 728,
+                                    'params': {}
+                                };
+                            </script>
+                            <script type="text/javascript"
+                                src="//www.highperformanceformat.com/cdbc2799ec0a8aabde5cb9ba973cfc1f/invoke.js"></script>
+                        </div>
+                        <!-- Mobile Ad (300x250) -->
+                        <div class="ad-mobile">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key': '2c4eee8d537a0e7bfd2db490140d223c',
+                                    'format': 'iframe',
+                                    'height': 250,
+                                    'width': 300,
+                                    'params': {}
+                                };
+                            </script>
+                            <script type="text/javascript"
+                                src="//www.highperformanceformat.com/2c4eee8d537a0e7bfd2db490140d223c/invoke.js"></script>
+                        </div>
+                    </div>
+            <br>
+            <div class="box">
+                <p style="color: white;">
+                <div>
+                    <h3 style="color: #c4c4c4;">How to Play</h3>
+                    <p>
+                        In <strong>Basket Random</strong>, each match is completely random. You and your opponent must
+                        score as many points as possible by getting the basketball into the hoop, but the controls and
+                        settings change unpredictably!
+                    </p>
+                    <ul>
+                        <li><strong><span style="color: #c4c4c4;">Arrow Keys:</span></strong> Move your player on the
+                            court.</li>
+                        <li><strong><span style="color: #c4c4c4;">Space:</span></strong> Jump to block shots or perform
+                            unexpected moves.</li>
+                        <li><strong><span style="color: #c4c4c4;">Control the ball:</span></strong> Try to get the
+                            basketball into the hoop!</li>
+                    </ul>
+                    <p>
+                        Can you adapt to the randomness and win? Play now on <a href="/" style="color: #c4c4c4;">Basket
+                            Random</a>!
+                    </p>
+
+                    <h3 style="color: #c4c4c4;">Description</h3>
+                    <p style="color: white;">
+                        <strong>Basket Random</strong> is a quirky basketball game where the gameplay is unpredictable.
+                        Every round, the controls or game environment changes, keeping you on your toes as you aim to
+                        score points.
+                    </p>
+
+                    <h3 style="color: #c4c4c4;">Developer</h3>
+                    <p style="color: white;">
+                        <strong>Basket Random</strong> was developed by <span style="color: #c4c4c4;"><strong>Y8
+                                Games</strong></span>, known for their fun and quirky take on sports games.
+                    </p>
+                </div>
             </div>
-          </div><!-- row end -->
-        </div>
-      </section>
-       <!-- contest-details-section end  -->
-      <h2 class="heading_animation" style="text-align: center; color:black"><div id="loadgame" style="text-align: center; color:black">
-          <!-- Button to trigger fullscreen -->
-          <button onclick="open_fullscreen()">Go Fullscreen</button>
-      </div></h2>  <br><hr>         
-         
-      <br>
-      <div class="box">
-        <p style="color: white;">
-        <div>
-          <h3 style="color: #c4c4c4;">How to Play</h3>
-          <p>
-            In <strong>Basket Random</strong>, each match is completely random. You and your opponent must score as many points as possible by getting the basketball into the hoop, but the controls and settings change unpredictably!
-          </p>
-          <ul>
-            <li><strong><span style="color: #c4c4c4;">Arrow Keys:</span></strong> Move your player on the court.</li>
-            <li><strong><span style="color: #c4c4c4;">Space:</span></strong> Jump to block shots or perform unexpected moves.</li>
-            <li><strong><span style="color: #c4c4c4;">Control the ball:</span></strong> Try to get the basketball into the hoop!</li>
-          </ul>
-          <p>
-            Can you adapt to the randomness and win? Play now on <a href="/" style="color: #c4c4c4;">Basket Random</a>!
-          </p>
-      
-          <h3 style="color: #c4c4c4;">Description</h3>
-          <p style="color: white;">
-            <strong>Basket Random</strong> is a quirky basketball game where the gameplay is unpredictable. Every round, the controls or game environment changes, keeping you on your toes as you aim to score points.
-          </p>
-      
-          <h3 style="color: #c4c4c4;">Developer</h3>
-          <p style="color: white;">
-            <strong>Basket Random</strong> was developed by <span style="color: #c4c4c4;"><strong>Y8 Games</strong></span>, known for their fun and quirky take on sports games.
-          </p>
-        </div>
-      </div>
-      <br>
-      <br>
-      
+            <br>
+            <br>
+
             <div class="row">
                 <div class="col-12">
                     <div class="games-masonary">
-                       
+
                         <!-- start game item -->
 
 
@@ -607,7 +791,7 @@
                                     </div>
                                     <div class="games-desc">
                                         <h3><a href="./game/drive-mad.html">Forged Alliance Forever
-                                        </a>
+                                            </a>
                                         </h3>
                                         <p class="game-meta">Shooting | Desktop</p>
                                     </div>
@@ -1992,7 +2176,8 @@
 
                     <h2>Unblocked Games for Kids – Play Fun, Safe Games Anywhere with Basket Random</h2><br>
                     <p>Do you love playing games but get stopped by school or home computer filters? Don’t worry!
-                        <strong>Basket Random</strong> is the best place for kids to play <strong>unblocked games</strong>
+                        <strong>Basket Random</strong> is the best place for kids to play <strong>unblocked
+                            games</strong>
                         anytime, anywhere. Our website is super easy to use, safe, and full of fun games that work on
                         Chromebooks, school computers, or even at home. With <strong>Unblocked Games 6x</strong>, you
                         can jump into exciting games without ads or downloads. Let’s explore why <strong>FAF
@@ -2002,7 +2187,8 @@
                     <h2>What Are Unblocked Games?</h2><br>
                     <p><strong>Unblocked games</strong> are online games you can play even if a computer has strict
                         rules, like at school or work. Normally, schools block gaming websites to keep students focused,
-                        but <strong>Basket Random</strong> uses special tricks to get past those blocks. This means you can
+                        but <strong>Basket Random</strong> uses special tricks to get past those blocks. This means you
+                        can
                         play <strong>free online games</strong> during a break or after finishing your schoolwork. Our
                         games are safe, kid-friendly, and don’t need any sign-ups or downloads.</p>
 
@@ -2027,7 +2213,8 @@
                             to <strong>single-player adventures</strong>, there’s something for everyone.</li><br>
 
                         <li><strong>Safe and Worry-Free</strong><br>
-                            <strong>Basket Random</strong> is a safe place for kids. We make sure there’s no bad stuff, like
+                            <strong>Basket Random</strong> is a safe place for kids. We make sure there’s no bad stuff,
+                            like
                             scary ads or unsafe links. You can play without worrying, and parents will love that it’s
                             kid-friendly. It’s perfect for relaxing after a long day of school.
                         </li><br>
@@ -2041,7 +2228,8 @@
 
                     <h2>Best Free Unblocked Games for School and Home</h2><br>
 
-                    <p>Stuck behind a school filter? <strong>Basket Random</strong> has tons of <strong>unblocked games for
+                    <p>Stuck behind a school filter? <strong>Basket Random</strong> has tons of <strong>unblocked games
+                            for
                             kids</strong> that work anywhere. You can play alone or join friends in <strong>online
                             multiplayer games</strong> without signing up. Our games use <strong>HTML5</strong>
                         technology, which means they’re fast and work on any device. Whether you want to race, solve
@@ -2109,7 +2297,8 @@
                     <p>Getting started is as easy as 1-2-3:</p>
 
                     <ol>
-                        <li><strong>Visit Basket Random:</strong> Open your web browser and go to the <a href="/">Basket Random
+                        <li><strong>Visit Basket Random:</strong> Open your web browser and go to the <a href="/">Basket
+                                Random
                                 website</a>.</li><br>
 
                         <li><strong>Choose a Game:</strong> Look through our big list of games or search for one you
@@ -2159,14 +2348,16 @@
 
                     <p>We’re always adding new <strong>unblocked games for kids</strong> to keep things fresh and
                         exciting. Want to know about the latest games? Sign up for our newsletter or follow us on social
-                        media. You’ll get updates about new games, fun features, and more. <strong>Basket Random</strong> is
+                        media. You’ll get updates about new games, fun features, and more. <strong>Basket
+                            Random</strong> is
                         always working to make your gaming time the best it can be!</p>
 
 
                     <h2>Why Unblocked Games Are So Popular</h2><br>
 
                     <p>Kids all over the world love <strong>unblocked games</strong> because they’re fun and easy to
-                        play. Whether you’re at school, home, or a library, <strong>Basket Random</strong> lets you enjoy
+                        play. Whether you’re at school, home, or a library, <strong>Basket Random</strong> lets you
+                        enjoy
                         games without any hassle. Our website is designed to be super simple, so even young kids can
                         find and play their favorite games. Plus, with <strong>no ads</strong> and <strong>no
                             downloads</strong>, you get to focus on the fun.</p>
@@ -2183,19 +2374,22 @@
                         </p>
 
                         <p><strong>Q. Is Basket Random safe for kids?</strong>
-                            <br> Ans: Yes! <strong>Basket Random</strong> is kid-friendly and free from bad content. It’s a
+                            <br> Ans: Yes! <strong>Basket Random</strong> is kid-friendly and free from bad content.
+                            It’s a
                             safe place
                             for kids to play games.
                         </p>
 
                         <p><strong>Q. Do I need to download anything to play?</strong>
-                            <br> Ans: No! All games on <strong>Basket Random</strong> work in your web browser, so you don’t
+                            <br> Ans: No! All games on <strong>Basket Random</strong> work in your web browser, so you
+                            don’t
                             need to
                             download anything.
                         </p>
 
                         <p><strong>Q. Can I play Basket Random on my Chromebook?</strong>
-                            <br> Ans: Yes! <strong>Basket Random</strong> works great on Chromebooks, school computers, and
+                            <br> Ans: Yes! <strong>Basket Random</strong> works great on Chromebooks, school computers,
+                            and
                             any device
                             with a web browser.
                         </p>
@@ -2208,9 +2402,11 @@
 
                     <h2>Get Started with Basket Random Today!</h2><br>
 
-                    <p>Ready to have fun? Visit <a href="/">Basket Random</a> now and start playing <strong>unblocked games
+                    <p>Ready to have fun? Visit <a href="/">Basket Random</a> now and start playing <strong>unblocked
+                            games
                             for kids</strong> that are safe, free, and super exciting. Whether you love racing, puzzles,
-                        or battling friends, <strong>Basket Random</strong> has something for you. Play today and discover
+                        or battling friends, <strong>Basket Random</strong> has something for you. Play today and
+                        discover
                         why kids everywhere love <strong>Basket Random</strong>!</p>
                 </div>
             </div>
@@ -2283,8 +2479,7 @@
     <!--Search Bar js-->
     <script src="assets/js/script.js"></script>
     <script>
-        function loadMainGame()
-        {
+        function loadMainGame() {
             var html = `<iframe class="game-iframe iframeloader" id="game-area" src="../game/iframe/basket-random/index.html" width="500" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;
             document.getElementById("loadgame").innerHTML = html;
             document.getElementById('loadgame').scrollIntoView();
@@ -2292,26 +2487,28 @@
         function open_fullscreen() {
             let game = document.getElementById("game-area");
             if (game.requestFullscreen) {
-            game.requestFullscreen();
+                game.requestFullscreen();
             } else if (game.mozRequestFullScreen) { /* Firefox */
-            game.mozRequestFullScreen();
+                game.mozRequestFullScreen();
             } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-            game.webkitRequestFullscreen();
+                game.webkitRequestFullscreen();
             } else if (game.msRequestFullscreen) { /* IE/Edge */
-             game.msRequestFullscreen();
+                game.msRequestFullscreen();
             }
-            };
+        };
     </script>
     <script>
         if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js')
-          .then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-          });
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
         }
-      </script>
+    </script>
+    <script type='text/javascript'
+        src='//pl27301091.profitableratecpm.com/6a/af/75/6aaf75f328883f4a7ad5358ace854077.js'></script>
 </body>
 
 </html>
