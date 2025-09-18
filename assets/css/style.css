@@ -459,7 +459,7 @@ li {
     border-style: solid !important;
     border-width: 8px 14px 0px 14px !important;
     left: 50%;
-    top: 100%;
+    top: 70%;
     -webkit-transform: translate(-50%, 100%);
     transform: translate(-50%, 100%);
     -webkit-transition: all 850ms ease;
