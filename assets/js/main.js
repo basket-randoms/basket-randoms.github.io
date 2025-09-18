@@ -308,3 +308,95 @@ JS INDEX
 
 }(jQuery));
 
+// Gaming Portal JavaScript Module
+      class GamingPortal {
+         constructor() {
+            this.init();
+         }
+
+         init() {
+            this.bindEvents();
+            this.animateCards();
+         }
+
+         bindEvents() {
+            const navButton = document.querySelector('.gaming-portal__nav-button');
+            if (navButton) {
+               navButton.addEventListener('click', this.handleNavigation.bind(this));
+            }
+         }
+
+         handleNavigation() {
+            alert('Redirecting to all games page...');
+            // In a real application, you would navigate to the all games page
+            // window.location.href = '/all-games';
+         }
+
+         animateCards() {
+            const cards = document.querySelectorAll('.game-card');
+
+            // Initially hide all cards
+            cards.forEach(card => {
+               card.classList.add('game-card--loading');
+            });
+
+            // Animate cards in sequence
+            cards.forEach((card, index) => {
+               setTimeout(() => {
+                  card.classList.remove('game-card--loading');
+                  card.classList.add('game-card--loaded');
+               }, index * 50);
+            });
+         }
+      }
+
+      // Initialize the gaming portal when DOM is loaded
+      document.addEventListener('DOMContentLoaded', () => {
+         new GamingPortal();
+      });
+	   if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/service-worker.js')
+            .then(function (registration) {
+               console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function (err) {
+               console.log('ServiceWorker registration failed: ', err);
+            });
+      }
+	 // FAQ Accordion Functionality
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function () {
+        const faqItem = this.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+
+        // Check if this item is currently active
+        const isActive = faqItem.classList.contains('active');
+
+        // Close all FAQ items first
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+            const itemAnswer = item.querySelector('.faq-answer');
+            itemAnswer.classList.remove('active');
+        });
+
+        // If this item wasn't active, open it
+        if (!isActive) {
+            faqItem.classList.add('active');
+            answer.classList.add('active');
+        }
+    });
+});
+// Smooth Scrolling for Navigation
+document.querySelectorAll('.floating-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
