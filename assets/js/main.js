@@ -400,3 +400,9 @@ document.querySelectorAll('.floating-nav a').forEach(anchor => {
         }
     });
 });
+ function reloadGame() {
+         let gameArea = document.getElementById("game-area");
+         if (gameArea) {
+            gameArea.src = gameArea.src;
+         }
+      }
