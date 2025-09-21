@@ -556,6 +556,7 @@
       .gaming-portal__container {
          max-width: 1200px;
          margin: 0 auto;
+          position: relative;
       }
 
       /* === HEADER COMPONENT === */
@@ -994,7 +995,9 @@
          margin: 0;
          font-size: 16px;
       }
-
+ strong {
+            color: #ffdd44;
+        }
       .box h2 {
          text-align: center;
          font-size: 24px;
