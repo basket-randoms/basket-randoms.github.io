@@ -1,325 +1,458 @@
 <!DOCTYPE html>
-    <html lang="en-US">
-    <head>
+<html lang="en-US">
+
+<head>
     <meta name="publisher" content="Sarkar Games">
     <meta name="copyright" content="Sarkar Games">
-                <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Doom 2 – Play Free Online | Basket Random</title>
-<meta name="description" content="Enjoy Doom 2 on Basket Random. Battle demons, explore dark maps, and use iconic weapons in this classic action-packed first-person shooter. Play now!">
-        <meta name="title" content="Doom 2">
-        <meta name="keywords" content="doom 2, doom 2 unblocked, doom 2 online, doom 2 free, doom 2 play, doom 2 (dos), doom 2 release date, doom 2 mod, doom 2 wad">
-        <meta name="news_keywords" content="doom 2 download
-        doom 2 free
-        doom 2 online
-        doom 2 play
-        doom 2 (dos)
-        doom 2 release date
-        doom 2 mod
-        doom 2 wad">
-        <meta name="author" content="Basket Random">
-        <link rel="canonical" href="https://basket-randoms.github.io/game/doom-2.html">
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.webp">
-        <!--Bootstrap css-->
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <!--Font Awesome css-->
-        <link rel="stylesheet" href="../assets/css/all.min.css">
-        <!--Magnific css-->
-        <link rel="stylesheet" href="../assets/css/magnific-popup.css">
-        <!--Owl-Carousel css-->
-        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
-        <!--NoUiSlider css-->
-        <link rel="stylesheet" href="../assets/css/nouislider.min.css">
-        <!--Animate css-->
-        <link rel="stylesheet" href="../assets/css/animate.min.css">
-        <!--Site Main Style css-->
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <!--Responsive css-->
-        <link rel="stylesheet" href="../assets/css/responsive.css">
-        <style>
-            .game-iframe-container {
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                min-height: 75vh;
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doom 2 – Play Free Online | Basket Random</title>
+    <meta name="description"
+        content="Enjoy Doom 2 on Basket Random. Battle demons, explore dark maps, and use iconic weapons in this classic action-packed first-person shooter. Play now!">
+    <meta name="author" content="Basket Random">
+    <link rel="canonical" href="https://basket-randoms.github.io/game/doom-2.html">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.webp">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!--Magnific css-->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!--Owl-Carousel css-->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <!--NoUiSlider css-->
+    <link rel="stylesheet" href="../assets/css/nouislider.min.css">
+    <!--Animate css-->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <style>
+        .game-iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 75vh;
+        }
+
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .FG-splash-button {
+            border-bottom-color: #ffb53d !important;
+            color: #000;
+            background: linear-gradient(140deg, #fbde04, #e2c803)
+        }
+
+        .FG-splash-button:hover {
+            border-bottom-color: #ff5e00 !important;
+            color: #fff;
+            background: linear-gradient(140deg, #ff9214, #fa8500)
+        }
+
+        .FG-splash-button:active {
+            border-bottom-color: #ff7e33 !important;
+            background: linear-gradient(140deg, #ff5e00, #ff5e00)
+        }
+
+        .SP-splash-button {
+            width: 290px;
+            height: 60px;
+            margin-top: 2.5rem;
+            border-radius: 290486px !important;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border: 3px solid #fff !important;
+            color: #0a0a0a;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #001aff, #002fff);
+            box-shadow: 12px 14px 15px -1px rgba(0, 0, 0, .2)
+        }
+
+        .SP-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background: linear-gradient(180deg, #af39b9, #c815d7);
+            transform: scale(0);
+            transform-origin: 50% 100%;
+            will-change: transform;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .SP-splash-top>div>button:active {
+            transform: translateY(0)
+        }
+
+        .SP-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .SP-splash-top>div>button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35)
+        }
+
+        .HG-splash-button {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: none !important;
+            border-radius: 5px !important;
+            color: #f06000;
+            background: #fff
+        }
+
+        .HG-splash-button:hover {
+            color: #fff;
+            background: #f06000
+        }
+
+        .BG-splash-button,
+        .BG-splash-button:active {
+            box-shadow: inset 0 3px 0 0 #00fcff,
+                inset 20px 0 50px rgba(8, 238, 225, .3),
+                inset 20px 0 300px rgba(0, 200, 187, .05),
+                inset 0 20px 50px rgba(8, 238, 225, .3),
+                inset 0 0 10px #affffa, 4px 4px 4px 0 rgba(10, 10, 10, .5) !important;
+            background-color: rgba(9, 81, 105, .5);
+            border: 0;
+            color: #affffa;
+            width: 290px;
+            height: 4rem;
+            border-radius: 290486px !important;
+            font-size: 1.25rem !important;
+            border: 2px solid #5258b5 !important;
+            opacity: .7
+        }
+
+        .BG-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background-color: #fff;
+            box-shadow: inset 0 0 7px 0 rgba(223, 180, 170, .53) !important;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            will-change: transform;
+            transition: transform 172ms cubic-bezier(.25, .46, .45, .94), opacity 172ms cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .BG-splash-button:hover {
+            color: rgba(0, 0, 0, .7) !important;
+            border: 2px solid #098c9c !important
+        }
+
+        .BG-splash-button:active {
+            border-color: transparent !important;
+            color: rgba(0, 0, 0, .7);
+            transform: translateY(0)
+        }
+
+        .BG-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .BG-splash-button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35) !important
+        }
+
+        body {
+            position: inherit
+        }
+
+        .talpa-splash-background-container {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden
+        }
+
+        .talpa-splash-background-image {
+            box-sizing: border-box;
+            position: absolute;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            background-image: var(--thumb);
+            background-size: cover;
+            filter: blur(50px) brightness(1.5)
+        }
+
+        .talpa-splash-container {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-top {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            flex: 1;
+            align-self: center;
+            justify-content: center;
+            padding: 20px
+        }
+
+        .talpa-splash-top>div {
+            text-align: center
+        }
+
+        .talpa-splash-top>div>button {
+            position: relative;
+            min-width: 180px;
+            min-height: 45px;
+            line-height: 45px;
+            border: 0;
+            border-radius: 25px;
+            border-bottom: 5px solid grey;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+            font-family: Roboto Condensed, Helvetica Neue, Arial, "sans-serif";
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            box-shadow: inset 0 -1px 1px hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 100%, .2);
+            will-change: transform;
+            transition: transform .15s linear
+        }
+
+        .talpa-splash-top>div>button:focus {
+            outline: none
+        }
+
+        .talpa-splash-top>div>button:active {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .13);
+            transform: translateY(-5px)
+        }
+
+        .talpa-loader,
+        .talpa-loader:after {
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em
+        }
+
+        .talpa-loader {
+            box-sizing: content-box;
+            margin: 0 auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border: 1.1em solid hsla(0, 0%, 100%, .2);
+            border-left-color: #fff;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: talpa-load8 1.1s linear infinite;
+            animation: talpa-load8 1.1s linear infinite;
+            display: none
+        }
+
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-bottom {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 0 20px
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent,
+        .talpa-splash-bottom>.talpa-splash-title {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, .5) 50%, transparent);
+            color: #fff;
+            text-align: left;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(0, 0, 0, .7);
+            line-height: 150%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-title {
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            line-height: 100%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent a {
+            color: #fff
+        }
+
+        @-webkit-keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
             }
-            .game-iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
             }
-                    .FG-splash-button{
-                        border-bottom-color:#ffb53d!important;
-                        color:#000;background:linear-gradient(140deg,#fbde04,#e2c803)}
-                    .FG-splash-button:hover{
-                        border-bottom-color:#ff5e00!important;
-                        color:#fff;
-                        background:linear-gradient(140deg,#ff9214,#fa8500)}
-                    .FG-splash-button:active{
-                        border-bottom-color:#ff7e33!important;
-                        background:linear-gradient(140deg,#ff5e00,#ff5e00)}
-                    .SP-splash-button{
-                        width:290px;
-                        height:60px;
-                        margin-top:2.5rem;
-                        border-radius:290486px!important;
-                        padding-left:2rem;
-                        padding-right:2rem;
-                        border:3px solid #fff!important;
-                        color:#0a0a0a;
-                        text-transform:uppercase;
-                        background:linear-gradient(180deg,#001aff,#002fff);
-                        box-shadow:12px 14px 15px -1px rgba(0,0,0,.2)}
-                    .SP-splash-button:before{
-                        content:"";
-                        position:absolute;
-                        left:0;top:1px;
-                        width:100%;
-                        height:100%;
-                        border-radius:290486px!important;
-                        opacity:0;
-                        background: linear-gradient(180deg,#af39b9,#c815d7);
-                        transform:scale(0);
-                        transform-origin:50% 100%;
-                        will-change:transform;
-                        transition:transform .3s cubic-bezier(.25,.46,.45,.94),opacity .2s cubic-bezier(.25,.46,.45,.94);
-                        z-index:-1}
-                    .SP-splash-top>div>button:active{transform:translateY(0)}
-                    .SP-splash-button:hover:before{
-                        top:0;
-                        opacity:1;
-                        transform:scale(1)}
-                    .SP-splash-top>div>button:active:before{
-                        box-shadow:inset 0 0 7px 0 rgba(224,71,36,.53),inset 0 0 7px 0 rgba(0,0,0,.35)}
-                    .HG-splash-button{
-                        height:35px;
-                        line-height:35px;
-                        border-bottom:none!important;
-                        border-radius:5px!important;
-                        color:#f06000;
-                        background:#fff}
-                    .HG-splash-button:hover{
-                        color:#fff;
-                        background:#f06000}
-                    .BG-splash-button,.BG-splash-button:active{
-                        box-shadow:inset 0 3px 0 0 #00fcff,
-                        inset 20px 0 50px rgba(8,238,225,.3),
-                        inset 20px 0 300px rgba(0,200,187,.05),
-                        inset 0 20px 50px rgba(8,238,225,.3),
-                        inset 0 0 10px #affffa,4px 4px 4px 0 rgba(10,10,10,.5)!important;
-                        background-color:rgba(9,81,105,.5);
-                        border:0;
-                        color:#affffa;
-                        width:290px;
-                        height:4rem;
-                        border-radius:290486px!important;
-                        font-size:1.25rem!important;
-                        border:2px solid #5258b5!important;
-                        opacity:.7}
-                    .BG-splash-button:before{
-                        content:"";
-                        position:absolute;
-                        left:0;top:1px;
-                        width:100%;
-                        height:100%;
-                        border-radius:290486px!important;
-                        opacity:0;
-                        background-color:#fff;box-shadow:inset 0 0 7px 0 rgba(223,180,170,.53)!important;transform:scale(0);
-                        transform-origin:50% 50%;will-change:transform;
-                        transition:transform 172ms cubic-bezier(.25,.46,.45,.94),opacity 172ms cubic-bezier(.25,.46,.45,.94);
-                        z-index:-1}
-                    .BG-splash-button:hover{
-                        color:rgba(0,0,0,.7)!important;border:2px solid #098c9c!important}
-                    .BG-splash-button:active{
-                        border-color:transparent!important;
-                        color:rgba(0,0,0,.7);transform:translateY(0)}
-                    .BG-splash-button:hover:before{
-                        top:0;
-                        opacity:1;
-                        transform:scale(1)}
-                    .BG-splash-button:active:before{
-                        box-shadow:inset 0 0 7px 0 rgba(224,71,36,.53),inset 0 0 7px 0 rgba(0,0,0,.35)!important}body{position:inherit}
-                    .talpa-splash-background-container{
-                        box-sizing:border-box;
-                        position:absolute;
-                        top:0;
-                        left:0;
-                        width:100%;
-                        height:100%;
-                        background-color:#000;
-                        overflow:hidden}
-                    .talpa-splash-background-image{
-                        box-sizing:border-box;
-                        position:absolute;
-                        top:-25%;
-                        left:-25%;
-                        width:150%;
-                        height:150%;
-                        background-image:var(--thumb);
-                        background-size:cover;
-                        filter:blur(50px) brightness(1.5)}
-                    .talpa-splash-container{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        position:absolute;
-                        bottom:0;
-                        width:100%;
-                        height:100%}
-                    .talpa-splash-top{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        flex:1;
-                        align-self:center;
-                        justify-content:center;
-                        padding:20px}
-                    .talpa-splash-top>div{text-align:center}
-                    .talpa-splash-top>div>button{
-                        position:relative;
-                        min-width:180px;
-                        min-height:45px;
-                        line-height:45px;
-                        border:0;
-                        border-radius:25px;
-                        border-bottom:5px solid grey;
-                        white-space:nowrap;
-                        text-overflow:ellipsis;
-                        text-align:center;
-                        text-transform:uppercase;
-                        text-shadow:1px 1px 1px rgba(0,0,0,.004);
-                        font-family:Roboto Condensed,Helvetica Neue,Arial,"sans-serif";
-                        font-size:16px;
-                        font-weight:400;
-                        cursor:pointer;
-                        box-shadow:inset 0 -1px 1px hsla(0,0%,100%,.1),inset 0 1px 1px hsla(0,0%,100%,.2);
-                        will-change:transform;
-                        transition:transform .15s linear}
-                    .talpa-splash-top>div>button:focus{outline:none}
-                    .talpa-splash-top>div>button:active{
-                        box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.13);
-                        transform:translateY(-5px)}
-                    .talpa-loader,.talpa-loader:after{
-                        border-radius:50%;
-                        width:1.5em;
-                        height:1.5em}
-                    .talpa-loader{
-                        box-sizing:content-box;
-                        margin:0 auto;
-                        font-size:10px;
-                        position:relative;
-                        text-indent:-9999em;
-                        border:1.1em solid hsla(0,0%,100%,.2);
-                        border-left-color:#fff;
-                        -webkit-transform:translateZ(0);
-                        -ms-transform:translateZ(0);
-                        transform:translateZ(0);
-                        -webkit-animation:talpa-load8 1.1s linear infinite;
-                        animation:talpa-load8 1.1s linear infinite;
-                        display:none}
-                    .talpa-splash-top>div>div:first-child{
-                        position:relative;
-                        width:150px;
-                        height:150px;
-                        margin:auto auto 20px;
-                        border-radius:10px;
-                        overflow:hidden;
-                        border:2px solid hsla(0,0%,100%,.8);
-                        box-shadow:inset 0 5px 5px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.3);
-                        background-image:var(--thumb);
-                        background-position:50%;
-                        background-size:cover}
-                    .talpa-splash-top>div>div>img{
-                        width:100%;
-                        height:100%}
-                    .talpa-splash-bottom{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        align-self:center;
-                        justify-content:center;
-                        width:100%;
-                        padding:0 0 20px}
-                    .talpa-splash-bottom>.talpa-splash-consent,.talpa-splash-bottom>.talpa-splash-title{
-                        box-sizing:border-box;
-                        width:100%;
-                        padding:20px;
-                        background:linear-gradient(90deg,transparent,rgba(0,0,0,.5) 50%,transparent);
-                        color:#fff;
-                        text-align:left;
-                        font-size:12px;
-                        font-family:Arial;
-                        font-weight:400;
-                        text-shadow:0 0 1px rgba(0,0,0,.7);
-                        line-height:150%}
-                    .talpa-splash-bottom>.talpa-splash-title{
-                        padding:15px 0;
-                        text-align:center;
-                        font-size:18px;
-                        font-family:Helvetica,Arial,sans-serif;
-                        font-weight:700;
-                        line-height:100%}
-                    .talpa-splash-bottom>.talpa-splash-consent a{
-                        color:#fff}
-                        @-webkit-keyframes talpa-load8{0%{-webkit-transform:rotate(0deg);
-                        transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);
-                        transform:rotate(1turn)}}
-                        @keyframes talpa-load8{0%{-webkit-transform:rotate(0deg);
-                        transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);
-                        transform:rotate(1turn)}}
-                        @keyframes talpa-gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}
-                    .iframeloader {
-                        background: url(./images/loadinggif.gif) center center no-repeat;
-                        background-size: 5vw;}
-            .article-header {
-                width: 100%;
-                float: left;
-                border-bottom: 1px solid rgba(255,255,255,.1);
-                padding-bottom: 20px;
-                margin-bottom: 30px;
-                margin-top: 20px
+        }
+
+        @keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
             }
-            
-        </style>
-       </head>
-       <body> 
-           
-           
-          <!-- Custom Cursor Start -->
-          <div id="cursor-large"></div>
-          <div id="cursor-small"></div>
-          <!-- Custom Cursor End -->
-        <!-- Header Area Start -->
-        <nav class="fag-header navbar navbar-expand-lg">
-          <div class="container">
-              <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Basket Random" /></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="menu-toggle"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                  <ul class="header_menu  mr-auto">
-                      <li class="nav-item active">
-                          <a href="../index.html" class="nav-link">Home</a>
-                      </li>
-                      <li class="nav-item">
-                              <a href="../action/index.html" class="nav-link">Action</a>
-                      </li>
-                      <li class="nav-item">
-                              <a href="../adventure/index.html" class="nav-link">Adventure</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="../bike/index.html" class="nav-link">Bike</a>
-                      </li>        
-                      <li class="nav-item">
-                              <a href="../car/index.html" class="nav-link">Car</a>
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes talpa-gradient {
+            0% {
+                background-position: 0 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            to {
+                background-position: 0 50%
+            }
+        }
+
+        .iframeloader {
+            background: url(./images/loadinggif.gif) center center no-repeat;
+            background-size: 5vw;
+        }
+
+        .article-header {
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/new-layout.css">
+    <style>
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
+
+
+    <!-- Custom Cursor Start -->
+    <div id="cursor-large"></div>
+    <div id="cursor-small"></div>
+    <!-- Custom Cursor End -->
+    <!-- Header Area Start -->
+    <nav class="fag-header navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Basket Random" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="header_menu  mr-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../action/index.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../adventure/index.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../bike/index.html" class="nav-link">Bike</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../car/index.html" class="nav-link">Car</a>
                     </li>
                     <li class="nav-item">
                         <a href="../game/1v1lol.html" class="nav-link">1v1 lol Unblocked</a>
@@ -342,629 +475,718 @@
                     <input type="text" id="gameSearch" placeholder="Search  games here" oninput="searchGames()">
                     <div id="gameList"></div>
                 </div>
-              </div>
-          </div>
-      </nav>
-      <!-- Header Area End -->
-      <!-- Breadcrumb Area Start -->
-          <section class="fag-breadcrumb-area">
-             <div class="container">
-                <div class="row">
-                   <div class="col-12">
-                      <div class="games-details-banner">
-                         <div class="row">
-                            
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </section>
-                
-                 <!-- Breadcrumb Area End -->
-           
-           
-           <!-- games Details Page Start -->
-     <br>
-    <h1  style="text-align: center; color:#c4c4c4">Doom 2 Unblocked </h1>
-    <hr>
-        <!-- contest-details-section start -->
-        <section class="pb-120 mt-minus-300">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-12">
-                <div class="contest-details__slider-area">
-                  <div class="contest-details__thumb-slider">
-                    <div class="game-iframe-container" id="loadgame">
-                      <div class="talpa-splash-container" style="background: var(--color2);"><div class="talpa-splash-top"><div>
-                           <div style="--thumb:url(../assets/img/doom2/doom-2.png);" alt="Stylish Crop Top Trends"></div>
-                           <button id="talpa-splash-button" class="SP-splash-button" onclick="loadMainGame()" style="display: block;">PLAY NOW</button>
-                           <div class="talpa-loader" style="display: none;">Loading...</div></div></div><div class="talpa-splash-bottom"></div>
-                      </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <!-- contest-details-section start -->
+    <div class="error-container">
+        <div class="game-console">
+            <div class="console-screen">
+                <section class="pb-120 mt-minus-300">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="contest-details__slider-area">
+                                    <div class="contest-details__thumb-slider">
+                                        <div class="game-iframe-container" id="loadgame">
+                                            <div class="talpa-splash-container" style="background: var(--color2);">
+                                                <div class="talpa-splash-top">
+                                                    <div>
+                                                        <div style="--thumb:url(../assets/img/doom2/doom-2.png);"
+                                                            alt="Stylish Crop Top Trends"></div>
+                                                        <button id="talpa-splash-button" class="SP-splash-button"
+                                                            onclick="loadMainGame()" style="display: block;">PLAY
+                                                            NOW</button>
+                                                        <div class="talpa-loader" style="display: none;">Loading...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="talpa-splash-bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- row end -->
+                        </div>
+                </section>
+                <!-- contest-details-section end  -->
+            </div>
+
+
+            <div class="iframe-footer-bar">
+                <div class="iframe-footer-left">
+                    <img src="../assets/img/doom2/doom-2.png" alt="Doom 2" class="iframe-footer-thumb">
+                    <div>
+                        <div class="iframe-footer-title">
+                            <h1 style="font-size: 1.1rem; text-align: left;">Doom 2</h1>
+                        </div>
                     </div>
                 </div>
-              </div>
-            </div><!-- row end -->
-          </div>
-        </section>
-         <!-- contest-details-section end  -->
-        <h2 class="heading_animation" style="text-align: center; color:black"><div id="loadgame" style="text-align: center; color:black">
-            <!-- Button to trigger fullscreen -->
-            <button onclick="open_fullscreen()">Go Fullscreen</button>
-        </div></h2>  <br><hr>         
-           
-        <br>
-        <div class="box">
-          <p style="color: white;">
-          <div>
-            <h3 style="color: #c4c4c4;">How to Play</h3>
-            <p>
-              In <strong>Doom 2</strong>, you fight your way through various levels filled with enemies, collecting weapons and power-ups to defeat the demon hordes.
-            </p>
-            <ul>
-              <li><strong><span style="color: #c4c4c4;">WASD:</span></strong> Move around the map.</li>
-              <li><strong><span style="color: #c4c4c4;">Mouse:</span></strong> Aim and shoot your weapons.</li>
-              <li><strong><span style="color: #c4c4c4;">R:</span></strong> Reload your weapon.</li>
-            </ul>
-            <p>
-              Can you survive the demon onslaught? Play now on <a href="/" style="color: #c4c4c4;">Basket Random</a>!
-            </p>
-        
-            <h3 style="color: #c4c4c4;">Description</h3>
-            <p style="color: white;">
-              <strong>Doom 2</strong> is a classic first-person shooter where you fight demons through various levels. Collect weapons, power-ups, and ammo to survive the relentless onslaught of enemies.
-            </p>
-        
-            <h3 style="color: #c4c4c4;">Developer</h3>
-            <p style="color: white;">
-              <strong>Doom 2</strong> was developed by <span style="color: #c4c4c4;"><strong>id Software</strong></span>, known for creating one of the most influential first-person shooter games in history.
-            </p>
-          </div>
-        </div>
-        <br>
-        <br>
-                           
-       <!-- Related Games Start -->
-          <section class="fag-games-area related_games section_100">
-             <div class="container">
-                <div class="row">
-                   <div class="col-12">
-                      <div class="site-heading">
-                         <h2 class="heading_animation">Related <span>games</span></h2>
-                      </div>
-                   </div>
+                <div class="iframe-footer-right">
+
+                    <span class="iframe-footer-icon" onclick="reloadGame()"><i class="fas fa-redo"></i></span>
+                    <span class="iframe-footer-icon" onclick="open_fullscreen()">
+                        <i class="fas fa-expand"></i></span>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                      <div class="games-masonary">
-                          <div class="clearfix gamesContainer">
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/bob-the-robber-2.html">
-                                                  <img src="../assets/img/bobtherobber2/bob-the-robber-2.png" alt="Bob The Robber 2" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/bob-the-robber-2.html">Bob The Robber 2</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/bob-the-robber-4.html">
-                                                  <img src="../assets/img/bobtherobber4/bob-the-robber-4.png" alt="Bob The Robber 4" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/bob-the-robber-4.html">Bob The Robber 4</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/bomb-it-7.html">
-                                                  <img src="../assets/img/bombit7/bomb-it-7.png" alt="Bomb It 7" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/bomb-it-7.html">Bomb It 7</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/bullet-force.html">
-                                                  <img src="../assets/img/bulletforce/bullet-force.png" alt="Bullet Force" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/bullet-force.html">Bullet Force</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/circloo.html">
-                                                  <img src="../assets/img/circloo/circloo.png" alt="CircloO" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/circloo.html">CirCloO</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/circloo-2.html">
-                                                  <img src="../assets/img/circloo/circloo-2.png" alt="CirCloO 2" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/circloo-2.html">CirCloO 2</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/clicker-heroes.html">
-                                                  <img src="../assets/img/clickerheroes/clicker-heroes.png" alt="Clicker Heroes" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/clicker-heroes.html">Clicker Heroes</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/crossy-road.html">
-                                                  <img src="../assets/img/crossyroad/crossy-road.png" alt="Crossy Road" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/crossy-road.html">Crossy Road</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/doom-2.html">
-                                                  <img src="../assets/img/doom2/doom-2.png" alt="Doom 2" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/doom-2.html">Doom 2</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/fortnite.html">
-                                                  <img src="../assets/img/fortnite/fortnite.png" alt="Fortnite" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/fortnite.html">Fortnite</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/gun-mayhem.html">
-                                                  <img src="../assets/img/gunmayhem/gun-mayhem.png" alt="Gun Mayhem" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/gun-mayhem.html">Gun Mayhem</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/gun-mayhem-2.html">
-                                                  <img src="../assets/img/gunmayhem/gun-mayhem-2.png" alt="Gun Mayhem 2" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/gun-mayhem-2.html">Gun Mayhem 2</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/gun-mayhem-3.html">
-                                                  <img src="../assets/img/gunmayhem/gun-mayhem-3.png" alt="Gun Mayhem 3" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/gun-mayhem-3.html">Gun Mayhem 3</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/gun-blood.html">
-                                                  <img src="../assets/img/gunblood/gunblood.png" alt="Gun Blood" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/gun-blood.html">Gun Blood</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/leader-strike.html">
-                                                  <img src="../assets/img/leaderstrike/leader-strike.png" alt="Leader Strike" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/leader-strike.html">Leader Strike</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/mad-gunz.html">
-                                                  <img src="../assets/img/madgunz/logo.png" alt="Mad Gunz" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/mad-gunz.html">Mad Gunz</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/magikmon.html">
-                                                  <img src="../assets/img/magikmon/magikmon.png" alt="Magikmon" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/magikmon.html">Magikmon</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/masked-forces.html">
-                                                  <img src="../assets/img/maskedforces/masked-forces.png" alt="Masked Forces" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/masked-forces.html">Masked Forces</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/microwars.html">
-                                                  <img src="../assets/img/microwars/microwars.png" alt="Microwars" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/microwars.html">Microwars</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/rooftop-snipers.html">
-                                                  <img src="../assets/img/rooftopsnipers/rooftop-snipers-logo.png" alt="Rooftop Snipers" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/rooftop-snipers.html">Rooftop Snipers</a></h3>
-                                          <p class="game-meta">Action | Shooting | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/iron-snout-2.html">
-                                                  <img src="../assets/img/ironsnout2/iron-snout-2.png" alt="Iron Snout 2" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/iron-snout-2.html">Iron Snout 2</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/iron-snout.html">
-                                                  <img src="../assets/img/ironsnout/iron-snout.png" alt="Iron Snout" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/iron-snout.html">Iron Snout</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/swipe-fighter-heroes.html">
-                                                  <img src="../assets/img/swipefighterheroes/swipe-fighter-heroes.png" alt="Swipe Fighter Heroes" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/swipe-fighter-heroes.html">Swipe Fighter Heroes</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/thumb-fighter.html">
-                                                  <img src="../assets/img/thumbfighter/thumb-fighter.png" alt="Thumb Fighter" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/thumb-fighter.html">Thumb Fighter</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/worlds-hardest-game.html">
-                                                  <img src="../assets/img/worldshardestgame/worlds-hardest-game.png" alt="Worlds Hardest Game" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/worlds-hardest-game.html">Worlds Hardest Game</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/worlds-hardest-game-2.html">
-                                                  <img src="../assets/img/worldshardestgame/worlds-hardest-game 2.png" alt="Worlds Hardest Game 2" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/worlds-hardest-game-2.html">Worlds Hardest Game 2</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                              <!-- end game item -->
-                              <div class="games-item desktop">
-                                  <div class="games-single-item img-contain-isotope">
-                                      <div class="games-thumb">
-                                              <a href="../game/worlds-hardest-game-3.html">
-                                                  <img src="../assets/img/worldshardestgame/worlds-hardest-game-3.logo.png" alt="Worlds Hardest Game 3" />
-                                              </a>
-                                      </div>
-                                      <div class="games-desc">
-                                          <h3><a href="../game/worlds-hardest-game-3.html">Worlds Hardest Game 3</a></h3>
-                                          <p class="game-meta">Action | Desktop</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- end game item -->
-                          </div>
-                      </div>
-                  </div>
-              </div>
             </div>
-          </section>
-          <!-- Related Games End -->
-          <footer class="fag-footer">
-             <div class="footer-top-area">
-                 <div class="container">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 col-sm-12">
-                             <div class="single-footer">
-                                   <h3>About us</h3>
-                <p style="color:white;"> <strong>Basket Random</strong> is your go-to destination for <strong>Unblocked Games Premium</strong> designed specifically for school students. At Basket Random, we are passionate about providing a safe and enjoyable gaming experience that enhances your learning and relaxation time. Our wide selection ensures that every game you play is of the highest quality, free from restrictions, and full of educational benefits. Join our community today and explore a world of fun and learning with<strong> <a href="/index.html"> Basket Random</a></strong>!</p>
-                             </div>
-                         </div>
-                         <div class="col-lg-5 col-md-6 col-sm-12">
-                             <div class="widget-content">
-                                 <div class="row clearfix">
-                                     <div class=" col-lg-6 col-md-6 col-sm-12">
-                                         <div class="single-footer">
-                                             <h3>Our Games</h3>
-                                             <ul>
-                                                 <li><a href="../game/blocky-blast-puzzle.html"><span class="fa fa-caret-right"></span>Block Blast Puzzle</a></li>
-                                                 <li><a href="../game/basket-random.html"><span class="fa fa-caret-right"></span>Basket Random</a></li>
-                                                 <li><a href="../game/basket-and-ball.html"><span class="fa fa-caret-right"></span>Basket and Ball</a></li>
-                                                 <li><a href="../game/basketball-legends-2020.html"><span class="fa fa-caret-right"></span>Basketball Legends 2020</a></li>
-                                                 <li><a href="../game/basketball-legends-2020.html"><span class="fa fa-caret-right"></span>Basketball Legends 2020</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                     <div class=" col-lg-6 col-md-6 col-sm-12">
-                                         <div class="single-footer">
-                                             <h3>Explore</h3>
-                                             <ul>
-                                                 <a href="/about.html"><span class="fa fa-caret-right"></span>About</a></li>
-                                                 <li><a href="#"><span class="fa fa-caret-right"></span>Our Games</a></li>
-                                                 <li><a href="/contact.html"><span class="fa fa-caret-right"></span>Contact Us</a></li>
-                                                 <li><a href="#"><span class="fa fa-caret-right"></span>Help & Support</a></li>
-                                                 <li><a href="#"><span class="fa fa-caret-right"></span>Privacy Policy</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class=" col-lg-3 col-md-6 col-sm-12">
-                             <div class="single-footer">
-                                 <h3>Contact Us</h3>
-                                 <div class="footer-contact">
-                                     <h4 class="title"><i class="fa fa-map-marker"></i>Address </h4>
-                                     <p>88 Road, Broklyn Street<br>New York, USA</p>
-                                 </div>
-                                 <div class="footer-contact">
-                                     <h4 class="title"><i class="fa fa-envelope"></i>Email Address</h4>
-                            <p>sarkargames.info@gamil.com</p>
-                                 </div>
-                                 <div class="footer-contact">
-                                     <h4 class="title"><i class="fa fa-phone"></i>Phone </h4>
-                                     <p>000-0000-000</p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="footer-bottom">
-                 <div class="container">
-                     <div class="row">
-                         <div class="col-12">
-                             <div class="footer-bottom-inn">
-                                  <div class="footer-logo">
-                        <a href="/index.html">
-                           <img src="../assets/img/logo.webp" alt="site logo" />
-                        </a>
-                     </div>
-                     <div class="footer-logo" style="padding-top: 10px;">
-                        Wants to advertise on our Website? <a href="/contact.html"
-                           target="_blank" style="font-size: 20px;"><Strong> Contact us!</Strong></a>
-                     </div>
-                                 <div class="footer-social">
-                                     <ul>
-                                         <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                         <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                         <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                                         <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="copyright">
-                                     <p>&copy; Copyrights 2025 Basket Random - Powered by Sarkar Games 💖</p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </footer>
-         <!-- Footer Area End -->
-    
-           
-        <!--Jquery js-->
-        <script src="../assets/js/jquery.min.js"></script>
-        <!--Bootstrap js-->
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        <!--Owl-Carousel js-->
-        <script src="../assets/js/owl.carousel.min.js"></script>
-        <!--Magnific js-->
-        <script src="../assets/js/jquery.magnific-popup.min.js"></script>
-        <!--wNumb js-->
-        <script src="../assets/js/wNumb.js"></script>
-        <!--NoUiSlider js-->
-        <script src="../assets/js/nouislider.min.js"></script>
-        <!-- Isotop Js -->
-        <script src="../assets/js/isotope.pkgd.min.js"></script>
-        <script src="../assets/js/custom-isotop.js"></script>
-        <!--Main js-->
-        <script src="../assets/js/main.js"></script>
-        <script>
-            function loadMainGame()
-            {
-                  var html = `<iframe class="game-iframe iframeloader" id="game-area" src="https://doomunblocked.github.io/2/" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;
-                  document.getElementById("loadgame").innerHTML = html;
-                  document.getElementById('loadgame').scrollIntoView();
+        </div>
+    </div>
+
+    <br>
+    <div class="container-box">
+        <div class="box">
+            <h2>Game Description</h2>
+            <p>Doom 2 is the legendary first-person shooter that defined the genre, bringing intense battles against
+                demons, monsters, and endless action-packed levels. Armed with powerful weapons, players must survive
+                hell’s invasion and clear each map with skill and strategy. You can enjoy Doom 2 online free at Basket
+                Random, with no download required and playable on all devices.</p><br><br>
+            <div class="box" style="text-align:center;">
+                <h2>Global Rating</h2>
+                <h3>⭐⭐⭐⭐☆ (4.6/5)</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Technical Details</h2>
+            <table class="features-table">
+                <tr>
+                    <td><strong>Technology</strong></td>
+                    <td>DOS / HTML5 (browser port)</td>
+                </tr>
+                <tr>
+                    <td><strong>Developer</strong></td>
+                    <td>id Software</td>
+                </tr>
+                <tr>
+                    <td><strong>Platform</strong></td>
+                    <td>Web Browser, PC (Windows, Linux), Mobile (via emulator)</td>
+                </tr>
+                <tr>
+                    <td><strong>Classification</strong></td>
+                    <td>First-Person Shooter / Action</td>
+                </tr>
+                <tr>
+                    <td><strong>Controls</strong></td>
+                    <td>Keyboard + Mouse (desktop), On-screen touch (mobile/tablet)</td>
+                </tr>
+                <tr>
+                    <td><strong>Global Rating</strong></td>
+                    <td>⭐⭐⭐⭐☆ (4.6/5)</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Update</strong></td>
+                    <td>2022 (browser optimized version release)</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box">
+            <h2>How to Play Doom 2 on All Devices</h2>
+            <p><strong>How to Play Description:</strong><br>Learn the controls and master Doom 2 across all your
+                devices.</p><br>
+
+            <div class="container-box">
+                <div class="box" style="background-color: #505051;">
+                    <h2>🖥️ Desktop Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Move Forward / Backward</td>
+                            <td>⌨️ ⬆⬇ Arrow Keys or W/S</td>
+                        </tr>
+                        <tr>
+                            <td>Strafe Left / Right</td>
+                            <td>⌨️ ⬅➡ Arrow Keys or A/D</td>
+                        </tr>
+                        <tr>
+                            <td>Shoot</td>
+                            <td>⌨️ Ctrl / Mouse Left Click 🖱</td>
+                        </tr>
+                        <tr>
+                            <td>Open Doors / Action</td>
+                            <td>⌨️ Space ⌨</td>
+                        </tr>
+                        <tr>
+                            <td>Switch Weapons</td>
+                            <td>⌨️ Numbers 1–7</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Desktop Tip:</strong> Keep moving constantly to dodge enemy fire and save ammo for
+                            stronger demons.</p>
+                    </div>
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Mobile Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Move</td>
+                            <td>👆 On-screen joystick</td>
+                        </tr>
+                        <tr>
+                            <td>Shoot</td>
+                            <td>👆 Tap Fire button</td>
+                        </tr>
+                        <tr>
+                            <td>Open Doors / Actions</td>
+                            <td>👆 Tap Action button</td>
+                        </tr>
+                        <tr>
+                            <td>Switch Weapons</td>
+                            <td>👆 Weapon icons</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Mobile Tip:</strong> Use headphones for immersive sound—it helps detect enemies!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Tablet Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Move</td>
+                            <td>👆 On-screen joystick</td>
+                        </tr>
+                        <tr>
+                            <td>Shoot</td>
+                            <td>👆 Tap Fire button</td>
+                        </tr>
+                        <tr>
+                            <td>Interact / Open Doors</td>
+                            <td>👆 Tap Action button</td>
+                        </tr>
+                        <tr>
+                            <td>Switch Weapons</td>
+                            <td>👆 Weapon icons</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Tablet Tip:</strong> Adjust sensitivity in settings for smoother aiming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+   <div class="gaming-portal__container">
+        <header class="gaming-portal__header">
+            <h2 class="gaming-portal__title">
+                <span class="gaming-portal__title-icon">⚡</span>
+                Related Action Games
+            </h2>
+            <button class="gaming-portal__nav-button">ALL GAMES</button>
+        </header>
+
+        <!-- Row 1 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="bob-the-robber-2.html" class="game-card__link">
+                        <img src="../assets/img/bobtherobber2/bob-the-robber-2.png" alt="Bob The Robber 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Bob The Robber 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="bob-the-robber-4.html" class="game-card__link">
+                        <img src="../assets/img/bobtherobber4/bob-the-robber-4.png" alt="Bob The Robber 4" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Bob The Robber 4</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="bomb-it-7.html" class="game-card__link">
+                        <img src="../assets/img/bombit7/bomb-it-7.png" alt="Bomb It 7" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Bomb It 7</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="bullet-force.html" class="game-card__link">
+                        <img src="../assets/img/bulletforce/bullet-force.png" alt="Bullet Force" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Bullet Force</h3>
+            </article>
+
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="circloo.html" class="game-card__link">
+                        <img src="../assets/img/circloo/circloo.png" alt="CircloO" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">CircloO</h3>
+            </article>
+
+            <article class="game-card game-card--theme-cyan">
+                <div class="game-card__image-container">
+                    <a href="circloo-2.html" class="game-card__link">
+                        <img src="../assets/img/circloo/circloo-2.png" alt="CircloO 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">CircloO 2</h3>
+            </article>
+        </section>
+
+        <!-- Row 2 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="clicker-heroes.html" class="game-card__link">
+                        <img src="../assets/img/clickerheroes/clicker-heroes.png" alt="Clicker Heroes" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Clicker Heroes</h3>
+            </article>
+
+            <article class="game-card game-card--theme-brown">
+                <div class="game-card__image-container">
+                    <a href="crossy-road.html" class="game-card__link">
+                        <img src="../assets/img/crossyroad/crossy-road.png" alt="Crossy Road" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Crossy Road</h3>
+            </article>
+
+            <article class="game-card game-card--theme-grey">
+                <div class="game-card__image-container">
+                    <a href="doom-2.html" class="game-card__link">
+                        <img src="../assets/img/doom2/doom-2.png" alt="Doom 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Doom 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-lime">
+                <div class="game-card__image-container">
+                    <a href="fortnite.html" class="game-card__link">
+                        <img src="../assets/img/fortnite/fortnite.png" alt="Fortnite" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Fortnite</h3>
+            </article>
+
+            <article class="game-card game-card--theme-amber">
+                <div class="game-card__image-container">
+                    <a href="gun-mayhem.html" class="game-card__link">
+                        <img src="../assets/img/gunmayhem/gun-mayhem.png" alt="Gun Mayhem" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Gun Mayhem</h3>
+            </article>
+
+            <article class="game-card game-card--theme-violet">
+                <div class="game-card__image-container">
+                    <a href="gun-mayhem-2.html" class="game-card__link">
+                        <img src="../assets/img/gunmayhem/gun-mayhem-2.png" alt="Gun Mayhem 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Gun Mayhem 2</h3>
+            </article>
+        </section>
+
+        <!-- Row 3 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-teal">
+                <div class="game-card__image-container">
+                    <a href="gun-mayhem-3.html" class="game-card__link">
+                        <img src="../assets/img/gunmayhem/gun-mayhem-3.png" alt="Gun Mayhem 3" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Gun Mayhem 3</h3>
+            </article>
+
+            <article class="game-card game-card--theme-indigo">
+                <div class="game-card__image-container">
+                    <a href="gun-blood.html" class="game-card__link">
+                        <img src="../assets/img/gunblood/gunblood.png" alt="Gun Blood" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Gun Blood</h3>
+            </article>
+
+            <article class="game-card game-card--theme-deep-orange">
+                <div class="game-card__image-container">
+                    <a href="leader-strike.html" class="game-card__link">
+                        <img src="../assets/img/leaderstrike/leader-strike.png" alt="Leader Strike" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Leader Strike</h3>
+            </article>
+
+            <article class="game-card game-card--theme-deep-purple">
+                <div class="game-card__image-container">
+                    <a href="mad-gunz.html" class="game-card__link">
+                        <img src="../assets/img/madgunz/logo.png" alt="Mad Gunz" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Mad Gunz</h3>
+            </article>
+
+            <article class="game-card game-card--theme-light-blue">
+                <div class="game-card__image-container">
+                    <a href="magikmon.html" class="game-card__link">
+                        <img src="../assets/img/magikmon/magikmon.png" alt="Magikmon" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Magikmon</h3>
+            </article>
+
+            <article class="game-card game-card--theme-light-green">
+                <div class="game-card__image-container">
+                    <a href="masked-forces.html" class="game-card__link">
+                        <img src="../assets/img/maskedforces/masked-forces.png" alt="Masked Forces" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Masked Forces</h3>
+            </article>
+        </section>
+
+        <!-- Row 4 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-yellow">
+                <div class="game-card__image-container">
+                    <a href="microwars.html" class="game-card__link">
+                        <img src="../assets/img/microwars/microwars.png" alt="Microwars" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Microwars</h3>
+            </article>
+
+            <article class="game-card game-card--theme-crimson">
+                <div class="game-card__image-container">
+                    <a href="rooftop-snipers.html" class="game-card__link">
+                        <img src="../assets/img/rooftopsnipers/rooftop-snipers-logo.png" alt="Rooftop Snipers" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--shooting">SHOOTING</span>
+                <h3 class="game-card__title">Rooftop Snipers</h3>
+            </article>
+
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="iron-snout-2.html" class="game-card__link">
+                        <img src="../assets/img/ironsnout2/iron-snout-2.png" alt="Iron Snout 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Iron Snout 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="iron-snout.html" class="game-card__link">
+                        <img src="../assets/img/ironsnout/iron-snout.png" alt="Iron Snout" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Iron Snout</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="swipe-fighter-heroes.html" class="game-card__link">
+                        <img src="../assets/img/swipefighterheroes/swipe-fighter-heroes.png" alt="Swipe Fighter Heroes" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Swipe Fighter Heroes</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="thumb-fighter.html" class="game-card__link">
+                        <img src="../assets/img/thumbfighter/thumb-fighter.png" alt="Thumb Fighter" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Thumb Fighter</h3>
+            </article>
+        </section>
+
+        <!-- Row 5 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="worlds-hardest-game.html" class="game-card__link">
+                        <img src="../assets/img/worldshardestgame/worlds-hardest-game.png" alt="Worlds Hardest Game" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Worlds Hardest Game</h3>
+            </article>
+
+            <article class="game-card game-card--theme-cyan">
+                <div class="game-card__image-container">
+                    <a href="worlds-hardest-game-2.html" class="game-card__link">
+                        <img src="../assets/img/worldshardestgame/worlds-hardest-game 2.png" alt="Worlds Hardest Game 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Worlds Hardest Game 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="worlds-hardest-game-3.html" class="game-card__link">
+                        <img src="../assets/img/worldshardestgame/worlds-hardest-game-3.logo.png" alt="Worlds Hardest Game 3" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--action">ACTION</span>
+                <h3 class="game-card__title">Worlds Hardest Game 3</h3>
+            </article>
+        </section>
+    </div><br><br>
+    <div class="container">
+        <div class="container-box">
+            <div class="box full-width-section">
+                <h2>Doom 2 FAQs ❓</h2>
+                <div class="faq-container section" id="faq" style="border-color: #f0d210;">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I play Doom 2 online for free?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes! You can play Doom 2 free online at Basket Random without
+                                download.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is Doom 2 available on mobile?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, thanks to HTML5 and emulation, Doom 2 works on mobile and
+                                tablet browsers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Who developed Doom 2?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">The game was developed by id Software, released in 1994.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What’s the difference between Doom 1 and Doom 2?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Doom 2 features new levels, enemies, and the iconic Super
+                                Shotgun weapon.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need an emulator for Doom 2?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">No emulator needed—just play directly in your browser at Basket
+                                Random.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is Doom 2 multiplayer?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, the original game supported LAN multiplayer, but browser
+                                versions are usually single-player only.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-highlight-line">
+        <p>Doom 2 online is a legendary shooter that still thrills gamers today. Play free, no download, on desktop,
+            mobile, or tablet at Basket Random. 👉 Start your demon-slaying adventure now and relive the classic action!
+        </p>
+    </div>
+    <footer class="fag-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-inn">
+                            <div class="footer-logo">
+                                <a href="/index.html">
+                                    <img src="../assets/img/logo.webp" alt="site logo" />
+                                </a>
+                            </div>
+                            <div class="footer-logo" style="padding-top: 10px;">
+                                Wants to advertise on our Website? <a href="/contact.html" target="_blank"
+                                    style="font-size: 20px;"><Strong> Contact us!</Strong></a>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; Copyrights 2025 Basket Random - Powered by Sarkar Games 💖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+
+    <!--Jquery js-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!--Owl-Carousel js-->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!--Magnific js-->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!--wNumb js-->
+    <script src="../assets/js/wNumb.js"></script>
+    <!--NoUiSlider js-->
+    <script src="../assets/js/nouislider.min.js"></script>
+    <!-- Isotop Js -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/custom-isotop.js"></script>
+    <!--Main js-->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function loadMainGame() {
+            var html = `<iframe class="game-iframe iframeloader" id="game-area" src="https://doomunblocked.github.io/2/" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;
+            document.getElementById("loadgame").innerHTML = html;
+            document.getElementById('loadgame').scrollIntoView();
+        }
+        function open_fullscreen() {
+            let game = document.getElementById("game-area");
+            if (game.requestFullscreen) {
+                game.requestFullscreen();
+            } else if (game.mozRequestFullScreen) { /* Firefox */
+                game.mozRequestFullScreen();
+            } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                game.webkitRequestFullscreen();
+            } else if (game.msRequestFullscreen) { /* IE/Edge */
+                game.msRequestFullscreen();
             }
-            function open_fullscreen() {
-                  let game = document.getElementById("game-area");
-                  if (game.requestFullscreen) {
-                  game.requestFullscreen();
-                  } else if (game.mozRequestFullScreen) { /* Firefox */
-                  game.mozRequestFullScreen();
-                  } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-                  game.webkitRequestFullscreen();
-                  } else if (game.msRequestFullscreen) { /* IE/Edge */
-                  game.msRequestFullscreen();
-                  }
-                  };
-         </script>
-<script src="../assets/js/script.js"></script>
-        <script>
-            if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('/service-worker.js')
-              .then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-              }, function(err) {
-                console.log('ServiceWorker registration failed: ', err);
-              });
-            }
-          </script>
-    </body>                      
+        };
+    </script>
+    <!-- ...existing code... -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- ...existing code... -->
+    <script>particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#000000" },
+                shape: { type: "circle" },
+                opacity: { value: 1.1 },
+                size: { value: 5 },
+                line_linked: { enable: true, distance: 150, color: "#000000", opacity: 1.1, width: 1 },
+                move: { enable: true, speed: 4 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });</script>
+</body>
+
 </html>

@@ -8,14 +8,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Forged Alliance Forever – Play Free Online | Basket Random</title>
-<meta name="description" content="Enjoy Forged Alliance Forever on Basket Random. Build bases, lead armies, and engage in large-scale battles in this legendary RTS. Play this classic today!">
-
-
-    <meta name="title" content="Forged Alliance Forever">
-    <meta name="keywords"
-        content="Forged Alliance Forever, Basket Random, free online games, unblocked games, play now, fun battles, shooter games, building games, no downloads required, forged-alliance-forever online">
-    <meta name="news_keywords" content="">
+    <title>Forged Alliance Forever – Play Free Online | Basket Random</title>
+    <meta name="description"
+        content="Enjoy Forged Alliance Forever on Basket Random. Build bases, lead armies, and engage in large-scale battles in this legendary RTS. Play this classic today!">
     <meta name="author" content="Basket Random">
     <link rel="canonical" href="https://basket-randoms.github.io/game/forged-alliance-forever.html">
     <!-- Favicon -->
@@ -495,10 +490,32 @@
         }
     </style>
 
-    
+
+    <link rel="stylesheet" href="../assets/css/new-layout.css">
+    <style>
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+    </style>
 </head>
 
 <body>
+    <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
 
 
     <!-- Custom Cursor Start -->
@@ -555,676 +572,639 @@
             </div>
         </div>
     </nav>
-    <!-- Header Area End -->
-    <!-- Breadcrumb Area Start -->
-    <section class="fag-breadcrumb-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="games-details-banner">
-                        <div class="row">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Breadcrumb Area End -->
-
-
-    <!-- games Details Page Start -->
-    <br>
-    <h1 style="text-align: center; color:#c4c4c4">Forged Alliance Forever</h1>
-    <hr>
+    <br><br>
     <!-- contest-details-section start -->
-    <section class="pb-120 mt-minus-300">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="contest-details__slider-area">
-                        <div class="contest-details__thumb-slider">
-                            <div class="game-iframe-container" id="loadgame">
-                                <div class="talpa-splash-container" style="background: var(--color2);">
-                                    <div class="talpa-splash-top">
-                                        <div>
-                                            <div style="--thumb:url(../assets/img/forged-alliance-forever.jpg);"
-                                                alt="Stylish Crop Top Trends"></div>
-                                            <button id="talpa-splash-button" class="SP-splash-button"
-                                                onclick="loadMainGame()" style="display: block;">PLAY NOW</button>
-                                            <div class="talpa-loader" style="display: none;">Loading...</div>
+    <div class="error-container">
+        <div class="game-console">
+            <div class="console-screen">
+                <section class="pb-120 mt-minus-300">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="contest-details__slider-area">
+                                    <div class="contest-details__thumb-slider">
+                                        <div class="game-iframe-container" id="loadgame">
+                                            <div class="talpa-splash-container" style="background: var(--color2);">
+                                                <div class="talpa-splash-top">
+                                                    <div>
+                                                        <div style="--thumb:url(../assets/img/forged-alliance-forever.jpg);"
+                                                            alt="Stylish Crop Top Trends"></div>
+                                                        <button id="talpa-splash-button" class="SP-splash-button"
+                                                            onclick="loadMainGame()" style="display: block;">PLAY
+                                                            NOW</button>
+                                                        <div class="talpa-loader" style="display: none;">Loading...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="talpa-splash-bottom"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="talpa-splash-bottom"></div>
                                 </div>
-                            </div>
+                            </div><!-- row end -->
+                        </div>
+                </section> <!-- contest-details-section end  -->
+            </div>
+
+
+            <div class="iframe-footer-bar">
+                <div class="iframe-footer-left">
+                    <img src="../assets/img/forged-alliance-forever.jpg" alt="Forged Alliance Forever"
+                        class="iframe-footer-thumb">
+                    <div>
+                        <div class="iframe-footer-title">
+                            <h1 style="font-size: 1.1rem; text-align: left;">Forged Alliance Forever</h1>
                         </div>
                     </div>
-                </div><!-- row end -->
+                </div>
+                <div class="iframe-footer-right">
+
+                    <span class="iframe-footer-icon" onclick="reloadGame()"><i class="fas fa-redo"></i></span>
+                    <span class="iframe-footer-icon" onclick="open_fullscreen()">
+                        <i class="fas fa-expand"></i></span>
+                </div>
             </div>
-    </section>
-    <br><br>
-    <!-- contest-details-section end  -->
-    <h2 class="heading_animation" style="text-align: center; color:black">
-        <div id="loadgame" style="text-align: center; color:black">
-            <!-- Button to trigger fullscreen -->
-            <button onclick="open_fullscreen()">Go Fullscreen</button>
         </div>
-    </h2><br>
-    <hr>
+    </div>
     <br>
-                <div class="box">
-                    <p style="color: white;">
-                    <div>
-                        <h3 style="color: #c4c4c4;">How to Play</h3>
-                        <p>
-                            In <strong>Forged Alliance Forever</strong>, you lead a huge army in epic sci-fi battles! Outsmart your opponents by building bases, making tanks, planes, and giant robots, and planning clever attacks. It’s a fast-paced strategy game where thinking meets action!
-                        </p>
-                        <ul>
-                            <li><strong><span style="color: #c4c4c4;">WASD or Arrow Keys:</span></strong> Move your camera around the map.</li>
-                            <li><strong><span style="color: #c4c4c4;">Mouse:</span></strong> Click to select units and give orders like building or attacking.</li>
-                            <li><strong><span style="color: #c4c4c4;">Shift:</span></strong> Hold to queue multiple orders for your units.</li>
-                            <li><strong><span style="color: #c4c4c4;">Ctrl + Number:</span></strong> Assign units to a group for quick control.</li>
-                            <li><strong><span style="color: #c4c4c4;">ESC:</span></strong> Open the in-game menu or pause the game.</li>
-                        </ul>
-                        <p>
-                            Sharpen your skills and rule the battlefield in solo missions or multiplayer wars, only on <a href="/" style="color: #c4c4c4;">Forged Alliance Forever</a>!
-                        </p>
+    <div class="container-box">
+        <div class="box">
+            <h2>Game Description</h2>
+            <p>Forged Alliance Forever (FAF) is a community-driven continuation of the legendary Supreme Commander:
+                Forged Alliance. It delivers epic-scale real-time strategy gameplay where thousands of units battle
+                across land, sea, and air. With enhanced balance, bug fixes, and an active online community, FAF keeps
+                this classic alive for modern players. You can play Forged Alliance Forever free online at Basket Random
+                and join massive wars, competitive multiplayer matches, and tactical campaigns, all designed for
+                strategy lovers across all devices.</p><br><br>
+            <div class="box" style="text-align:center;">
+                <h2>Global Rating</h2>
+                <h3>⭐⭐⭐⭐☆ (4.7/5)</h3>
+            </div>
+        </div>
 
-                        <h3 style="color: #c4c4c4;">Description</h3>
-                        <p style="color: white;">
-                            <strong>Forged Alliance Forever</strong> is an exciting real-time strategy (RTS) game built on <strong>Supreme Commander: Forged Alliance</strong>. You command massive armies with tanks, planes, and giant experimental units in a sci-fi world. Whether you’re playing solo campaigns, practicing against AI, or battling real players online, the game tests your strategy and quick thinking. Customize your army, try new maps, and lead your forces to victory!
-                        </p>
+        <div class="box">
+            <h2>Technical Details</h2>
+            <table class="features-table">
+                <tr>
+                    <td><strong>Technology</strong></td>
+                    <td>RTS Engine, Community Modifications</td>
+                </tr>
+                <tr>
+                    <td><strong>Developer</strong></td>
+                    <td>FAForever Community</td>
+                </tr>
+                <tr>
+                    <td><strong>Platform</strong></td>
+                    <td>PC (Windows, Linux), Browser</td>
+                </tr>
+                <tr>
+                    <td><strong>Classification</strong></td>
+                    <td>Strategy, RTS, Multiplayer</td>
+                </tr>
+                <tr>
+                    <td><strong>Controls</strong></td>
+                    <td>Mouse + Keyboard</td>
+                </tr>
+                <tr>
+                    <td><strong>Global Rating</strong></td>
+                    <td>⭐⭐⭐⭐☆ (4.7/5)</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Update</strong></td>
+                    <td>August 2025</td>
+                </tr>
 
-                        <h3 style="color: #c4c4c4;">Developer</h3>
-                        <p style="color: white;">
-                            <strong>Forged Alliance Forever</strong> is a community-driven project maintained by the <span style="color: #c4c4c4;"><strong>FAF Community</strong></span>, a group of fans who love <strong>Supreme Commander</strong> and keep the game alive with new features and updates.
+            </table>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box">
+            <h2>How to Play Forged Alliance Forever (FAF) on All Devices</h2>
+            <p><strong>How to Play Description:</strong><br></p><br>
+
+            <div class="container-box">
+                <div class="box" style="background-color: #505051;">
+                    <h2>🖥️ Desktop Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Select Units</td>
+                            <td>⌨️ 🖱 Left Click</td>
+                        </tr>
+                        <tr>
+                            <td>Move / Attack Command</td>
+                            <td>⌨️ 🖱 Right Click</td>
+                        </tr>
+                        <tr>
+                            <td>Zoom</td>
+                            <td>⌨️ Mouse Scroll</td>
+                        </tr>
+                        <tr>
+                            <td>Camera Move</td>
+                            <td>⌨️ ⬅ ➡ ⬆ ⬇</td>
+                        </tr>
+                        <tr>
+                            <td>Unit Grouping</td>
+                            <td>⌨️ CTRL + Number Keys</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Desktop Tip:</strong> Always protect your economy while building advanced tech
+                            units to dominate late game.</p>
+                    </div>
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Mobile Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Select Units</td>
+                            <td>👆 Tap</td>
+                        </tr>
+                        <tr>
+                            <td>Command Units</td>
+                            <td>👆 Tap + Hold</td>
+                        </tr>
+                        <tr>
+                            <td>Zoom In/Out</td>
+                            <td>👆 Pinch Screen</td>
+                        </tr>
+                        <tr>
+                            <td>Move Camera</td>
+                            <td>👆 Swipe</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Mobile Tip:</strong> Focus on fewer unit groups to manage better on mobile
+                            screens.</p>
+                    </div>
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Tablet Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Select Units</td>
+                            <td>👆 Tap</td>
+                        </tr>
+                        <tr>
+                            <td>Command Units</td>
+                            <td>👆 Double Tap</td>
+                        </tr>
+                        <tr>
+                            <td>Zoom</td>
+                            <td>👆 Pinch to Zoom</td>
+                        </tr>
+                        <tr>
+                            <td>Map Movement</td>
+                            <td>👆 Swipe</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Tablet Tip:</strong> Tablet size makes controlling large battles more comfortable.
                         </p>
                     </div>
                 </div>
-                <br>
-                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
 
     <!-- Related Games Start -->
-    <section class="fag-games-area related_games section_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="site-heading">
-                        <h2 class="heading_animation">Related <span>games</span></h2>
-                    </div>
+    <!-- Related Games Start -->
+    <div class="gaming-portal__container">
+        <header class="gaming-portal__header">
+            <h2 class="gaming-portal__title">
+                <span class="gaming-portal__title-icon">⚡</span>
+                Related Games
+            </h2>
+            <button class="gaming-portal__nav-button">ALL GAMES</button>
+        </header>
+
+        <!-- Row 1 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="apple-shooter.html" class="game-card__link">
+                        <img src="../assets/img/appleshooter/apple-shooter.png" alt="Apple Shooter" class="game-card__image" />
+                    </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="games-masonary">
-                        <div class="clearfix gamesContainer">
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/apple-shooter.html">
-                                            <img src="../assets/img/appleshooter/apple-shooter.png"
-                                                alt="Apple Shooter" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/apple-shooter.html">Apple Shooter</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/awesome-tanks-2.html">
-                                            <img src="../assets/img/awesometanks2/awesome-tanks.png"
-                                                alt="Awesome Tanks 2" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/awesome-tanks-2.html">Awesome Tanks 2</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/ballistic.html">
-                                            <img src="../assets/img/ballistic/ballistic.png" alt="Ballistic" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/ballistic.html">Ballistic</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/bullet-force.html">
-                                            <img src="../assets/img/bulletforce/bullet-force.png" alt="Bullet Force" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/bullet-force.html">Bullet Force</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/burnin-rubber-5-xs.html">
-                                            <img src="../assets/img/burninrubber5xs/burnin-rubber-5-xs.webp"
-                                                alt="Burnin Rubber 5 Xs" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/burnin-rubber-5-xs.html">Burnin Rubber 5 Xs</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/burnin-rubber.html">
-                                            <img src="../assets/img/burninrubber/burnin-rubber.webp"
-                                                alt="Burnin Rubber" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/burnin-rubber.html">Burnin Rubber</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/go-kart-go-ultra.html">
-                                            <img src="../assets/img/gokartgoultra/go-kart-go-ultra-logo.webp"
-                                                alt="Go Kart Go! Ultra!" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/go-kart-go-ultra.html">Go Kart Go! Ultra!</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/soccar.html">
-                                            <img src="../assets/img/soccar/soccar-logo.webp" alt="Soccar" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/soccar.html">Soccar</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/doom-2.html">
-                                            <img src="../assets/img/doom2/doom-2.png" alt="Doom 2" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/doom-2.html">Doom 2</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/fortnite.html">
-                                            <img src="../assets/img/fortnite/fortnite.png" alt="Fortnite" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/fortnite.html">Fortnite</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/gun-mayhem.html">
-                                            <img src="../assets/img/gunmayhem/gun-mayhem.png" alt="Gun Mayhem" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/gun-mayhem.html">Gun Mayhem</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/gun-mayhem-2.html">
-                                            <img src="../assets/img/gunmayhem/gun-mayhem-2.png" alt="Gun Mayhem 2" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/gun-mayhem-2.html">Gun Mayhem 2</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/gun-mayhem-3.html">
-                                            <img src="../assets/img/gunmayhem/gun-mayhem-3.png" alt="Gun Mayhem 3" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/gun-mayhem-3.html">Gun Mayhem 3</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/gun-blood.html">
-                                            <img src="../assets/img/gunblood/gunblood.png" alt="Gun Blood" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/gun-blood.html">Gun Blood</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/leader-strike.html">
-                                            <img src="../assets/img/leaderstrike/leader-strike.png"
-                                                alt="Leader Strike" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/leader-strike.html">Leader Strike</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/mad-gunz.html">
-                                            <img src="../assets/img/madgunz/logo.png" alt="Mad Gunz" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/mad-gunz.html">Mad Gunz</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/tank-trouble.html">
-                                            <img src="../assets/img/tanktrouble/tank-trouble.png" alt="Tank Trouble" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/tank-trouble.html">Tank Trouble</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/masked-forces.html">
-                                            <img src="../assets/img/maskedforces/masked-forces.png"
-                                                alt="Masked Forces" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/masked-forces.html">Masked Forces</a></h3>
-                                        <p class="game-meta">Action | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/mr-bullet.html">
-                                            <img src="../assets/img/mrbullet/logo.jpeg" alt="Mr Bullet" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/mr-bullet.html">Mr Bullet</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/rooftop-snipers.html">
-                                            <img src="../assets/img/rooftopsnipers/rooftop-snipers-logo.png"
-                                                alt="Rooftop Snipers" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/rooftop-snipers.html">Rooftop Snipers</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/stick-merge-halloween.html">
-                                            <img src="../assets/img/stickmergehalloween/stick-merge-halloween-logo.png"
-                                                alt="Stick Merge Halloween" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/stick-merge-halloween.html">Stick Merge Halloween</a></h3>
-                                        <p class="game-meta">Stickman| Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/stick-merge.html">
-                                            <img src="../assets/img/stickmerge/stickmerge-logo.png" alt="Stick Merge" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/stick-merge.html">Stick Merge</a></h3>
-                                        <p class="game-meta">Stickman| Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/raft-wars-1.html">
-                                            <img src="../assets/img/raftwars1/logo.png" alt="Raft Wars 1" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/raft-wars-1.html">Raft Wars 1</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/raft-wars-2.html">
-                                            <img src="../assets/img/raftwars2/raft-wars-2-logo.png" alt="Raft Wars 2" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/raft-wars-2.html">Raft Wars 2</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/road-fury.html">
-                                            <img src="../assets/img/roadfury/road-fury-logo.webp" alt="Road Fury" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/road-fury.html">Road Fury</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/rocket-soccer-derby.html">
-                                            <img src="../assets/img/rocketsoccerderby/rocket-soccer-derby-logo.webp"
-                                                alt="Rocket Soccer Derby" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/rocket-soccer-derby.html">Rocket Soccer Derby</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/smash-karts.html">
-                                            <img src="../assets/img/smashkarts/smash-karts-logo.webp"
-                                                alt="Smash Karts" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/smash-karts.html">Smash Karts</a></h3>
-                                        <p class="game-meta">Racing | Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item desktop">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/tower-crash-3d.html">
-                                            <img src="../assets/img/towercrash3d/tower-crash-3d.jpg"
-                                                alt="Tower Crash 3D" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/tower-crash-3d.html">Tower Crash 3D</a></h3>
-                                        <p class="game-meta">Shooting | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Apple Shooter</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="awesome-tanks-2.html" class="game-card__link">
+                        <img src="../assets/img/awesometanks2/awesome-tanks.png" alt="Awesome Tanks 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Awesome Tanks 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="ballistic.html" class="game-card__link">
+                        <img src="../assets/img/ballistic/ballistic.png" alt="Ballistic" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Ballistic</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="bullet-force.html" class="game-card__link">
+                        <img src="../assets/img/bulletforce/bullet-force.png" alt="Bullet Force" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Bullet Force</h3>
+            </article>
+
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="burnin-rubber-5-xs.html" class="game-card__link">
+                        <img src="../assets/img/burninrubber5xs/burnin-rubber-5-xs.webp" alt="Burnin Rubber 5 Xs" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Burnin Rubber 5 Xs</h3>
+            </article>
+
+            <article class="game-card game-card--theme-cyan">
+                <div class="game-card__image-container">
+                    <a href="burnin-rubber.html" class="game-card__link">
+                        <img src="../assets/img/burninrubber/burnin-rubber.webp" alt="Burnin Rubber" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Burnin Rubber</h3>
+            </article>
+        </section>
+
+        <!-- Row 2 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="go-kart-go-ultra.html" class="game-card__link">
+                        <img src="../assets/img/gokartgoultra/go-kart-go-ultra-logo.webp" alt="Go Kart Go! Ultra!" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Go Kart Go! Ultra!</h3>
+            </article>
+
+            <article class="game-card game-card--theme-brown">
+                <div class="game-card__image-container">
+                    <a href="soccar.html" class="game-card__link">
+                        <img src="../assets/img/soccar/soccar-logo.webp" alt="Soccar" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Soccar</h3>
+            </article>
+
+            <article class="game-card game-card--theme-grey">
+                <div class="game-card__image-container">
+                    <a href="doom-2.html" class="game-card__link">
+                        <img src="../assets/img/doom2/doom-2.png" alt="Doom 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Doom 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-lime">
+                <div class="game-card__image-container">
+                    <a href="fortnite.html" class="game-card__link">
+                        <img src="../assets/img/fortnite/fortnite.png" alt="Fortnite" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Fortnite</h3>
+            </article>
+
+            <article class="game-card game-card--theme-amber">
+                <div class="game-card__image-container">
+                    <a href="gun-mayhem.html" class="game-card__link">
+                        <img src="../assets/img/gunmayhem/gun-mayhem.png" alt="Gun Mayhem" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Gun Mayhem</h3>
+            </article>
+
+            <article class="game-card game-card--theme-violet">
+                <div class="game-card__image-container">
+                    <a href="gun-mayhem-2.html" class="game-card__link">
+                        <img src="../assets/img/gunmayhem/gun-mayhem-2.png" alt="Gun Mayhem 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Gun Mayhem 2</h3>
+            </article>
+        </section>
+
+        <!-- Row 3 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="gun-mayhem-3.html" class="game-card__link">
+                        <img src="../assets/img/gunmayhem/gun-mayhem-3.png" alt="Gun Mayhem 3" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Gun Mayhem 3</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="gun-blood.html" class="game-card__link">
+                        <img src="../assets/img/gunblood/gunblood.png" alt="Gun Blood" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Gun Blood</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="leader-strike.html" class="game-card__link">
+                        <img src="../assets/img/leaderstrike/leader-strike.png" alt="Leader Strike" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Leader Strike</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="mad-gunz.html" class="game-card__link">
+                        <img src="../assets/img/madgunz/logo.png" alt="Mad Gunz" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Mad Gunz</h3>
+            </article>
+
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="tank-trouble.html" class="game-card__link">
+                        <img src="../assets/img/tanktrouble/tank-trouble.png" alt="Tank Trouble" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Tank Trouble</h3>
+            </article>
+
+            <article class="game-card game-card--theme-cyan">
+                <div class="game-card__image-container">
+                    <a href="masked-forces.html" class="game-card__link">
+                        <img src="../assets/img/maskedforces/masked-forces.png" alt="Masked Forces" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Masked Forces</h3>
+            </article>
+        </section>
+
+        <!-- Row 4 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="mr-bullet.html" class="game-card__link">
+                        <img src="../assets/img/mrbullet/logo.jpeg" alt="Mr Bullet" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Mr Bullet</h3>
+            </article>
+
+            <article class="game-card game-card--theme-brown">
+                <div class="game-card__image-container">
+                    <a href="rooftop-snipers.html" class="game-card__link">
+                        <img src="../assets/img/rooftopsnipers/rooftop-snipers-logo.png" alt="Rooftop Snipers" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Rooftop Snipers</h3>
+            </article>
+
+            <article class="game-card game-card--theme-grey">
+                <div class="game-card__image-container">
+                    <a href="stick-merge-halloween.html" class="game-card__link">
+                        <img src="../assets/img/stickmergehalloween/stick-merge-halloween-logo.png" alt="Stick Merge Halloween" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Stick Merge Halloween</h3>
+            </article>
+
+            <article class="game-card game-card--theme-lime">
+                <div class="game-card__image-container">
+                    <a href="stick-merge.html" class="game-card__link">
+                        <img src="../assets/img/stickmerge/stickmerge-logo.png" alt="Stick Merge" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Stick Merge</h3>
+            </article>
+
+            <article class="game-card game-card--theme-amber">
+                <div class="game-card__image-container">
+                    <a href="raft-wars-1.html" class="game-card__link">
+                        <img src="../assets/img/raftwars1/logo.png" alt="Raft Wars 1" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Raft Wars 1</h3>
+            </article>
+
+            <article class="game-card game-card--theme-violet">
+                <div class="game-card__image-container">
+                    <a href="raft-wars-2.html" class="game-card__link">
+                        <img src="../assets/img/raftwars2/raft-wars-2-logo.png" alt="Raft Wars 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Raft Wars 2</h3>
+            </article>
+        </section>
+
+        <!-- Row 5 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="road-fury.html" class="game-card__link">
+                        <img src="../assets/img/roadfury/road-fury-logo.webp" alt="Road Fury" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Road Fury</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="rocket-soccer-derby.html" class="game-card__link">
+                        <img src="../assets/img/rocketsoccerderby/rocket-soccer-derby-logo.webp" alt="Rocket Soccer Derby" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Rocket Soccer Derby</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="smash-karts.html" class="game-card__link">
+                        <img src="../assets/img/smashkarts/smash-karts-logo.webp" alt="Smash Karts" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Smash Karts</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="tower-crash-3d.html" class="game-card__link">
+                        <img src="../assets/img/towercrash3d/tower-crash-3d.jpg" alt="Tower Crash 3D" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Tower Crash 3D</h3>
+            </article>
+        </section>
+    </div><br><br>
+    <div class="container">
+        <div class="container-box">
+            <div class="box full-width-section">
+                <h2>Forged Alliance Forever (FAF) FAQs ❓</h2>
+                <div class="faq-container section" id="faq" style="border-color: #f0d210;">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is Forged Alliance Forever different from Forged Alliance Forever Frame?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, both are part of the FAF project, but the Frame is a
+                                specific patch build, while Forged Alliance Forever is the main platform.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I play Forged Alliance Forever free?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, it is completely free to play online through Basket
+                                Random, powered by community servers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Does it have a ranking system?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, FAF includes an ELO ranking system for competitive online
+                                matches.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I play it offline?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, you can play offline campaigns and AI skirmishes in
+                                addition to multiplayer.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What kind of battles can I expect?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Expect large-scale battles with hundreds of units on huge maps
+                                across land, air, and sea.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is FAF safe to download and play?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, the community maintains secure updates, ensuring safe
+                                gameplay for all players.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><hr>
-        <br><br><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Forged Alliance Forever: Epic Battles, Easy to Play!</h1>
-                    <header>
-                    </header>
-                    <main>
-                        <section>
-                            <p>Want to play an awesome game called <strong>Forged Alliance Forever</strong> (FAF) but your school or computer blocks it? No problem! With <strong>Forged Alliance Forever</strong>, you can jump into huge battles anytime, even if the internet tries to stop you. Let’s learn what this game is, why kids love it, and how you can start playing it super easily!</p>
-                        </section>
-        
-                        <section>
-                            <h2>What is Forged Alliance Forever?</h2>
-                            <p><strong>Forged Alliance Forever</strong> is a super cool strategy game where you build giant armies and battle other players. You control a big robot called an Armored Command Unit (ACU) to make factories, tanks, planes, and even huge spaceships! It’s like being a general in a sci-fi movie. Kids love it because it’s exciting, makes you think, and lets you play with friends online. <a href="/">Visit FAF</a></p>
-                        </section>
-        
-                        <section>
-                            <h2>Why Kids Think Forged Alliance Forever is Amazing</h2>
-                            <ul>
-                                <li><strong>Epic battles:</strong> Fight with tanks, planes, and giant robots!</li>
-                                <li><strong>Build stuff:</strong> Make your own army and bases to win.</li>
-                                <li><strong>Easy to start:</strong> The game teaches you how to play step by step.</li>
-                                <li><strong>Play with friends:</strong> Team up or battle your buddies to see who’s the best!</li>
-                            </ul>
-                        </section>
-        
-                        <section>
-                            <h2>Why Do You Need Forged Alliance Forever?</h2>
-                            <p>Sometimes, school or work computers block games to keep you focused. But during a break, it’s fun to play a quick match! <strong>Forged Alliance Forever</strong> works through a special program that lets you play even if games are blocked. It’s like having a secret key to unlock the fun! You can enjoy it on a school computer without any trouble.</p>
-                        </section>
-        
-                        <section>
-                            <h2>How to Play Forged Alliance Forever</h2>
-                            <p>Playing <strong>Forged Alliance Forever</strong> is as easy as eating a cookie! Here’s how:</p>
-                            <ol>
-                                <li><strong>Get the game:</strong> Ask a grown-up to help you install <strong>Supreme Commander: Forged Alliance</strong> (you need this game first).</li>
-                                <li><strong>Download FAF:</strong> Go to <a href="/">faforever.com</a> and get the FAF client. It’s free!</li>
-                                <li><strong>Join a game:</strong> Open the FAF client, pick a game from the list, and start playing! No downloads or sign-ups needed after setup.</li>
-                            </ol>
-                            <p>Try searching for <strong>Forged Alliance Forever unblocked</strong>, <strong>FAF free play</strong>, or <strong>Supreme Commander online</strong> to find more tips. Some popular words to search are <strong>strategy games for kids</strong>, <strong>online war games</strong>, or <strong>multiplayer RTS games</strong>.</p>
-                        </section>
-        
-                        <section>
-                            <h2>Why Is Forged Alliance Forever So Popular?</h2>
-                            <p>Kids and grown-ups love <strong>Forged Alliance Forever</strong> because it’s like a giant toy box of battles! Here’s why it’s a big hit:</p>
-                            <ul>
-                                <li><strong>Huge battles:</strong> You can have armies with hundreds of units fighting at once!</li>
-                                <li><strong>Be creative:</strong> Build bases and plan attacks to outsmart your opponent.</li>
-                                <li><strong>Play anywhere:</strong> The FAF client lets you play on most computers, even at school.</li>
-                                <li><strong>Free and fun:</strong> After you have the game, FAF is free to play with tons of new maps and modes!</li>
-                            </ul>
-                            <p>Plus, it’s a great way to practice planning, teamwork, and quick thinking, like being a superhero commander in a video game!</p>
-                        </section>
-        
-                        <section>
-                            <h2>Tips for Playing Forged Alliance Forever</h2>
-                            <p>Want to be the best commander? Try these tricks:</p>
-                            <ul>
-                                <li><strong>Build fast:</strong> Start with a factory and power plants to grow your army quickly.</li>
-                                <li><strong>Watch the map:</strong> Keep an eye on your enemy so you’re not surprised.</li>
-                                <li><strong>Have fun:</strong> Don’t worry if you lose—just try again and learn!</li>
-                            </ul>
-                            <p>Check out the FAF Wiki for more tips: <a href="/">FAF Wiki</a></p>
-                        </section>
-        
-                        <section>
-                            <h2>Ready to Play?</h2>
-                            <p><strong>Forged Alliance Forever</strong> is the perfect game for kids who love action, building, and big battles. It’s easy to set up, simple to learn, and super exciting. Next time you’re on a break, ask a grown-up to help you get <strong>Forged Alliance Forever</strong>, join a match, and show off your commander skills!</p>
-                            <p><em>Want more cool games? Search for <strong>unblocked strategy games</strong>, <strong>online battle games</strong>, or <strong>fun war games</strong> to find other awesome adventures!</em></p>
-                        </section>
-                    </main>
-                </div>
-            </div>
         </div>
+    </div>
 
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- Related Games End -->
+    <div class="bottom-highlight-line">
+        <p>Forged Alliance Forever is the ultimate RTS experience online, offering epic
+        battles and continuous updates from the community. 👉 Play Forged Alliance Forever now free at Basket Random on
+        all devices – no download required!
+    </p></div>
     <footer class="fag-footer">
-        <div class="footer-top-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-footer">
-                            <h3>About us</h3>
-                            <p style="color:white;"> <strong>Basket Random</strong> is your go-to destination for
-                                <strong>Unblocked Games Premium</strong> designed specifically for school students. At
-                                Basket Random, we are passionate about providing a safe and enjoyable gaming experience that
-                                enhances your learning and relaxation time. Our wide selection ensures that every game
-                                you play is of the highest quality, free from restrictions, and full of educational
-                                benefits. Join our community today and explore a world of fun and learning with<strong>
-                                    <a href="/index.html"> Basket Random</a></strong>!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 col-sm-12">
-                        <div class="widget-content">
-                            <div class="row clearfix">
-                                <div class=" col-lg-6 col-md-6 col-sm-12">
-                                    <div class="single-footer">
-                                        <h3>Our Games</h3>
-                                        <ul>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Need For Speed</a>
-                                            </li>
-                                            <li><a href="../game/basket-random.html"><span class="fa fa-caret-right"></span>Basket Random</a></li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Resident Evil</a>
-                                            </li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Dragons Fight</a>
-                                            </li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>2 Player
-                                                    Champions</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class=" col-lg-6 col-md-6 col-sm-12">
-                                    <div class="single-footer">
-                                        <h3>Explore</h3>
-                                        <ul>
-                                            <a href="/about.html"><span class="fa fa-caret-right"></span>About</a></li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Our Games</a></li>
-                                            <li><a href="/contact.html"><span class="fa fa-caret-right"></span>Contact
-                                                    Us</a></li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Help & Support</a>
-                                            </li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Privacy Policy</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-3 col-md-6 col-sm-12">
-                        <div class="single-footer">
-                            <h3>Contact Us</h3>
-                            <div class="footer-contact">
-                                <h4 class="title"><i class="fa fa-map-marker"></i>Address </h4>
-                                <p>88 Road, Broklyn Street<br>New York, USA</p>
-                            </div>
-                            <div class="footer-contact">
-                               <h4 class="title"><i class="fa fa-envelope"></i>Email Address</h4>
-                            <p>sarkargames.info@gamil.com</p>
-                            </div>
-                            <div class="footer-contact">
-                                <h4 class="title"><i class="fa fa-phone"></i>Phone </h4>
-                                <p>000-0000-000</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
@@ -1308,6 +1288,26 @@
             }
         };
     </script>
+     <!-- ...existing code... -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- ...existing code... -->
+    <script>particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#000000" },
+                shape: { type: "circle" },
+                opacity: { value: 1.1 },
+                size: { value: 5 },
+                line_linked: { enable: true, distance: 150, color: "#000000", opacity: 1.1, width: 1 },
+                move: { enable: true, speed: 4 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });</script>
 </body>
 
 </html>

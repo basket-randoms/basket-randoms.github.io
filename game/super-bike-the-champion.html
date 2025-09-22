@@ -1,324 +1,457 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<html lang="en">
+
+<head>
     <meta name="publisher" content="Sarkar Games">
     <meta name="copyright" content="Sarkar Games">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <title>Super Bike The Champion – Play Free Online | Basket Random</title>
-<meta name="description" content="Play Super Bike The Champion on Basket Random. Race powerful bikes, speed through tracks, and test your skills in this thrilling 3D racing game.">
-        <meta name="robots" content="index, follow">
-        <meta name="keywords" content="
-        super bike the champion poki 
-        super bike the champion crazy games 
-        super bike the champion unblocked 
-        superbike the champion download 
-        superbike the champion online 
-        super bike game 
-        super bike game online 
-        super bike game download ">
-        <meta name="author" content="Basket Random">
-        <link rel="canonical" href="https://basket-randoms.github.io/game/super-bike-the-champion.html">
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.webp">
-        <!--Bootstrap css-->
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <!--Font Awesome css-->
-        <link rel="stylesheet" href="../assets/css/all.min.css">
-        <!--Magnific css-->
-        <link rel="stylesheet" href="../assets/css/magnific-popup.css">
-        <!--Owl-Carousel css-->
-        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
-        <!--NoUiSlider css-->
-        <link rel="stylesheet" href="../assets/css/nouislider.min.css">
-        <!--Animate css-->
-        <link rel="stylesheet" href="../assets/css/animate.min.css">
-        <!--Site Main Style css-->
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <!--Responsive css-->
-        <link rel="stylesheet" href="../assets/css/responsive.css">
-        <style>
-            .game-iframe-container {
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                min-height: 75vh;
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Bike The Champion – Play Free Online | Basket Random</title>
+    <meta name="description"
+        content="Play Super Bike The Champion on Basket Random. Race powerful bikes, speed through tracks, and test your skills in this thrilling 3D racing game.">
+    <meta name="author" content="Basket Random">
+    <link rel="canonical" href="https://basket-randoms.github.io/game/super-bike-the-champion.html">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.webp">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!--Magnific css-->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!--Owl-Carousel css-->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <!--NoUiSlider css-->
+    <link rel="stylesheet" href="../assets/css/nouislider.min.css">
+    <!--Animate css-->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <style>
+        .game-iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 75vh;
+        }
+
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .FG-splash-button {
+            border-bottom-color: #ffb53d !important;
+            color: #000;
+            background: linear-gradient(140deg, #fbde04, #e2c803)
+        }
+
+        .FG-splash-button:hover {
+            border-bottom-color: #ff5e00 !important;
+            color: #fff;
+            background: linear-gradient(140deg, #ff9214, #fa8500)
+        }
+
+        .FG-splash-button:active {
+            border-bottom-color: #ff7e33 !important;
+            background: linear-gradient(140deg, #ff5e00, #ff5e00)
+        }
+
+        .SP-splash-button {
+            width: 290px;
+            height: 60px;
+            margin-top: 2.5rem;
+            border-radius: 290486px !important;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border: 3px solid #fff !important;
+            color: #0a0a0a;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #001aff, #002fff);
+            box-shadow: 12px 14px 15px -1px rgba(0, 0, 0, .2)
+        }
+
+        .SP-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background: linear-gradient(180deg, #af39b9, #c815d7);
+            transform: scale(0);
+            transform-origin: 50% 100%;
+            will-change: transform;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .SP-splash-top>div>button:active {
+            transform: translateY(0)
+        }
+
+        .SP-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .SP-splash-top>div>button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35)
+        }
+
+        .HG-splash-button {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: none !important;
+            border-radius: 5px !important;
+            color: #f06000;
+            background: #fff
+        }
+
+        .HG-splash-button:hover {
+            color: #fff;
+            background: #f06000
+        }
+
+        .BG-splash-button,
+        .BG-splash-button:active {
+            box-shadow: inset 0 3px 0 0 #00fcff,
+                inset 20px 0 50px rgba(8, 238, 225, .3),
+                inset 20px 0 300px rgba(0, 200, 187, .05),
+                inset 0 20px 50px rgba(8, 238, 225, .3),
+                inset 0 0 10px #affffa, 4px 4px 4px 0 rgba(10, 10, 10, .5) !important;
+            background-color: rgba(9, 81, 105, .5);
+            border: 0;
+            color: #affffa;
+            width: 290px;
+            height: 4rem;
+            border-radius: 290486px !important;
+            font-size: 1.25rem !important;
+            border: 2px solid #5258b5 !important;
+            opacity: .7
+        }
+
+        .BG-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background-color: #fff;
+            box-shadow: inset 0 0 7px 0 rgba(223, 180, 170, .53) !important;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            will-change: transform;
+            transition: transform 172ms cubic-bezier(.25, .46, .45, .94), opacity 172ms cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .BG-splash-button:hover {
+            color: rgba(0, 0, 0, .7) !important;
+            border: 2px solid #098c9c !important
+        }
+
+        .BG-splash-button:active {
+            border-color: transparent !important;
+            color: rgba(0, 0, 0, .7);
+            transform: translateY(0)
+        }
+
+        .BG-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .BG-splash-button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35) !important
+        }
+
+        body {
+            position: inherit
+        }
+
+        .talpa-splash-background-container {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden
+        }
+
+        .talpa-splash-background-image {
+            box-sizing: border-box;
+            position: absolute;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            background-image: var(--thumb);
+            background-size: cover;
+            filter: blur(50px) brightness(1.5)
+        }
+
+        .talpa-splash-container {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-top {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            flex: 1;
+            align-self: center;
+            justify-content: center;
+            padding: 20px
+        }
+
+        .talpa-splash-top>div {
+            text-align: center
+        }
+
+        .talpa-splash-top>div>button {
+            position: relative;
+            min-width: 180px;
+            min-height: 45px;
+            line-height: 45px;
+            border: 0;
+            border-radius: 25px;
+            border-bottom: 5px solid grey;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+            font-family: Roboto Condensed, Helvetica Neue, Arial, "sans-serif";
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            box-shadow: inset 0 -1px 1px hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 100%, .2);
+            will-change: transform;
+            transition: transform .15s linear
+        }
+
+        .talpa-splash-top>div>button:focus {
+            outline: none
+        }
+
+        .talpa-splash-top>div>button:active {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .13);
+            transform: translateY(-5px)
+        }
+
+        .talpa-loader,
+        .talpa-loader:after {
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em
+        }
+
+        .talpa-loader {
+            box-sizing: content-box;
+            margin: 0 auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border: 1.1em solid hsla(0, 0%, 100%, .2);
+            border-left-color: #fff;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: talpa-load8 1.1s linear infinite;
+            animation: talpa-load8 1.1s linear infinite;
+            display: none
+        }
+
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-bottom {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 0 20px
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent,
+        .talpa-splash-bottom>.talpa-splash-title {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, .5) 50%, transparent);
+            color: #fff;
+            text-align: left;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(0, 0, 0, .7);
+            line-height: 150%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-title {
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            line-height: 100%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent a {
+            color: #fff
+        }
+
+        @-webkit-keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
             }
-            .game-iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
             }
-                    .FG-splash-button{
-                        border-bottom-color:#ffb53d!important;
-                        color:#000;background:linear-gradient(140deg,#fbde04,#e2c803)}
-                    .FG-splash-button:hover{
-                        border-bottom-color:#ff5e00!important;
-                        color:#fff;
-                        background:linear-gradient(140deg,#ff9214,#fa8500)}
-                    .FG-splash-button:active{
-                        border-bottom-color:#ff7e33!important;
-                        background:linear-gradient(140deg,#ff5e00,#ff5e00)}
-                    .SP-splash-button{
-                        width:290px;
-                        height:60px;
-                        margin-top:2.5rem;
-                        border-radius:290486px!important;
-                        padding-left:2rem;
-                        padding-right:2rem;
-                        border:3px solid #fff!important;
-                        color:#0a0a0a;
-                        text-transform:uppercase;
-                        background:linear-gradient(180deg,#001aff,#002fff);
-                        box-shadow:12px 14px 15px -1px rgba(0,0,0,.2)}
-                    .SP-splash-button:before{
-                        content:"";
-                        position:absolute;
-                        left:0;top:1px;
-                        width:100%;
-                        height:100%;
-                        border-radius:290486px!important;
-                        opacity:0;
-                        background: linear-gradient(180deg,#af39b9,#c815d7);
-                        transform:scale(0);
-                        transform-origin:50% 100%;
-                        will-change:transform;
-                        transition:transform .3s cubic-bezier(.25,.46,.45,.94),opacity .2s cubic-bezier(.25,.46,.45,.94);
-                        z-index:-1}
-                    .SP-splash-top>div>button:active{transform:translateY(0)}
-                    .SP-splash-button:hover:before{
-                        top:0;
-                        opacity:1;
-                        transform:scale(1)}
-                    .SP-splash-top>div>button:active:before{
-                        box-shadow:inset 0 0 7px 0 rgba(224,71,36,.53),inset 0 0 7px 0 rgba(0,0,0,.35)}
-                    .HG-splash-button{
-                        height:35px;
-                        line-height:35px;
-                        border-bottom:none!important;
-                        border-radius:5px!important;
-                        color:#f06000;
-                        background:#fff}
-                    .HG-splash-button:hover{
-                        color:#fff;
-                        background:#f06000}
-                    .BG-splash-button,.BG-splash-button:active{
-                        box-shadow:inset 0 3px 0 0 #00fcff,
-                        inset 20px 0 50px rgba(8,238,225,.3),
-                        inset 20px 0 300px rgba(0,200,187,.05),
-                        inset 0 20px 50px rgba(8,238,225,.3),
-                        inset 0 0 10px #affffa,4px 4px 4px 0 rgba(10,10,10,.5)!important;
-                        background-color:rgba(9,81,105,.5);
-                        border:0;
-                        color:#affffa;
-                        width:290px;
-                        height:4rem;
-                        border-radius:290486px!important;
-                        font-size:1.25rem!important;
-                        border:2px solid #5258b5!important;
-                        opacity:.7}
-                    .BG-splash-button:before{
-                        content:"";
-                        position:absolute;
-                        left:0;top:1px;
-                        width:100%;
-                        height:100%;
-                        border-radius:290486px!important;
-                        opacity:0;
-                        background-color:#fff;box-shadow:inset 0 0 7px 0 rgba(223,180,170,.53)!important;transform:scale(0);
-                        transform-origin:50% 50%;will-change:transform;
-                        transition:transform 172ms cubic-bezier(.25,.46,.45,.94),opacity 172ms cubic-bezier(.25,.46,.45,.94);
-                        z-index:-1}
-                    .BG-splash-button:hover{
-                        color:rgba(0,0,0,.7)!important;border:2px solid #098c9c!important}
-                    .BG-splash-button:active{
-                        border-color:transparent!important;
-                        color:rgba(0,0,0,.7);transform:translateY(0)}
-                    .BG-splash-button:hover:before{
-                        top:0;
-                        opacity:1;
-                        transform:scale(1)}
-                    .BG-splash-button:active:before{
-                        box-shadow:inset 0 0 7px 0 rgba(224,71,36,.53),inset 0 0 7px 0 rgba(0,0,0,.35)!important}body{position:inherit}
-                    .talpa-splash-background-container{
-                        box-sizing:border-box;
-                        position:absolute;
-                        top:0;
-                        left:0;
-                        width:100%;
-                        height:100%;
-                        background-color:#000;
-                        overflow:hidden}
-                    .talpa-splash-background-image{
-                        box-sizing:border-box;
-                        position:absolute;
-                        top:-25%;
-                        left:-25%;
-                        width:150%;
-                        height:150%;
-                        background-image:var(--thumb);
-                        background-size:cover;
-                        filter:blur(50px) brightness(1.5)}
-                    .talpa-splash-container{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        position:absolute;
-                        bottom:0;
-                        width:100%;
-                        height:100%}
-                    .talpa-splash-top{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        flex:1;
-                        align-self:center;
-                        justify-content:center;
-                        padding:20px}
-                    .talpa-splash-top>div{text-align:center}
-                    .talpa-splash-top>div>button{
-                        position:relative;
-                        min-width:180px;
-                        min-height:45px;
-                        line-height:45px;
-                        border:0;
-                        border-radius:25px;
-                        border-bottom:5px solid grey;
-                        white-space:nowrap;
-                        text-overflow:ellipsis;
-                        text-align:center;
-                        text-transform:uppercase;
-                        text-shadow:1px 1px 1px rgba(0,0,0,.004);
-                        font-family:Roboto Condensed,Helvetica Neue,Arial,"sans-serif";
-                        font-size:16px;
-                        font-weight:400;
-                        cursor:pointer;
-                        box-shadow:inset 0 -1px 1px hsla(0,0%,100%,.1),inset 0 1px 1px hsla(0,0%,100%,.2);
-                        will-change:transform;
-                        transition:transform .15s linear}
-                    .talpa-splash-top>div>button:focus{outline:none}
-                    .talpa-splash-top>div>button:active{
-                        box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.13);
-                        transform:translateY(-5px)}
-                    .talpa-loader,.talpa-loader:after{
-                        border-radius:50%;
-                        width:1.5em;
-                        height:1.5em}
-                    .talpa-loader{
-                        box-sizing:content-box;
-                        margin:0 auto;
-                        font-size:10px;
-                        position:relative;
-                        text-indent:-9999em;
-                        border:1.1em solid hsla(0,0%,100%,.2);
-                        border-left-color:#fff;
-                        -webkit-transform:translateZ(0);
-                        -ms-transform:translateZ(0);
-                        transform:translateZ(0);
-                        -webkit-animation:talpa-load8 1.1s linear infinite;
-                        animation:talpa-load8 1.1s linear infinite;
-                        display:none}
-                    .talpa-splash-top>div>div:first-child{
-                        position:relative;
-                        width:150px;
-                        height:150px;
-                        margin:auto auto 20px;
-                        border-radius:10px;
-                        overflow:hidden;
-                        border:2px solid hsla(0,0%,100%,.8);
-                        box-shadow:inset 0 5px 5px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.3);
-                        background-image:var(--thumb);
-                        background-position:50%;
-                        background-size:cover}
-                    .talpa-splash-top>div>div>img{
-                        width:100%;
-                        height:100%}
-                    .talpa-splash-bottom{
-                        display:flex;
-                        flex-flow:column;
-                        box-sizing:border-box;
-                        align-self:center;
-                        justify-content:center;
-                        width:100%;
-                        padding:0 0 20px}
-                    .talpa-splash-bottom>.talpa-splash-consent,.talpa-splash-bottom>.talpa-splash-title{
-                        box-sizing:border-box;
-                        width:100%;
-                        padding:20px;
-                        background:linear-gradient(90deg,transparent,rgba(0,0,0,.5) 50%,transparent);
-                        color:#fff;
-                        text-align:left;
-                        font-size:12px;
-                        font-family:Arial;
-                        font-weight:400;
-                        text-shadow:0 0 1px rgba(0,0,0,.7);
-                        line-height:150%}
-                    .talpa-splash-bottom>.talpa-splash-title{
-                        padding:15px 0;
-                        text-align:center;
-                        font-size:18px;
-                        font-family:Helvetica,Arial,sans-serif;
-                        font-weight:700;
-                        line-height:100%}
-                    .talpa-splash-bottom>.talpa-splash-consent a{
-                        color:#fff}
-                        @-webkit-keyframes talpa-load8{0%{-webkit-transform:rotate(0deg);
-                        transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);
-                        transform:rotate(1turn)}}
-                        @keyframes talpa-load8{0%{-webkit-transform:rotate(0deg);
-                        transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);
-                        transform:rotate(1turn)}}
-                        @keyframes talpa-gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}
-                    .iframeloader {
-                        background: url(./images/loadinggif.gif) center center no-repeat;
-                        background-size: 5vw;}
-            .article-header {
-                width: 100%;
-                float: left;
-                border-bottom: 1px solid rgba(255,255,255,.1);
-                padding-bottom: 20px;
-                margin-bottom: 30px;
-                margin-top: 20px
+        }
+
+        @keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
             }
-            
-        </style>
-       </head>
-       <body> 
-           
-           
-          <!-- Custom Cursor Start -->
-          <div id="cursor-large"></div>
-          <div id="cursor-small"></div>
-          <!-- Custom Cursor End -->
-        <!-- Header Area Start -->
-        <nav class="fag-header navbar navbar-expand-lg">
-          <div class="container">
-              <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Basket Random" /></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="menu-toggle"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                  <ul class="header_menu  mr-auto">
-                      <li class="nav-item active">
-                          <a href="../index.html" class="nav-link">Home</a>
-                      </li>
-                      <li class="nav-item">
-                              <a href="../action/index.html" class="nav-link">Action</a>
-                      </li>
-                      <li class="nav-item">
-                              <a href="../adventure/index.html" class="nav-link">Adventure</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="../bike/index.html" class="nav-link">Bike</a>
-                      </li>        
-                      <li class="nav-item">
-                              <a href="../car/index.html" class="nav-link">Car</a>
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes talpa-gradient {
+            0% {
+                background-position: 0 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            to {
+                background-position: 0 50%
+            }
+        }
+
+        .iframeloader {
+            background: url(./images/loadinggif.gif) center center no-repeat;
+            background-size: 5vw;
+        }
+
+        .article-header {
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/new-layout.css">
+    <style>
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
+
+
+    <!-- Custom Cursor Start -->
+    <div id="cursor-large"></div>
+    <div id="cursor-small"></div>
+    <!-- Custom Cursor End -->
+    <!-- Header Area Start -->
+    <nav class="fag-header navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Basket Random" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="header_menu  mr-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../action/index.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../adventure/index.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../bike/index.html" class="nav-link">Bike</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../car/index.html" class="nav-link">Car</a>
                     </li>
                     <li class="nav-item">
                         <a href="../game/1v1lol.html" class="nav-link">1v1 lol Unblocked</a>
@@ -341,465 +474,625 @@
                     <input type="text" id="gameSearch" placeholder="Search  games here" oninput="searchGames()">
                     <div id="gameList"></div>
                 </div>
-              </div>
-          </div>
-      </nav>
-      <!-- Header Area End -->
-      <!-- Breadcrumb Area Start -->
-          <section class="fag-breadcrumb-area">
-             <div class="container">
-                <div class="row">
-                   <div class="col-12">
-                      <div class="games-details-banner">
-                         <div class="row">
-                            
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </section>
-                
-                 <!-- Breadcrumb Area End -->
-           
-           
-           <!-- games Details Page Start -->
-     <br>
-    <h1  style="text-align: center; color:#c4c4c4">Super Bike The Champion</h1>
-    <hr>
-        <!-- contest-details-section start -->
-        <section class="pb-120 mt-minus-300">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-12">
-                <div class="contest-details__slider-area">
-                  <div class="contest-details__thumb-slider">
-                    <div class="game-iframe-container" id="loadgame">
-                      <div class="talpa-splash-container" style="background: var(--color2);"><div class="talpa-splash-top"><div>
-                           <div style="--thumb:url(../assets/img/superbikethechampion/super-bike-the-champion-logo.webp);" alt="Stylish Crop Top Trends"></div>
-                           <button id="talpa-splash-button" class="SP-splash-button" onclick="loadMainGame()" style="display: block;">PLAY NOW</button>
-                           <div class="talpa-loader" style="display: none;">Loading...</div></div></div><div class="talpa-splash-bottom"></div>
-                      </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <!-- contest-details-section start -->
+    <div class="error-container">
+        <div class="game-console">
+            <div class="console-screen">
+                <section class="pb-120 mt-minus-300">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="contest-details__slider-area">
+                                    <div class="contest-details__thumb-slider">
+                                        <div class="game-iframe-container" id="loadgame">
+                                            <div class="talpa-splash-container" style="background: var(--color2);">
+                                                <div class="talpa-splash-top">
+                                                    <div>
+                                                        <div style="--thumb:url(../assets/img/superbikethechampion/super-bike-the-champion-logo.webp);"
+                                                            alt="Stylish Crop Top Trends"></div>
+                                                        <button id="talpa-splash-button" class="SP-splash-button"
+                                                            onclick="loadMainGame()" style="display: block;">PLAY
+                                                            NOW</button>
+                                                        <div class="talpa-loader" style="display: none;">Loading...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="talpa-splash-bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- row end -->
+                        </div>
+                </section>
+                <!-- contest-details-section end  -->
+            </div>
+
+
+            <div class="iframe-footer-bar">
+                <div class="iframe-footer-left">
+                    <img src="../assets/img/superbikethechampion/super-bike-the-champion-logo.webp"
+                        alt="Super Bike The Champion" class="iframe-footer-thumb">
+                    <div>
+                        <div class="iframe-footer-title">
+                            <h1 style="font-size: 1.1rem; text-align: left;">Super Bike The Champion</h1>
+                        </div>
                     </div>
                 </div>
-              </div>
-            </div><!-- row end -->
-          </div>
-        </section>
-         <!-- contest-details-section end  -->
-        <h2 class="heading_animation" style="text-align: center; color:black"><div id="loadgame" style="text-align: center; color:black">
-            <!-- Button to trigger fullscreen -->
-            <button onclick="open_fullscreen()">Go Fullscreen</button>
-        </div></h2>  <br><hr>         
-           
-        <br>
-        <div class="box">
-          <p style="color: white;">
-          <div>
-            <h3 style="color: #c4c4c4;">How to Play</h3>
-            <p>
-              In <strong>Super Bike The Champion</strong>, race your bike through challenging tracks to become the ultimate champion! Avoid obstacles and outpace your opponents to reach the finish line first.
-            </p>
-            <ul>
-              <li><strong><span style="color: #c4c4c4;">Arrow Keys:</span></strong> Move your bike.</li>
-              <li><strong><span style="color: #c4c4c4;">Space:</span></strong> Boost your speed.</li>
-            </ul>
-            <p>
-              Are you ready to claim the title of champion? Play now on <a href="/" style="color: #c4c4c4;">Basket Random</a>!
-            </p>
-        
-            <h3 style="color: #c4c4c4;">Description</h3>
-            <p style="color: white;">
-              <strong>Super Bike The Champion</strong> is an exciting racing game where you control a bike and compete against other racers on different tracks. Collect power-ups, avoid hazards, and use your speed to win!
-            </p>
-        
-            <h3 style="color: #c4c4c4;">Developer</h3>
-            <p style="color: white;">
-              <strong>Super Bike The Champion</strong> was developed by <span style="color: #c4c4c4;"><strong>Arcade Studio</strong></span>.
-            </p>
-          </div>
+                <div class="iframe-footer-right">
+
+                    <span class="iframe-footer-icon" onclick="reloadGame()"><i class="fas fa-redo"></i></span>
+                    <span class="iframe-footer-icon" onclick="open_fullscreen()">
+                        <i class="fas fa-expand"></i></span>
+                </div>
+            </div>
         </div>
-        <br>
-        <br>
-                           
-       <!-- Related Games Start -->
-          <section class="fag-games-area related_games section_100">
-             <div class="container">
-                <div class="row">
-                   <div class="col-12">
-                      <div class="site-heading">
-                         <h2 class="heading_animation">Related <span>games</span></h2>
-                      </div>
-                   </div>
+    </div>
+
+    <br>
+    <div class="container-box">
+        <div class="box">
+            <h2>Game Description</h2>
+            <p>Super Bike The Champion is a thrilling motorcycle racing game where speed, precision, and control
+                determine your victory. Players hop on powerful superbikes and race through city streets, mountain
+                highways, and sharp racing tracks, aiming to outpace rivals and set unbeatable lap times. The game
+                features realistic bike physics, smooth controls, and fast-paced challenges that test both reflexes and
+                racing strategies. Play Super Bike The Champion online free at basket random, no download required, and
+                enjoy the excitement on desktop, mobile, or tablet.</p><br><br>
+            <div class="box" style="text-align:center;">
+                <h2>Global Rating</h2>
+                <h3>⭐⭐⭐⭐⭐ 4.6 / 5</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Technical Details</h2>
+            <table class="features-table">
+                <tr>
+                    <td><strong>Technology</strong></td>
+                    <td>HTML5 / WebGL</td>
+                </tr>
+                <tr>
+                    <td><strong>Developer</strong></td>
+                    <td>RHM Interactive</td>
+                </tr>
+                <tr>
+                    <td><strong>Platform</strong></td>
+                    <td>Web Browser, iOS, Android</td>
+                </tr>
+                <tr>
+                    <td><strong>Classification</strong></td>
+                    <td>Racing / Sports / Simulator</td>
+                </tr>
+                <tr>
+                    <td><strong>Controls</strong></td>
+                    <td>Keyboard / Touchscreen</td>
+                </tr>
+                <tr>
+                    <td><strong>Global Rating</strong></td>
+                    <td>⭐⭐⭐⭐⭐ 4.6 / 5</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Update</strong></td>
+                    <td>2024</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box">
+            <h2>How to Play Super Bike The Champion on All Devices</h2>
+            <p><strong>How to Play Description:</strong><br>Learn the controls and master Super Bike The Champion across
+                all your devices.</p><br>
+
+            <div class="container-box">
+                <div class="box" style="background-color: #505051;">
+                    <h2>🖥️ Desktop Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Accelerate</td>
+                            <td>⌨️ ⬆ Arrow</td>
+                        </tr>
+                        <tr>
+                            <td>Brake/Reverse</td>
+                            <td>⌨️ ⬇ Arrow</td>
+                        </tr>
+                        <tr>
+                            <td>Steer Left</td>
+                            <td>⌨️ ⬅ Arrow</td>
+                        </tr>
+                        <tr>
+                            <td>Steer Right</td>
+                            <td>⌨️ ➡ Arrow</td>
+                        </tr>
+                        <tr>
+                            <td>Nitro Boost</td>
+                            <td>⌨️ Shift</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Desktop Tip:</strong> Use the nitro only on straight stretches for maximum speed
+                            without losing control.</p>
+                    </div>
                 </div>
-                <div class="row">
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="3d-moto-simulator-2.html">
-                               <img src="../assets/img/3dmotosimulator2/3d-moto-simulator-2.png" alt="3D Moto Simulator 2" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="3d-moto-simulator-2.html">3D Moto Simulator 2</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                          <a href="bike-trials-winter-2.html">
-                               <img src="../assets/img/biketrialswinter2/bike-trials-winter-2.webp" alt="Bike Trials Winter 2" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="bike-trials-winter-2.html">Bike Trials Winter 2</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                            <a href="cars-thief.html">
-                               <img src="../assets/img/carsthief/cars-thief.webp" alt="Cars Thief" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="cars-thief.html">Cars Thief</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="e-scooter.html">
-                               <img src="../assets/img/escooter/e-scooter.png" alt="E-Scooter" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="e-scooter.html">E-Scooter</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="highway-rider-extreme.html">
-                               <img src="../assets/img/highwayriderextreme/highway-rider-extreme.png" alt="Highway Rider Extreme" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="highway-rider-extreme.html">Highway Rider Extreme</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="icycle.html">
-                               <img src="../assets/img/icycle/icycle.png" alt="Icycle" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="icycle.html">Icycle</a></h3>
-                            <p class="game-meta">Bike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="moto-road-rash-3d.html">
-                               <img src="../assets/img/motoroadrash3d/motoroadrash3d.png" alt="Moto Road Rash 3D" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="moto-road-rash-3d.html">Moto Road Rash 3D</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="moto-x3m-2.html">
-                               <img src="../assets/img/moto3mx/moto-x3m-2.png" alt="Moto X3M 2" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="moto-x3m-2.html">Moto X3M 2</a></h3>
-                            <p class="game-meta">Motorbike | Moto X3M | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="moto-x3m-bike-race.html">
-                               <img src="../assets/img/moto3mx/moto-x3m-bike-race-logo.webp" alt="Moto X3M Bike Race" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="moto-x3m-bike-race.html">Moto X3M Bike Race</a></h3>
-                            <p class="game-meta">Motorbike | Moto X3M | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="moto-x3m-pool-party.html">
-                               <img src="../assets/img/motox3mpoolparty/moto-x3m-pool-party.webp" alt="Moto X3M Pool Party" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="moto-x3m-pool-party.html">Moto X3M Pool Party</a></h3>
-                            <p class="game-meta">Motorbike | Moto X3M | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="moto-x3m-spooky-land.html">
-                               <img src="../assets/img/motox3mspookyland/moto-x3m-spooky-land.webp" alt="Moto X3M Spooky Land" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="moto-x3m-spooky-land.html">Moto X3M Spooky Land</a></h3>
-                            <p class="game-meta">Motorbike | Moto X3M | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="moto-x3m-winter.html">
-                               <img src="../assets/img/motox3mwinter/moto-x3m-winter.webp" alt="Moto X3M Winter" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="moto-x3m-winter.html">Moto X3M Winter</a></h3>
-                            <p class="game-meta">Motorbike | Moto X3M | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="neon-biker.html">
-                               <img src="../assets/img/neonbiker/neon-biker.png" alt="Neon Biker" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="neon-biker.html">Neon Biker</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop </p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="neon-racer.html">
-                               <img src="../assets/img/neonracer/neon-racer.png" alt="Neon Racer" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="neon-racer.html">Neon Racer</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop</p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="super-bike-the-champion.html">
-                               <img src="../assets/img/superbikethechampion/super-bike-the-champion-logo.webp" alt="Super Bike The Champion" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="super-bike-the-champion.html">Super Bike The Champion</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop</p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="traffic-tom.html">
-                               <img src="../assets/img/traffictom/traffic-tom.png" alt="Traffic Tom" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="traffic-tom.html">Traffic Tom</a></h3>
-                            <p class="game-meta">Motorbike | Racing | Desktop</p>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <div class="games-single-item img-contain-isotope">
-                         <div class="games-thumb">
-                               <a href="wheelie-bike.html">
-                               <img src="../assets/img/wheeliebike/wheelie-bike.png" alt="Wheelie Bike" />
-                               </a>
-                         </div>
-                         <div class="games-desc">
-                            <h3><a href="wheelie-bike.html">Wheelie Bike</a></h3>
-                            <p class="game-meta">Bike | Racing | Desktop</p>
-                         </div>
-                      </div>
-                   </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Mobile Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Accelerate</td>
+                            <td>👆 🖱 On-screen pedal</td>
+                        </tr>
+                        <tr>
+                            <td>Brake/Reverse</td>
+                            <td>👆 🖱 On-screen brake</td>
+                        </tr>
+                        <tr>
+                            <td>Steer Left</td>
+                            <td>👆 Tilt / Left Button</td>
+                        </tr>
+                        <tr>
+                            <td>Steer Right</td>
+                            <td>👆 Tilt / Right Button</td>
+                        </tr>
+                        <tr>
+                            <td>Nitro Boost</td>
+                            <td>👆 ⚡ On-screen button</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Mobile Tip:</strong> Tilt controls give better precision during sharp corners than
+                            button steering.</p>
+                    </div>
                 </div>
-             </div>
-          </section>
-          <!-- Related Games End -->
-          <footer class="fag-footer">
-             <div class="footer-top-area">
-                 <div class="container">
-                     <div class="row">
-                         <div class="col-lg-4 col-md-6 col-sm-12">
-                             <div class="single-footer">
-                                 <h3>About us</h3>
-                                 <p>Moreover, they ban certain gaming websites and utilize internet filters to restrict others. <br>All gaming sites are blocked by these filters.<br>
-                                     Even though it takes a long time, <br>some gaming websites will get unblocked since it is difficult to prohibit every website on the internet, <br>
-                                     and because <a href="https://fafgames.github.io">Basket Random</a> websites are less likely to be blocked.</p>
-                             </div>
-                         </div>
-                         <div class="col-lg-5 col-md-6 col-sm-12">
-                             <div class="widget-content">
-                                 <div class="row clearfix">
-                                     <div class=" col-lg-6 col-md-6 col-sm-12">
-                                         <div class="single-footer">
-                                             <h3>Our Games</h3>
-                                             <ul>
-                                                 <li><a href="../game/blocky-blast-puzzle.html"><span class="fa fa-caret-right"></span>Block Blast Puzzle</a></li>
-                                                 <li><a href="../game/basket-random.html"><span class="fa fa-caret-right"></span>Basket Random</a></li>
-                                                 <li><a href="../game/basket-and-ball.html"><span class="fa fa-caret-right"></span>Basket and Ball</a></li>
-                                                 <li><a href="../game/basketball-legends-2020.html"><span class="fa fa-caret-right"></span>Basketball Legends 2020</a></li>
-                                                 <li><a href="../game/basketball-legends-2020.html"><span class="fa fa-caret-right"></span>Basketball Legends 2020</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                     <div class=" col-lg-6 col-md-6 col-sm-12">
-                                         <div class="single-footer">
-                                             <h3>Explore</h3>
-                                             <ul>
-                                                 <a href="/about.html"><span class="fa fa-caret-right"></span>About</a></li>
-                                                 <li><a href="#"><span class="fa fa-caret-right"></span>Our Games</a></li>
-                                                 <li><a href="/contact.html"><span class="fa fa-caret-right"></span>Contact Us</a></li>
-                                                 <li><a href="#"><span class="fa fa-caret-right"></span>Help & Support</a></li>
-                                                 <li><a href="#"><span class="fa fa-caret-right"></span>Privacy Policy</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class=" col-lg-3 col-md-6 col-sm-12">
-                             <div class="single-footer">
-                                 <h3>Contact Us</h3>
-                                 <div class="footer-contact">
-                                     <h4 class="title"><i class="fa fa-map-marker"></i>Address </h4>
-                                     <p>88 Road, Broklyn Street<br>New York, USA</p>
-                                 </div>
-                                 <div class="footer-contact">
-                                     <h4 class="title"><i class="fa fa-envelope"></i>Email Address</h4>
-                                     <p>info@fafgames.com</p>
-                                 </div>
-                                 <div class="footer-contact">
-                                     <h4 class="title"><i class="fa fa-phone"></i>Phone </h4>
-                                     <p>000-0000-000</p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="footer-bottom">
-                 <div class="container">
-                     <div class="row">
-                         <div class="col-12">
-                             <div class="footer-bottom-inn">
-                                  <div class="footer-logo">
-                        <a href="/index.html">
-                           <img src="../assets/img/logo.webp" alt="site logo" />
-                        </a>
-                     </div>
-                     <div class="footer-logo" style="padding-top: 10px;">
-                        Wants to advertise on our Website? <a href="/contact.html"
-                           target="_blank" style="font-size: 20px;"><Strong> Contact us!</Strong></a>
-                     </div>
-                                 <div class="footer-social">
-                                     <ul>
-                                         <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                         <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                         <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                                         <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                     </ul>
-                                 </div>
-                                 <div class="copyright">
-                                     <p>&copy; Copyrights 2025 Basket Random - Powered by Sarkar Games 💖</p>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </footer>
-         <!-- Footer Area End -->
-    
-           
-        <!--Jquery js-->
-        <script src="../assets/js/jquery.min.js"></script>
-        <!--Bootstrap js-->
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        <!--Owl-Carousel js-->
-        <script src="../assets/js/owl.carousel.min.js"></script>
-        <!--Magnific js-->
-        <script src="../assets/js/jquery.magnific-popup.min.js"></script>
-        <!--wNumb js-->
-        <script src="../assets/js/wNumb.js"></script>
-        <!--NoUiSlider js-->
-        <script src="../assets/js/nouislider.min.js"></script>
-        <!-- Isotop Js -->
-        <script src="../assets/js/isotope.pkgd.min.js"></script>
-        <script src="../assets/js/custom-isotop.js"></script>
-        <!--Main js-->
-        <script src="../assets/js/main.js"></script>
-        <script>
-            function loadMainGame(){
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Tablet Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Accelerate</td>
+                            <td>👆 🖱 On-screen pedal</td>
+                        </tr>
+                        <tr>
+                            <td>Brake/Reverse</td>
+                            <td>👆 🖱 On-screen brake</td>
+                        </tr>
+                        <tr>
+                            <td>Steer Left</td>
+                            <td>👆 Tilt / Left Button</td>
+                        </tr>
+                        <tr>
+                            <td>Steer Right</td>
+                            <td>👆 Tilt / Right Button</td>
+                        </tr>
+                        <tr>
+                            <td>Nitro Boost</td>
+                            <td>👆 ⚡ On-screen button</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Tablet Tip:</strong> Larger screens let you plan turns ahead—watch the track
+                            carefully to anticipate curves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+   <div class="gaming-portal__container">
+        <header class="gaming-portal__header">
+            <h2 class="gaming-portal__title">
+                <span class="gaming-portal__title-icon">🏍️</span>
+                Related Motorbike Games
+            </h2>
+            <button class="gaming-portal__nav-button">ALL GAMES</button>
+        </header>
+
+        <!-- Row 1 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="3d-moto-simulator-2.html" class="game-card__link">
+                        <img src="../assets/img/3dmotosimulator2/3d-moto-simulator-2.png" alt="3D Moto Simulator 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--motorbike">MOTORBIKE</span>
+                <h3 class="game-card__title">3D Moto Simulator 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="bike-trials-winter-2.html" class="game-card__link">
+                        <img src="../assets/img/biketrialswinter2/bike-trials-winter-2.webp" alt="Bike Trials Winter 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Bike Trials Winter 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="cars-thief.html" class="game-card__link">
+                        <img src="../assets/img/carsthief/cars-thief.webp" alt="Cars Thief" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">RACING</span>
+                <h3 class="game-card__title">Cars Thief</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="e-scooter.html" class="game-card__link">
+                        <img src="../assets/img/escooter/e-scooter.png" alt="E-Scooter" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">E-Scooter</h3>
+            </article>
+
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="highway-rider-extreme.html" class="game-card__link">
+                        <img src="../assets/img/highwayriderextreme/highway-rider-extreme.png" alt="Highway Rider Extreme" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Highway Rider Extreme</h3>
+            </article>
+
+            <article class="game-card game-card--theme-cyan">
+                <div class="game-card__image-container">
+                    <a href="icycle.html" class="game-card__link">
+                        <img src="../assets/img/icycle/icycle.png" alt="Icycle" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--motorbike">BIKE</span>
+                <h3 class="game-card__title">Icycle</h3>
+            </article>
+        </section>
+
+        <!-- Row 2 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="moto-road-rash-3d.html" class="game-card__link">
+                        <img src="../assets/img/motoroadrash3d/motoroadrash3d.png" alt="Moto Road Rash 3D" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--motorbike">MOTORBIKE</span>
+                <h3 class="game-card__title">Moto Road Rash 3D</h3>
+            </article>
+
+            <article class="game-card game-card--theme-brown">
+                <div class="game-card__image-container">
+                    <a href="moto-x3m-2.html" class="game-card__link">
+                        <img src="../assets/img/moto3mx/moto-x3m-2.png" alt="Moto X3M 2" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Moto X3M 2</h3>
+            </article>
+
+            <article class="game-card game-card--theme-grey">
+                <div class="game-card__image-container">
+                    <a href="moto-x3m-bike-race.html" class="game-card__link">
+                        <img src="../assets/img/moto3mx/moto-x3m-bike-race-logo.webp" alt="Moto X3M Bike Race" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Moto X3M Bike Race</h3>
+            </article>
+
+            <article class="game-card game-card--theme-lime">
+                <div class="game-card__image-container">
+                    <a href="moto-x3m-pool-party.html" class="game-card__link">
+                        <img src="../assets/img/motox3mpoolparty/moto-x3m-pool-party.webp" alt="Moto X3M Pool Party" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Moto X3M Pool Party</h3>
+            </article>
+
+            <article class="game-card game-card--theme-amber">
+                <div class="game-card__image-container">
+                    <a href="moto-x3m-spooky-land.html" class="game-card__link">
+                        <img src="../assets/img/motox3mspookyland/moto-x3m-spooky-land.webp" alt="Moto X3M Spooky Land" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Moto X3M Spooky Land</h3>
+            </article>
+
+            <article class="game-card game-card--theme-violet">
+                <div class="game-card__image-container">
+                    <a href="moto-x3m-winter.html" class="game-card__link">
+                        <img src="../assets/img/motox3mwinter/moto-x3m-winter.webp" alt="Moto X3M Winter" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Moto X3M Winter</h3>
+            </article>
+        </section>
+
+        <!-- Row 3 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-teal">
+                <div class="game-card__image-container">
+                    <a href="neon-biker.html" class="game-card__link">
+                        <img src="../assets/img/neonbiker/neon-biker.png" alt="Neon Biker" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--motorbike">MOTORBIKE</span>
+                <h3 class="game-card__title">Neon Biker</h3>
+            </article>
+
+            <article class="game-card game-card--theme-indigo">
+                <div class="game-card__image-container">
+                    <a href="neon-racer.html" class="game-card__link">
+                        <img src="../assets/img/neonracer/neon-racer.png" alt="Neon Racer" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">RACING</span>
+                <h3 class="game-card__title">Neon Racer</h3>
+            </article>
+
+            <article class="game-card game-card--theme-deep-orange">
+                <div class="game-card__image-container">
+                    <a href="super-bike-the-champion.html" class="game-card__link">
+                        <img src="../assets/img/superbikethechampion/super-bike-the-champion-logo.webp" alt="Super Bike The Champion" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Super Bike The Champion</h3>
+            </article>
+
+            <article class="game-card game-card--theme-deep-purple">
+                <div class="game-card__image-container">
+                    <a href="traffic-tom.html" class="game-card__link">
+                        <img src="../assets/img/traffictom/traffic-tom.png" alt="Traffic Tom" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Traffic Tom</h3>
+            </article>
+
+            <article class="game-card game-card--theme-light-blue">
+                <div class="game-card__image-container">
+                    <a href="wheelie-bike.html" class="game-card__link">
+                        <img src="../assets/img/wheeliebike/wheelie-bike.png" alt="Wheelie Bike" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--motorbike">BIKE</span>
+                <h3 class="game-card__title">Wheelie Bike</h3>
+            </article>
+        </section>
+    </div><br><br>
+    <div class="container">
+        <div class="container-box">
+            <div class="box full-width-section">
+                <h2>Super Bike The Champion FAQs ❓</h2>
+                <div class="faq-container section" id="faq" style="border-color: #f0d210;">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What makes Super Bike The Champion different from other bike games?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">It offers realistic motorcycle physics, sharp track designs,
+                                and nitro-boost racing for a more authentic challenge.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I play Super Bike The Champion free online?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, it’s 100% free to play at basket random with no downloads
+                                required.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Does the game have different levels or tracks?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, it includes multiple racing tracks with varied terrains
+                                and increasing difficulty.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I use nitro effectively in the game?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Save nitro for long straight roads or after exiting sharp
+                                corners to maximize speed and control.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is Super Bike The Champion available on mobile devices?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, it runs smoothly on Android, iOS, and can also be played
+                                directly in mobile browsers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Who developed Super Bike The Champion?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">It was developed by RHM Interactive, a studio known for
+                                high-quality 3D racing games.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-highlight-line">
+        <p>Super Bike The Champion is the ultimate two-wheeled racing experience, combining
+        speed, nitro boosts, and realistic track challenges. Race free online at basket random, available instantly
+        across desktop, mobile, and tablet. 👉 Gear up, hit the throttle, and become the ultimate champion today!
+    </p></div>
+    <footer class="fag-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-inn">
+                            <div class="footer-logo">
+                                <a href="/index.html">
+                                    <img src="../assets/img/logo.webp" alt="site logo" />
+                                </a>
+                            </div>
+                            <div class="footer-logo" style="padding-top: 10px;">
+                                Wants to advertise on our Website? <a href="/contact.html" target="_blank"
+                                    style="font-size: 20px;"><Strong> Contact us!</Strong></a>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; Copyrights 2025 Basket Random - Powered by Sarkar Games 💖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+
+    <!--Jquery js-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!--Owl-Carousel js-->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!--Magnific js-->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!--wNumb js-->
+    <script src="../assets/js/wNumb.js"></script>
+    <!--NoUiSlider js-->
+    <script src="../assets/js/nouislider.min.js"></script>
+    <!-- Isotop Js -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/custom-isotop.js"></script>
+    <!--Main js-->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function loadMainGame() {
             var html = `<iframe class="game-iframe iframeloader" id="game-area" src="https://ubg77.github.io/edit/super-bike-the-champion/" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;
             document.getElementById("loadgame").innerHTML = html;
             document.getElementById('loadgame').scrollIntoView();
+        }
+        function open_fullscreen() {
+            let game = document.getElementById("game-area");
+            if (game.requestFullscreen) {
+                game.requestFullscreen();
+            } else if (game.mozRequestFullScreen) { /* Firefox */
+                game.mozRequestFullScreen();
+            } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                game.webkitRequestFullscreen();
+            } else if (game.msRequestFullscreen) { /* IE/Edge */
+                game.msRequestFullscreen();
             }
-            function open_fullscreen() {
-                let game = document.getElementById("game-area");
-                if (game.requestFullscreen) {
-                    game.requestFullscreen();
-                } else if (game.mozRequestFullScreen) { /* Firefox */
-                    game.mozRequestFullScreen();
-                } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-                    game.webkitRequestFullscreen();
-                } else if (game.msRequestFullscreen) { /* IE/Edge */
-                    game.msRequestFullscreen();
-                }
-                };
-        </script>
-    <script src="../assets/js/script.js"></script>
-        <script>
-            if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('/service-worker.js')
-              .then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-              }, function(err) {
-                console.log('ServiceWorker registration failed: ', err);
-              });
-            }
-          </script>
-    </body>                      
+        };
+    </script>
+    <!-- ...existing code... -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- ...existing code... -->
+    <script>particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#000000" },
+                shape: { type: "circle" },
+                opacity: { value: 1.1 },
+                size: { value: 5 },
+                line_linked: { enable: true, distance: 150, color: "#000000", opacity: 1.1, width: 1 },
+                move: { enable: true, speed: 4 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });</script>
+</body>
+
 </html>

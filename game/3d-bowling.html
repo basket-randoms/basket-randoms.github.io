@@ -9,16 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>3D Bowling – Play Free Online | Basket Random</title>
-<meta name="description" content="Enjoy 3D Bowling on Basket Random. Aim your shots, knock down every pin, and challenge friends in realistic 3D lanes. Practice bowling skills and play now!">
-    <meta name="title" content="3d bowling">
-    <meta name="keywords" content="3d game, 3d bowling, 3d bowling Game, ">
-    <meta name="news_keywords" content="bowling 3d model
-        3d bowling alley
-        3d bowling free 
-        lagged 3d bowling 
-        bowling g 3d 
-        bowling rules
-        how to play bowling ">
+    <meta name="description"
+        content="Enjoy 3D Bowling on Basket Random. Aim your shots, knock down every pin, and challenge friends in realistic 3D lanes. Practice bowling skills and play now!">
     <meta name="author" content="Basket Random">
     <link rel="canonical" href="https://basket-randoms.github.io/game/3d-bowling.html">
     <!-- Favicon -->
@@ -396,11 +388,31 @@
             background-size: 5vw;
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/new-layout.css">
+    <style>
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+    </style>
 </head>
 
 <body>
-
-
+    <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
     <!-- Custom Cursor Start -->
     <div id="cursor-large"></div>
     <div id="cursor-small"></div>
@@ -455,415 +467,480 @@
             </div>
         </div>
     </nav>
-    <!-- Header Area End -->
-    <!-- Breadcrumb Area Start -->
-    <section class="fag-breadcrumb-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="games-details-banner">
-                        <div class="row">
-
+    <br><br>
+    <!-- contest-details-section start -->
+    <div class="error-container">
+        <div class="game-console">
+            <div class="console-screen">
+                <section class="pb-120 mt-minus-300">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="contest-details__slider-area">
+                                    <div class="contest-details__thumb-slider">
+                                        <div class="game-iframe-container" id="loadgame">
+                                            <div class="talpa-splash-container" style="background: var(--color2);">
+                                                <div class="talpa-splash-top">
+                                                    <div>
+                                                        <div style="--thumb:url(../assets/img/3dbowling/logo.png);"
+                                                            alt="Stylish Crop Top Trends"></div>
+                                                        <button id="talpa-splash-button" class="SP-splash-button"
+                                                            onclick="loadMainGame()" style="display: block;">PLAY
+                                                            NOW</button>
+                                                        <div class="talpa-loader" style="display: none;">Loading...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="talpa-splash-bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- row end -->
+                        </div>
+                </section>
+            </div>
+            <div class="iframe-footer-bar">
+                <div class="iframe-footer-left">
+                    <img src="../assets/img/3dbowling/logo.png" alt="3D Bowling Unblocked" class="iframe-footer-thumb">
+                    <div>
+                        <div class="iframe-footer-title">
+                            <h1 style="font-size: 1.1rem; text-align: left;">3D Bowling Unblocked</h1>
                         </div>
                     </div>
                 </div>
+                <div class="iframe-footer-right">
+
+                    <span class="iframe-footer-icon" onclick="reloadGame()"><i class="fas fa-redo"></i></span>
+                    <span class="iframe-footer-icon" onclick="open_fullscreen()">
+                        <i class="fas fa-expand"></i></span>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Breadcrumb Area End -->
-
-    <!-- games Details Page Start -->
     <br>
-    <h1 style="text-align: center; color:#c4c4c4">3D Bowling Unblocked</h1>
-    <hr>
-    <!-- contest-details-section start -->
-    <section class="pb-120 mt-minus-300">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="contest-details__slider-area">
-                        <div class="contest-details__thumb-slider">
-                            <div class="game-iframe-container" id="loadgame">
-                                <div class="talpa-splash-container" style="background: var(--color2);">
-                                    <div class="talpa-splash-top">
-                                        <div>
-                                            <div style="--thumb:url(../assets/img/3dbowling/logo.png);"
-                                                alt="Stylish Crop Top Trends"></div>
-                                            <button id="talpa-splash-button" class="SP-splash-button"
-                                                onclick="loadMainGame()" style="display: block;">PLAY NOW</button>
-                                            <div class="talpa-loader" style="display: none;">Loading...</div>
-                                        </div>
-                                    </div>
-                                    <div class="talpa-splash-bottom"></div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container-box">
+        <div class="box">
+            <h2>Game Description</h2>
+            <p>3D Bowling is a realistic bowling simulator that brings the excitement of the lanes straight to your
+                screen. Test your precision and aim as you throw strikes and spares in smooth 3D gameplay. With lifelike
+                physics and engaging challenges, 3D Bowling online feels just like the real thing. Play free on Basket
+                Random and enjoy a strike-filled experience on all devices.</p><br><br>
+            <div class="box" style="text-align:center;">
+                <h2>Global Rating</h2>
+                <h3>⭐⭐⭐⭐☆ (4.4/5)</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Technical Details</h2>
+            <table class="features-table">
+                <tr>
+                    <td><strong>Technology</strong></td>
+                    <td>HTML5 / Unity</td>
+                </tr>
+                <tr>
+                    <td><strong>Developer</strong></td>
+                    <td>EivaaGames / Web Adaptation</td>
+                </tr>
+                <tr>
+                    <td><strong>Platform</strong></td>
+                    <td>Web Browser, Android, iOS</td>
+                </tr>
+                <tr>
+                    <td><strong>Classification</strong></td>
+                    <td>Sports / Arcade</td>
+                </tr>
+                <tr>
+                    <td><strong>Controls</strong></td>
+                    <td>Mouse (Desktop), Touch (Mobile/Tablet)</td>
+                </tr>
+                <tr>
+                    <td><strong>Global Rating</strong></td>
+                    <td>⭐⭐⭐⭐☆ (4.4/5)</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Update</strong></td>
+                    <td>2023 (latest optimization for online play)</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box">
+            <h2>How to Play 3D Bowling on All Devices</h2>
+            <p><strong>How to Play Description:</strong><br>Learn the controls and master 3D Bowling across all your
+                devices.</p><br>
+
+            <div class="container-box">
+                <div class="box" style="background-color: #505051;">
+                    <h2>🖥️ Desktop Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Aim the Ball</td>
+                            <td>⌨️ 🖱 Move Mouse Left / Right</td>
+                        </tr>
+                        <tr>
+                            <td>Roll the Ball</td>
+                            <td>⌨️ 🖱 Click + Drag Forward</td>
+                        </tr>
+                        <tr>
+                            <td>Adjust Spin</td>
+                            <td>⌨️ 🖱 Swipe Mouse Curve</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Desktop Tip:</strong> Add spin by curving your mouse drag for trick shots.</p>
                     </div>
-                </div><!-- row end -->
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Mobile Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Aim the Ball</td>
+                            <td>👆 Swipe left or right</td>
+                        </tr>
+                        <tr>
+                            <td>Roll the Ball</td>
+                            <td>👆 Swipe up to throw</td>
+                        </tr>
+                        <tr>
+                            <td>Add Spin</td>
+                            <td>👆 Curve your swipe gesture</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Mobile Tip:</strong> A smooth upward swipe gives the most accurate roll.</p>
+                    </div>
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h2>📱 Tablet Controls</h2>
+                    <table class="features-table">
+                        <tr>
+                            <th>Action</th>
+                            <th>Control</th>
+                        </tr>
+                        <tr>
+                            <td>Aim the Ball</td>
+                            <td>👆 Drag left or right</td>
+                        </tr>
+                        <tr>
+                            <td>Roll the Ball</td>
+                            <td>👆 Swipe up across the screen</td>
+                        </tr>
+                        <tr>
+                            <td>Add Spin</td>
+                            <td>👆 Curve swipe for spin effect</td>
+                        </tr>
+
+                    </table><br>
+                    <div class="box" style="background-color: #505051;">
+                        <p><strong>🎯 Tablet Tip:</strong> Use both thumbs for better control when curving swipes.</p>
+                    </div>
+                </div>
             </div>
-    </section>
-    <!-- contest-details-section end  -->
-    <br>
-    <h2 class="heading_animation" style="text-align: center; color:black">
-        <div id="loadgame" style="text-align: center; color:black">
-            <!-- Button to trigger fullscreen -->
-            <button onclick="open_fullscreen()">Go Fullscreen</button>
-        </div>
-    </h2>
-    <hr>
-
-
-    <br>
-    <div class="box">
-        <p style="color: white;">
-        <div>
-            <h3 style="color: #c4c4c4;">How to Play</h3>
-            <p>
-                In <strong>3D Bowling</strong>, experience the thrill of realistic bowling action right from your
-                browser! Line up your shot, control the power, and aim for a strike!
-            </p>
-            <ul>
-                <li><strong><span style="color: #c4c4c4;">Mouse:</span></strong> Drag to aim your ball and adjust the
-                    curve.</li>
-                <li><strong><span style="color: #c4c4c4;">Left Click:</span></strong> Release to throw the ball down the
-                    lane.</li>
-                <li><strong><span style="color: #c4c4c4;">ESC:</span></strong> Pause the game or return to the main
-                    menu.</li>
-            </ul>
-            <p>
-                Show off your bowling skills and aim for a perfect 300 game, only at <a href="/"
-                    style="color: #c4c4c4;">Basket Random</a>!
-            </p>
-
-            <h3 style="color: #c4c4c4;">Description</h3>
-            <p style="color: white;">
-                <strong>3D Bowling</strong> is a hyper-realistic, casual sports game that lets you bowl like a pro in a
-                lifelike alley environment. With smooth physics and dynamic camera angles, it feels just like real-life
-                bowling. Choose your ball, perfect your aim, and take on ten frames of pin-smashing fun. Whether you're
-                a seasoned bowler or just starting out, this game brings tons of replayability and satisfying gameplay.
-                Play now and strike it big on <a href="/" style="color: #c4c4c4;">Basket Random</a>!
-            </p>
-
-            <h3 style="color: #c4c4c4;">Developer</h3>
-            <p style="color: white;">
-                <strong>3D Bowling</strong> was developed by <span style="color: #c4c4c4;"><strong>Italic
-                        Games</strong></span>, known for creating immersive mobile and web sports experiences.
-            </p>
         </div>
     </div>
     <br>
     <br>
 
 
-    <!-- Related Games Start -->
-    <section class="fag-games-area related_games section_100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="site-heading">
-                        <h2 class="heading_animation">Related <span>games</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="games-masonary">
-                        <div class="clearfix gamesContainer">
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/3d-bowling.html">
-                                            <img src="../assets/img/3dbowling/logo.png" alt="3D Bowling" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/3d-bowling.html">3D Bowling</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/8ball-pool.html">
-                                            <img src="../assets/img/8ballpool/8-ball-pool.png" alt="8 Ball" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/8ball-pool.html">8 Ball</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/axis-football-league.html">
-                                            <img src="../assets/img/axisfootballleague/axis-football-league.png"
-                                                alt="Axis Football League" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/axis-football-league.html">Axis Football League</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/basket-and-ball.html">
-                                            <img src="../assets/img/basketandball/basket-and-ball.png"
-                                                alt="Basket & Ball" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/basket-and-ball.html">Basket & Ball</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/basket-random.html">
-                                            <img src="../assets/img/basketrandom/basket-random.png"
-                                                alt="Basket Random" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/basket-random.html">Basket Random</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/basketball-legends-2020.html">
-                                            <img src="../assets/img/basketlegends2020/basketball-legends.png"
-                                                alt="Basketball Legends 2020" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/basketball-legends-2020.html">Basketball Legends 2020</a>
-                                        </h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/basketball-stars.html">
-                                            <img src="../assets/img/basketballstars/basketball-stars.png"
-                                                alt="Basketball Stars" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/basketball-stars.html">Basketball Stars</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/extreme-pamplona.html">
-                                            <img src="../assets/img/extremepamplona/extreme-pamplona.png"
-                                                alt="Extreme Pamplona" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/extreme-pamplona.html">Extreme Pamplona</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/football-legends.html">
-                                            <img src="../assets/img/footballlegends/football-legends.png"
-                                                alt="Football Legends" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/football-legends.html">Football Legends</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/penalty-kick-online.html">
-                                            <img src="../assets/img/penaltykickonline/penalty-kick-online.png"
-                                                alt="Penalty Kick Online" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/penalty-kick-online.html">Penalty Kick Online</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/retro-bowl.html">
-                                            <img src="../assets/img/retrobowl/retro-bowl.png" alt="Retro Bowl" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/retro-bowl.html">Retro Bowl</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/soccer-heads.html">
-                                            <img src="../assets/img/soccerheads/soccer-heads.png" alt="Soccer Heads" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/soccer-heads.html">Soccer Heads</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/sprinter.html">
-                                            <img src="../assets/img/spinter/sprinter.png" alt="Spinter" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/sprinter.html">Spinter</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/street-ball-star.html">
-                                            <img src="../assets/img/streetballstar/street-ball-star.png"
-                                                alt="Street Ball Star" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/street-ball-star.html">Street Ball Star</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                            <div class="games-item mobile">
-                                <div class="games-single-item img-contain-isotope">
-                                    <div class="games-thumb">
-                                        <a href="../game/tap-tap-shots.html">
-                                            <img src="../assets/img/taptapshots/tap-tap-shots.png"
-                                                alt="Tap Tap Shots" />
-                                        </a>
-                                    </div>
-                                    <div class="games-desc">
-                                        <h3><a href="../game/tap-tap-shots.html">Tap Tap Shots</a></h3>
-                                        <p class="game-meta">Sport | Desktop</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end game item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Related Games End -->
-    <footer class="fag-footer">
-        <div id="awn-z8463442"></div>
-        <div class="footer-top-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-footer">
-                            <h3>About us</h3>
-       <p style="color:white;"> <strong>Basket Random</strong> is your go-to destination for <strong>Unblocked Games Premium</strong> designed specifically for school students. At Basket Random, we are passionate about providing a safe and enjoyable gaming experience that enhances your learning and relaxation time. Our wide selection ensures that every game you play is of the highest quality, free from restrictions, and full of educational benefits. Join our community today and explore a world of fun and learning with<strong> <a href="/index.html"> Basket Random</a></strong>!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 col-sm-12">
-                        <div class="widget-content">
-                            <div class="row clearfix">
-                                <div class=" col-lg-6 col-md-6 col-sm-12">
-                                    <div class="single-footer">
-                                        <h3>Our Games</h3>
-                                        <ul>
-                                            <li><a href="../game/blocky-blast-puzzle.html"><span class="fa fa-caret-right"></span>Block Blast Puzzle</a></li>
-                                            <li><a href="../game/basket-random.html"><span class="fa fa-caret-right"></span>Basket Random</a></li>
-                                            <li><a href="../game/basket-and-ball.html"><span class="fa fa-caret-right"></span>Basket and Ball</a></li>
-                                            <li><a href="../game/basketball-legends-2020.html"><span class="fa fa-caret-right"></span>Basketball Legends 2020</a></li>
-                                            <li><a href="../game/basketball-legends-2020.html"><span class="fa fa-caret-right"></span>Basketball Legends 2020</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class=" col-lg-6 col-md-6 col-sm-12">
-                                    <div class="single-footer">
-                                        <h3>Explore</h3>
-                                        <ul>
-                                            <li><a href="/about.html"><span class="fa fa-caret-right"></span>About</a>
-                                            </li>
+    
+    <div class="gaming-portal__container">
+        <header class="gaming-portal__header">
+            <h2 class="gaming-portal__title">
+                <span class="gaming-portal__title-icon">🏆</span>
+                Related Sports Games
+            </h2>
+            <button class="gaming-portal__nav-button">ALL GAMES</button>
+        </header>
 
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Our Games</a></li>
-                                            <li><a href="/contact.html"><span class="fa fa-caret-right"></span>Contact
-                                                    Us</a></li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Help & Support</a>
-                                            </li>
-                                            <li><a href="#"><span class="fa fa-caret-right"></span>Privacy Policy</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Row 1 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="3d-bowling.html" class="game-card__link">
+                        <img src="../assets/img/3dbowling/logo.png" alt="3D Bowling" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <h3 class="game-card__title">3D Bowling</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="8ball-pool.html" class="game-card__link">
+                        <img src="../assets/img/8ballpool/8-ball-pool.png" alt="8 Ball" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">8 Ball Pool</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="axis-football-league.html" class="game-card__link">
+                        <img src="../assets/img/axisfootballleague/axis-football-league.png" alt="Axis Football League" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Axis Football League</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="basket-and-ball.html" class="game-card__link">
+                        <img src="../assets/img/basketandball/basket-and-ball.png" alt="Basket & Ball" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <h3 class="game-card__title">Basket & Ball</h3>
+            </article>
+
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="basket-random.html" class="game-card__link">
+                        <img src="../assets/img/basketrandom/basket-random.png" alt="Basket Random" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Basket Random</h3>
+            </article>
+
+            <article class="game-card game-card--theme-cyan">
+                <div class="game-card__image-container">
+                    <a href="basketball-legends-2020.html" class="game-card__link">
+                        <img src="../assets/img/basketlegends2020/basketball-legends.png" alt="Basketball Legends 2020" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Basketball Legends 2020</h3>
+            </article>
+        </section>
+
+        <!-- Row 2 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="basketball-stars.html" class="game-card__link">
+                        <img src="../assets/img/basketballstars/basketball-stars.png" alt="Basketball Stars" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Basketball Stars</h3>
+            </article>
+
+            <article class="game-card game-card--theme-brown">
+                <div class="game-card__image-container">
+                    <a href="extreme-pamplona.html" class="game-card__link">
+                        <img src="../assets/img/extremepamplona/extreme-pamplona.png" alt="Extreme Pamplona" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <h3 class="game-card__title">Extreme Pamplona</h3>
+            </article>
+
+            <article class="game-card game-card--theme-grey">
+                <div class="game-card__image-container">
+                    <a href="football-legends.html" class="game-card__link">
+                        <img src="../assets/img/footballlegends/football-legends.png" alt="Football Legends" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Football Legends</h3>
+            </article>
+
+            <article class="game-card game-card--theme-lime">
+                <div class="game-card__image-container">
+                    <a href="penalty-kick-online.html" class="game-card__link">
+                        <img src="../assets/img/penaltykickonline/penalty-kick-online.png" alt="Penalty Kick Online" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Penalty Kick Online</h3>
+            </article>
+
+            <article class="game-card game-card--theme-amber">
+                <div class="game-card__image-container">
+                    <a href="retro-bowl.html" class="game-card__link">
+                        <img src="../assets/img/retrobowl/retro-bowl.png" alt="Retro Bowl" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Retro Bowl</h3>
+            </article>
+
+            <article class="game-card game-card--theme-violet">
+                <div class="game-card__image-container">
+                    <a href="soccer-heads.html" class="game-card__link">
+                        <img src="../assets/img/soccerheads/soccer-heads.png" alt="Soccer Heads" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <h3 class="game-card__title">Soccer Heads</h3>
+            </article>
+        </section>
+
+        <!-- Row 3 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-teal">
+                <div class="game-card__image-container">
+                    <a href="sprinter.html" class="game-card__link">
+                        <img src="../assets/img/spinter/sprinter.png" alt="Sprinter" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--new">NEW</span>
+                <h3 class="game-card__title">Sprinter</h3>
+            </article>
+
+            <article class="game-card game-card--theme-indigo">
+                <div class="game-card__image-container">
+                    <a href="street-ball-star.html" class="game-card__link">
+                        <img src="../assets/img/streetballstar/street-ball-star.png" alt="Street Ball Star" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--popular">POPULAR</span>
+                <h3 class="game-card__title">Street Ball Star</h3>
+            </article>
+
+            <article class="game-card game-card--theme-deep-orange">
+                <div class="game-card__image-container">
+                    <a href="tap-tap-shots.html" class="game-card__link">
+                        <img src="../assets/img/taptapshots/tap-tap-shots.png" alt="Tap Tap Shots" class="game-card__image" />
+                    </a>
+                </div>
+                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <h3 class="game-card__title">Tap Tap Shots</h3>
+            </article>
+        </section>
+    </div><br><br>
+    <div class="container">
+        <div class="container-box">
+            <div class="box full-width-section">
+                <h2>3D Bowling FAQs ❓</h2>
+                <div class="faq-container section" id="faq" style="border-color: #f0d210;">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I play 3D Bowling free online?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, you can play 3D Bowling free online at Basket Random, no
+                                download needed.</p>
                         </div>
                     </div>
-                    <div class=" col-lg-3 col-md-6 col-sm-12">
-                        <div class="single-footer">
-                            <h3>Contact Us</h3>
-                            <div class="footer-contact">
-                                <h4 class="title"><i class="fa fa-map-marker"></i>Address </h4>
-                                <p>81 Road, 23rd Street<br>New York, USA</p>
-                            </div>
-                            <div class="footer-contact">
-                               <h4 class="title"><i class="fa fa-envelope"></i>Email Address</h4>
-                            <p>sarkargames.info@gamil.com</p>
-                            </div>
-                            <div class="footer-contact">
-                                <h4 class="title"><i class="fa fa-phone"></i>Phone </h4>
-                                <p>000-0000-000</p>
-                            </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Does 3D Bowling work on all devices?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, it runs smoothly on PC, mobile, and tablets using touch or
+                                mouse.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I get a strike in 3D Bowling?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Aim slightly off-center and add spin for better strike chances.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is 3D Bowling multiplayer?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Most versions are single-player, but some include pass-and-play
+                                local modes.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Who developed 3D Bowling?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">It was developed by EivaaGames, later adapted for web browsers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is 3D Bowling realistic?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">Yes, it uses 3D physics simulation for lifelike rolling and pin
+                                reactions.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="bottom-highlight-line">
+        <p>3D Bowling online is the perfect way to enjoy realistic bowling fun anywhere. Free, no download, and playable
+            on all devices, it’s a strike every time. 🎳 👉 Play now at Basket Random and aim for the perfect game!</p>
+    </div>
+    <footer class="fag-footer">
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
@@ -942,6 +1019,25 @@
                 });
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- ...existing code... -->
+    <script>particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#000000" },
+                shape: { type: "circle" },
+                opacity: { value: 1.1 },
+                size: { value: 5 },
+                line_linked: { enable: true, distance: 150, color: "#000000", opacity: 1.1, width: 1 },
+                move: { enable: true, speed: 4 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });</script>
 </body>
 
 </html>
