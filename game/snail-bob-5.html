@@ -706,7 +706,7 @@
             <article class="game-card game-card--theme-blue">
                 <div class="game-card__image-container">
                     <a href="3d-car-simulator.html" class="game-card__link">
-                        <img src="../assets/img/3dcarsimulator/3d-car-simulator.webp" alt="3D Car Simulator" class="game-card__image" />
+                        <img src="https://basket-randoms.github.io/img/3d-car-simulator.webp" alt="3D Car Simulator" class="game-card__image" />
                     </a>
                 </div>
                 <span class="game-card__badge game-card__badge--new">CAR</span>
@@ -1487,7 +1487,18 @@
    <script src="../assets/js/isotope.pkgd.min.js"></script>
    <script src="../assets/js/custom-isotop.js"></script>
    <!--Main js-->
-   <script src="../assets/js/main.js"></script>
+   <script src="../assets/js/main.js"></script><script src="../assets/js/script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        }
+    </script>
 
 
    <script>

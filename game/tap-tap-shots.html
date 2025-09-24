@@ -680,10 +680,10 @@
             <article class="game-card game-card--theme-blue">
                 <div class="game-card__image-container">
                     <a href="3d-bowling.html" class="game-card__link">
-                        <img src="../assets/img/3dbowling/logo.png" alt="3D Bowling" class="game-card__image" />
+                        <img src="http://basket-randoms.github.io/img/3d-bowling.webp" alt="3D Bowling" class="game-card__image" />
                     </a>
                 </div>
-                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <span class="game-card__badge game-card__badge--new">SPORT</span>
                 <h3 class="game-card__title">3D Bowling</h3>
             </article>
 
@@ -713,7 +713,7 @@
                         <img src="../assets/img/basketandball/basket-and-ball.png" alt="Basket & Ball" class="game-card__image" />
                     </a>
                 </div>
-                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <span class="game-card__badge game-card__badge--new">SPORT</span>
                 <h3 class="game-card__title">Basket & Ball</h3>
             </article>
 
@@ -756,7 +756,7 @@
                         <img src="../assets/img/extremepamplona/extreme-pamplona.png" alt="Extreme Pamplona" class="game-card__image" />
                     </a>
                 </div>
-                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <span class="game-card__badge game-card__badge--new">SPORT</span>
                 <h3 class="game-card__title">Extreme Pamplona</h3>
             </article>
 
@@ -796,7 +796,7 @@
                         <img src="../assets/img/soccerheads/soccer-heads.png" alt="Soccer Heads" class="game-card__image" />
                     </a>
                 </div>
-                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <span class="game-card__badge game-card__badge--new">SPORT</span>
                 <h3 class="game-card__title">Soccer Heads</h3>
             </article>
         </section>
@@ -829,7 +829,7 @@
                         <img src="../assets/img/taptapshots/tap-tap-shots.png" alt="Tap Tap Shots" class="game-card__image" />
                     </a>
                 </div>
-                <span class="game-card__badge game-card__badge--sport">SPORT</span>
+                <span class="game-card__badge game-card__badge--new">SPORT</span>
                 <h3 class="game-card__title">Tap Tap Shots</h3>
             </article>
         </section>
@@ -997,7 +997,18 @@
     <script src="../assets/js/isotope.pkgd.min.js"></script>
     <script src="../assets/js/custom-isotop.js"></script>
     <!--Main js-->
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script><script src="../assets/js/script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        }
+    </script>
     <script>
         function loadMainGame() {
             var html = `<iframe class="game-iframe iframeloader" id="game-area" src="https://taptapshots.github.io/" width="500" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;

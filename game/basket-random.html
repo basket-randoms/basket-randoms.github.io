@@ -839,7 +839,7 @@
             <article class="game-card game-card--theme-blue">
                 <div class="game-card__image-container">
                     <a href="../game/3d-bowling.html" class="game-card__link">
-                        <img src="../assets/img/3dbowling/logo.png" alt="3D Bowling" class="game-card__image" />
+                        <img src="http://basket-randoms.github.io/img/3d-bowling.webp" alt="3D Bowling" class="game-card__image" />
                     </a>
                 </div>
                 <h3 class="game-card__title">3D Bowling</h3>
@@ -1287,7 +1287,18 @@
     <script src="../assets/js/isotope.pkgd.min.js"></script>
     <script src="../assets/js/custom-isotop.js"></script>
     <!--Main js-->
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script><script src="../assets/js/script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        }
+    </script>
     <script>
         function loadMainGame() {
             var html = `<iframe class="game-iframe iframeloader" id="game-area" src="../game/iframe/basket-random/index.html" width="500" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;

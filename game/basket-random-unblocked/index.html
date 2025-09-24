@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="publisher" content="Sarkar Games">
+    <meta name="copyright" content="Sarkar Games">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basket Random Unblocked – Play Free Online Basketball</title>
+    <meta name="description"
+        content="Play Basket Random Unblocked online! A fun physics-based basketball game with random courts, hilarious moves, and free multiplayer action.">
+    <meta name="author" content="Basket Random">
+    <link rel="canonical" href="https://basket-randoms.github.io/game/basket-random-unblocked/">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://basket-randoms.github.io/assets/img/favicon/favicon-32x32.webp">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/bootstrap.min.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/all.min.css">
+    <!--Magnific css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/magnific-popup.css">
+    <!--Owl-Carousel css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/owl.theme.default.min.css">
+    <!--NoUiSlider css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/nouislider.min.css">
+    <!--Animate css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/animate.min.css">
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/responsive.css">
+    <style>
+        .game-iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 75vh;
+        }
+
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .FG-splash-button {
+            border-bottom-color: #ffb53d !important;
+            color: #000;
+            background: linear-gradient(140deg, #fbde04, #e2c803)
+        }
+
+        .FG-splash-button:hover {
+            border-bottom-color: #ff5e00 !important;
+            color: #fff;
+            background: linear-gradient(140deg, #ff9214, #fa8500)
+        }
+
+        .FG-splash-button:active {
+            border-bottom-color: #ff7e33 !important;
+            background: linear-gradient(140deg, #ff5e00, #ff5e00)
+        }
+
+        .SP-splash-button {
+            width: 290px;
+            height: 60px;
+            margin-top: 2.5rem;
+            border-radius: 290486px !important;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border: 3px solid #fff !important;
+            color: #0a0a0a;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #001aff, #002fff);
+            box-shadow: 12px 14px 15px -1px rgba(0, 0, 0, .2)
+        }
+
+        .SP-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background: linear-gradient(180deg, #af39b9, #c815d7);
+            transform: scale(0);
+            transform-origin: 50% 100%;
+            will-change: transform;
+            transition: transform .3s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .SP-splash-top>div>button:active {
+            transform: translateY(0)
+        }
+
+        .SP-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .SP-splash-top>div>button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35)
+        }
+
+        .HG-splash-button {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: none !important;
+            border-radius: 5px !important;
+            color: #f06000;
+            background: #fff
+        }
+
+        .HG-splash-button:hover {
+            color: #fff;
+            background: #f06000
+        }
+
+        .BG-splash-button,
+        .BG-splash-button:active {
+            box-shadow: inset 0 3px 0 0 #00fcff,
+                inset 20px 0 50px rgba(8, 238, 225, .3),
+                inset 20px 0 300px rgba(0, 200, 187, .05),
+                inset 0 20px 50px rgba(8, 238, 225, .3),
+                inset 0 0 10px #affffa, 4px 4px 4px 0 rgba(10, 10, 10, .5) !important;
+            background-color: rgba(9, 81, 105, .5);
+            border: 0;
+            color: #affffa;
+            width: 290px;
+            height: 4rem;
+            border-radius: 290486px !important;
+            font-size: 1.25rem !important;
+            border: 2px solid #5258b5 !important;
+            opacity: .7
+        }
+
+        .BG-splash-button:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 100%;
+            height: 100%;
+            border-radius: 290486px !important;
+            opacity: 0;
+            background-color: #fff;
+            box-shadow: inset 0 0 7px 0 rgba(223, 180, 170, .53) !important;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            will-change: transform;
+            transition: transform 172ms cubic-bezier(.25, .46, .45, .94), opacity 172ms cubic-bezier(.25, .46, .45, .94);
+            z-index: -1
+        }
+
+        .BG-splash-button:hover {
+            color: rgba(0, 0, 0, .7) !important;
+            border: 2px solid #098c9c !important
+        }
+
+        .BG-splash-button:active {
+            border-color: transparent !important;
+            color: rgba(0, 0, 0, .7);
+            transform: translateY(0)
+        }
+
+        .BG-splash-button:hover:before {
+            top: 0;
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .BG-splash-button:active:before {
+            box-shadow: inset 0 0 7px 0 rgba(224, 71, 36, .53), inset 0 0 7px 0 rgba(0, 0, 0, .35) !important
+        }
+
+        body {
+            position: inherit
+        }
+
+        .talpa-splash-background-container {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden
+        }
+
+        .talpa-splash-background-image {
+            box-sizing: border-box;
+            position: absolute;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            background-image: var(--thumb);
+            background-size: cover;
+            filter: blur(50px) brightness(1.5)
+        }
+
+        .talpa-splash-container {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-top {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            flex: 1;
+            align-self: center;
+            justify-content: center;
+            padding: 20px
+        }
+
+        .talpa-splash-top>div {
+            text-align: center
+        }
+
+        .talpa-splash-top>div>button {
+            position: relative;
+            min-width: 180px;
+            min-height: 45px;
+            line-height: 45px;
+            border: 0;
+            border-radius: 25px;
+            border-bottom: 5px solid grey;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+            font-family: Roboto Condensed, Helvetica Neue, Arial, "sans-serif";
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            box-shadow: inset 0 -1px 1px hsla(0, 0%, 100%, .1), inset 0 1px 1px hsla(0, 0%, 100%, .2);
+            will-change: transform;
+            transition: transform .15s linear
+        }
+
+        .talpa-splash-top>div>button:focus {
+            outline: none
+        }
+
+        .talpa-splash-top>div>button:active {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .13);
+            transform: translateY(-5px)
+        }
+
+        .talpa-loader,
+        .talpa-loader:after {
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em
+        }
+
+        .talpa-loader {
+            box-sizing: content-box;
+            margin: 0 auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border: 1.1em solid hsla(0, 0%, 100%, .2);
+            border-left-color: #fff;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: talpa-load8 1.1s linear infinite;
+            animation: talpa-load8 1.1s linear infinite;
+            display: none
+        }
+
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+
+        .talpa-splash-bottom {
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 0 20px
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent,
+        .talpa-splash-bottom>.talpa-splash-title {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, .5) 50%, transparent);
+            color: #fff;
+            text-align: left;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(0, 0, 0, .7);
+            line-height: 150%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-title {
+            padding: 15px 0;
+            text-align: center;
+            font-size: 18px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            line-height: 100%
+        }
+
+        .talpa-splash-bottom>.talpa-splash-consent a {
+            color: #fff
+        }
+
+        @-webkit-keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes talpa-load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes talpa-gradient {
+            0% {
+                background-position: 0 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            to {
+                background-position: 0 50%
+            }
+        }
+
+        .iframeloader {
+            background: url(./images/loadinggif.gif) center center no-repeat;
+            background-size: 5vw;
+        }
+
+        .article-header {
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px
+        }
+    </style>
+    <link rel="stylesheet" href="https://basket-randoms.github.io/assets/css/new-layout.css">
+    <style>
+        .talpa-splash-top>div>div:first-child {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto auto 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid hsla(0, 0%, 100%, .8);
+            box-shadow: inset 0 5px 5px rgba(0, 0, 0, .5), 0 2px 4px rgba(0, 0, 0, .3);
+            background-image: var(--thumb);
+            background-position: 50%;
+            background-size: cover
+        }
+
+        .talpa-splash-top>div>div>img {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <!-- Custom Cursor Start -->
+    <div id="cursor-large"></div>
+    <div id="cursor-small"></div>
+    <!-- Custom Cursor End -->
+
+    <nav class="fag-header navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="https://basket-randoms.github.io/index.html"><img
+                    src="https://basket-randoms.github.io/assets/img/logo.webp" alt="Basket Random" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="header_menu  mr-auto">
+                    <li class="nav-item active">
+                        <a href="https://basket-randoms.github.io/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://basket-randoms.github.io/action/index.html" class="nav-link">Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://basket-randoms.github.io/adventure/index.html" class="nav-link">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://basket-randoms.github.io/game/1v1lol.html" class="nav-link">1v1 lol
+                            Unblocked</a>
+                    </li>
+                    <!-- More Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/bike/index.html">Bike</a></li>
+                            <li><a class="dropdown-item" href="https://basket-randoms.github.io/car/index.html">Car</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/idle/index.html">Idle</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/shooting/index.html">Shooting</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/skill/index.html">Skill</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/sport/index.html">Sport</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/classroom6x/index.html">Classroom 6x</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://basket-randoms.github.io/2-player-games/index.html">2 Player Games</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://basket-randoms.github.io/io-games/index.html">.io
+                                    Games</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" id="gameSearch" placeholder="Search  games here" oninput="searchGames()">
+                    <div id="gameList"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Area End -->
+    <br><br>
+    <!-- contest-details-section start -->
+    <div class="error-container">
+        <div class="game-console">
+            <div class="console-screen">
+                <section class="pb-120 mt-minus-300">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="contest-details__slider-area">
+                                    <div class="contest-details__thumb-slider">
+                                        <div class="game-iframe-container" id="loadgame">
+                                            <div class="talpa-splash-container" style="background: var(--color2);">
+                                                <div class="talpa-splash-top">
+                                                    <div>
+                                                        <div style="--thumb:url(https://basket-randoms.github.io/assets/img/basketrandom/basket-random.png);"
+                                                            alt="Stylish Crop Top Trends"></div>
+                                                        <button id="talpa-splash-button" class="SP-splash-button"
+                                                            onclick="loadMainGame()" style="display: block;">PLAY
+                                                            NOW</button>
+                                                        <div class="talpa-loader" style="display: none;">Loading...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="talpa-splash-bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- row end -->
+                        </div>
+                </section>
+                <!-- contest-details-section end  -->
+            </div>
+
+
+            <div class="iframe-footer-bar">
+                <div class="iframe-footer-left">
+                    <img src="https://basket-randoms.github.io/assets/img/basketrandom/basket-random.png"
+                        alt="Basketball Random Unblocked" class="iframe-footer-thumb">
+                    <div>
+                        <div class="iframe-footer-title">
+                            <h1 style="font-size: 1.1rem; text-align: left;">Basket Random Unblocked</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="iframe-footer-right">
+
+                    <span class="iframe-footer-icon" onclick="reloadGame()"><i class="fas fa-redo"></i></span>
+                    <span class="iframe-footer-icon" onclick="open_fullscreen()">
+                        <i class="fas fa-expand"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ad-center">
+        <!-- Desktop Ad (728x90) -->
+        <div class="ad-desktop">
+            <script type="text/javascript">
+                atOptions = {
+                    'key': 'cdbc2799ec0a8aabde5cb9ba973cfc1f',
+                    'format': 'iframe',
+                    'height': 90,
+                    'width': 728,
+                    'params': {}
+                };
+            </script>
+            <script type="text/javascript"
+                src="//www.highperformanceformat.com/cdbc2799ec0a8aabde5cb9ba973cfc1f/invoke.js"></script>
+        </div>
+        <!-- Mobile Ad (300x250) -->
+        <div class="ad-mobile">
+            <script type="text/javascript">
+                atOptions = {
+                    'key': '2c4eee8d537a0e7bfd2db490140d223c',
+                    'format': 'iframe',
+                    'height': 250,
+                    'width': 300,
+                    'params': {}
+                };
+            </script>
+            <script type="text/javascript"
+                src="//www.highperformanceformat.com/2c4eee8d537a0e7bfd2db490140d223c/invoke.js"></script>
+        </div>
+    </div>
+    <br>
+    <div class="container-box">
+        <div class="box">
+            <h2><strong>Basket Random Unblocked</strong></h2>
+            <p>Experience the <strong>wildest basketball game ever</strong> with <strong>Basket Random
+                    Unblocked</strong>, a hilarious physics-based sports adventure where every match is unpredictable.
+                Unlike traditional unblocked basketball games that rely on scripted animations, Basket Random uses
+                realistic physics to create spontaneous, laugh-out-loud moments with each jump, block, and shot. Random
+                court conditions, shifting player abilities, and unpredictable physics ensure no two matches ever feel
+                the same. Whether you're playing solo or challenging friends in multiplayer mode, the chaotic mechanics
+                of <a href="https://basket-randoms.github.io/game/basketball-random-unblocked/"><strong>basketball
+                        random unblocked</strong></a> keep every second fresh, exciting, and full of surprises. It's not
+                just basketball—it's a test of timing, adaptability, and skill wrapped in pure fun.</p>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box">
+            <h2><strong>How to Play Basket Random Unblocked</strong></h2>
+            <p>Jump straight into the action with <strong>simple one-button controls</strong>! Whether you're on a
+                <strong>desktop, mobile, or tablet</strong>, Basket Random unblocked is easy to pick up but tricky to
+                master. Press, tap, or hold your control to make your player <strong>jump, aim, and shoot</strong>. In
+                the first 30 seconds, you'll already get the hang of it — just <strong>time your jumps
+                    perfectly</strong> to outmaneuver your opponent and sink those crazy shots.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box poik">
+            <h2><strong>Controls by Device</strong></h2>
+            <div class="container-box">
+                <div class="box">
+                    <h2><strong>Core Gameplay Loop</strong></h2>
+                    <ol>
+                        <li><strong>Position Your Player</strong> → Use precise timing to control positioning.<br><br>
+                        </li>
+                        <li><strong>Master the Jump</strong> → Perfect your jump timing to set up shots.<br><br></li>
+                        <li><strong>Aim Under Pressure</strong> → Account for quirky physics when shooting.<br><br></li>
+                        <li><strong>Defend Smart</strong> → Block shots by anticipating your opponent's moves.<br><br>
+                        </li>
+                        <li><strong>Adapt to Randomness</strong> → React quickly as courts and player abilities
+                            shift.<br><br>
+                        </li>
+                        <li><strong>Score to Win</strong> → First player/team to hit the target score takes the match.
+                        </li>
+                    </ol>
+                </div>
+                <div class="box">
+                    <h3
+                        style="color: #ffaa33; font-size: 1.5em; margin: 25px 0 15px; border-bottom: 2px solid #ffaa33; padding-bottom: 10px">
+                        <strong>Desktop (PC/Laptop)</strong>
+                    </h3><br>
+                    <table class="features-table">
+                        <thead>
+                            <tr>
+                                <th><strong>Control</strong></th>
+                                <th><strong>Action</strong></th>
+                                <th><strong>Pro Tip</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>W / Up Arrow</strong></td>
+                                <td>Jump & Shoot</td>
+                                <td>Hold longer for higher jumps</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A / D or Left / Right Arrow</strong></td>
+                                <td>Move player</td>
+                                <td>Use momentum to drift into position</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Space</strong> <em>(in some versions)</em></td>
+                                <td>Alternate jump/shoot</td>
+                                <td>Great for rebounding and quick blocks</td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                </div>
+            </div>
+
+
+            <div class="container-box">
+                <div class="box" style="background-color: #505051;">
+                    <h3
+                        style="color: #ffaa33; font-size: 1.5em; margin: 25px 0 15px; border-bottom: 2px solid #ffaa33; padding-bottom: 10px">
+                        <strong>📱 Mobile (Touch Controls)</strong>
+                    </h3>
+                    <table class="features-table">
+                        <thead>
+                            <tr>
+                                <th><strong>Control</strong></th>
+                                <th><strong>Action</strong></th>
+                                <th><strong>Pro Tip</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tap screen</strong></td>
+                                <td>Jump & Shoot</td>
+                                <td>Quick taps for blocks, longer hold for high jumps</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Swipe left/right</strong> <em>(if enabled)</em></td>
+                                <td>Player drift</td>
+                                <td>Use swipes to nudge into position</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Multi-tap</strong></td>
+                                <td>Burst jump/block</td>
+                                <td>Timing two quick taps helps counter opponents</td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                </div>
+
+                <div class="box" style="background-color: #505051;">
+                    <h3
+                        style="color: #ffaa33; font-size: 1.5em; margin: 25px 0 15px; border-bottom: 2px solid #ffaa33; padding-bottom: 10px">
+                        <strong>📱 Tablet (Touch + Hybrid)</strong>
+                    </h3>
+                    <table class="features-table">
+                        <thead>
+                            <tr>
+                                <th><strong>Control</strong></th>
+                                <th><strong>Action</strong></th>
+                                <th><strong>Pro Tip</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tap screen</strong></td>
+                                <td>Jump & Shoot</td>
+                                <td>Tablet's bigger screen makes precise tapping easier</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tilt/Swipe</strong> <em>(depends on version)</em></td>
+                                <td>Adjust position</td>
+                                <td>Tilt sensitivity can help micro-position</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Keyboard (if connected)</strong></td>
+                                <td>Same as PC</td>
+                                <td>Use W/Arrow keys for faster response</td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .container-box {
+            max-width: 1200px;
+            margin: 0 auto 30px
+        }
+
+        h2 {
+            color: #ffaa33;
+            font-size: 1.8em;
+            margin: 25px 0 15px;
+            border-bottom: 2px solid #ffaa33;
+            padding-bottom: 10px
+        }
+
+        .rating {
+            text-align: center;
+            font-size: 2em;
+            color: #ffd700;
+            margin: 10px 0
+        }
+
+        .device-section {
+            background-color: #505051 !important;
+            margin: 20px 0
+        }
+
+        .pro-tip {
+            background: rgba(255, 221, 68, 0.1);
+            border-left: 4px solid #ffdd44;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px
+        }
+
+        a {
+            color: #ffaa33;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        a:hover {
+            color: #ffdd44;
+            text-decoration: underline
+        }
+
+        .faq-container {
+            margin: 20px 0
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin: 15px 0;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1)
+        }
+
+        @media (max-width:768px) {
+            .container-box {
+                padding: 0 10px
+            }
+
+            .box {
+                padding: 20px 20px
+            }
+
+            .poik {
+                padding: 0 0;
+            }
+
+            h1 {
+                font-size: 2em
+            }
+
+            .features-table {
+                font-size: 0.9em
+            }
+
+            .features-table th,
+            .features-table td {
+                padding: 8px 10px
+            }
+        }
+    </style>
+
+    <!-- Related Games Start -->
+    <div class="gaming-portal__container" style=" position: relative;">
+        <header class="gaming-portal__header">
+            <h2 class="gaming-portal__title" style="border-bottom: none; margin: 0 0; padding-bottom: 0;">
+                <span class="gaming-portal__title-icon">⚡</span>
+                Related Games
+            </h2>
+            <button class="gaming-portal__nav-button">ALL GAMES</button>
+        </header>
+
+        <!-- Row 1 -->
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-blue">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/3d-bowling.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/3dbowling/logo.png" alt="3D Bowling"
+                            class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">3D Bowling</h3>
+            </article>
+
+            <article class="game-card game-card--theme-green">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/8ball-pool.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/8ballpool/8-ball-pool.png" alt="8 Ball"
+                            class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">8 Ball</h3>
+            </article>
+
+            <article class="game-card game-card--theme-orange">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/axis-football-league.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/axisfootballleague/axis-football-league.png"
+                            alt="Axis Football League" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Axis Football League</h3>
+            </article>
+
+            <article class="game-card game-card--theme-purple">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/basket-and-ball.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/basketandball/basket-and-ball.png"
+                            alt="Basket & Ball" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Basket & Ball</h3>
+            </article>
+
+            <article class="game-card game-card--theme-pink">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/basket-random.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/basketrandom/basket-random.png"
+                            alt="Basket Random" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Basket Random</h3>
+            </article>
+
+            <!-- Row 2 -->
+            <article class="game-card game-card--theme-red">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/basketball-legends-2020.html"
+                        class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/basketlegends2020/basketball-legends.png"
+                            alt="Basketball Legends 2020" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Basketball Legends 2020</h3>
+            </article>
+        </section>
+        <section class="gaming-portal__games-grid">
+
+            <article class="game-card game-card--theme-brown">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/basketball-stars.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/basketballstars/basketball-stars.png"
+                            alt="Basketball Stars" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Basketball Stars</h3>
+            </article>
+
+            <article class="game-card game-card--theme-grey">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/extreme-pamplona.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/extremepamplona/extreme-pamplona.png"
+                            alt="Extreme Pamplona" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Extreme Pamplona</h3>
+            </article>
+
+            <article class="game-card game-card--theme-lime">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/football-legends.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/footballlegends/football-legends.png"
+                            alt="Football Legends" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Football Legends</h3>
+            </article>
+
+            <article class="game-card game-card--theme-amber">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/penalty-kick-online.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/penaltykickonline/penalty-kick-online.png"
+                            alt="Penalty Kick Online" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Penalty Kick Online</h3>
+            </article>
+
+            <!-- Row 3 -->
+            <article class="game-card game-card--theme-sunset">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/retro-bowl.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/retrobowl/retro-bowl.png" alt="Retro Bowl"
+                            class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Retro Bowl</h3>
+            </article>
+
+            <article class="game-card game-card--theme-ocean">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/soccer-heads.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/soccerheads/soccer-heads.png"
+                            alt="Soccer Heads" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Soccer Heads</h3>
+            </article>
+        </section>
+
+        <section class="gaming-portal__games-grid">
+            <article class="game-card game-card--theme-forest">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/sprinter.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/spinter/sprinter.png" alt="Sprinter"
+                            class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Sprinter</h3>
+            </article>
+
+            <article class="game-card game-card--theme-royal">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/street-ball-star.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/streetballstar/street-ball-star.png"
+                            alt="Street Ball Star" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Street Ball Star</h3>
+            </article>
+
+            <article class="game-card game-card--theme-gold">
+                <div class="game-card__image-container">
+                    <a href="https://basket-randoms.github.io/game/tap-tap-shots.html" class="game-card__link">
+                        <img src="https://basket-randoms.github.io/assets/img/taptapshots/tap-tap-shots.png"
+                            alt="Tap Tap Shots" class="game-card__image" />
+                    </a>
+                </div>
+                <h3 class="game-card__title">Tap Tap Shots</h3>
+            </article>
+        </section>
+    </div><br><br>
+
+    <!-- Related Games End -->
+    <div class="container-box">
+        <div class="box">
+            <h2 style="text-align: left;"><strong>Mastery Tips</strong></h2>
+            <ul>
+                <li><strong>Momentum is everything</strong> → Instead of fighting physics, flow with it.<br><br></li>
+                <li><strong>Read patterns</strong> → Anticipate where your opponent will jump.<br><br></li>
+                <li><strong>Random courts = random strategies</strong> → Ice floors, windy arenas, or slippery shoes?
+                    Adjust instantly.<br><br></li>
+                <li><strong>Shot consistency</strong> → Practice timing sequences; pros hit "impossible" shots by
+                    syncing movement with jump arcs</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="box">
+            <h2><strong>Why Basket Random Unblocked is the Best Physics Sports Game</strong></h2>
+
+            <div class="box">
+                <h3 style="text-align: center; margin-bottom: 10px;"><strong>Revolutionary Physics-Based Basketball
+                        Experience</strong></h3>
+                <p style="text-align: left;"><a
+                        href="https://basket-randoms.github.io/game/basketball-random-unblocked/"><strong>Basketball
+                            random unblocked</strong></a> stands apart from generic sports games through its innovative
+                    use of physics that creates authentic variability. While other basketball games rely on scripted
+                    animations, this game generates unique moments through realistic physics interactions. Every jump,
+                    collision, and shot feels different because the physics engine creates genuine spontaneity.</p>
+                <p style="text-align: left;">The game's genius lies in balancing skill with chaos. Experienced players
+                    develop real expertise in timing and positioning, but the physics system ensures that luck and
+                    adaptability remain crucial factors. This creates an incredibly accessible yet deeply engaging
+                    experience that keeps players coming back for "just one more game."</p><br>
+            </div>
+            <div class="container-box">
+                <div class="box">
+                    <h3 style="text-align: center; margin-bottom: 10px;"><strong>Play Basket Random No Ads -
+                            Uninterrupted Gaming Experience</strong></h3>
+                    <p style="text-align: left;">Enjoy <a href="https://basket-randoms.github.io/"><strong>basket random
+                                no ads</strong></a> or without restrictions or annoying interruptions! This unblocked
+                        version provides instant access to full gameplay without downloads, registration, or ad breaks
+                        that destroy immersion. The game runs smoothly on any device with a web browser, making it
+                        perfect for quick gaming sessions during breaks or extended tournament-style competitions.</p>
+                    <p style="text-align: left;">Performance optimization ensures consistent frame rates even on older
+                        devices, while the instant-load design means you're playing within seconds of clicking. No
+                        waiting, no barriers – just pure ragdoll basketball entertainment whenever you want it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-box">
+            <div class="box">
+                <h2><strong>Best Reasons to Play Basket Random Unblocked</strong></h2>
+                <div class="box">
+                    <h3 style="text-align: center; margin-bottom: 10px;"><strong>Instant Stress Relief and Pure
+                            Entertainment</strong></h3>
+                    <p>The chaotic nature of physics-based gameplay creates genuine laughter and tension relief that
+                        traditional sports games can't match. Every shot attempt becomes a small adventure, and the
+                        physics-based mayhem naturally reduces stress while providing engaging entertainment. The game's
+                        short match format makes it perfect for quick mental breaks.</p><br>
+                </div>
+                <div class="box">
+                    <h3 style="text-align: center; margin-bottom: 10px;"><strong>Why Basket Random Never Gets
+                            Boring</strong></h3>
+                    <p>The genius of physics-based gameplay means every match generates unique situations that can't be
+                        memorized or automated. Court variations, player modifications, and environmental changes create
+                        an endless stream of new challenges. The competitive element drives improvement while the chaos
+                        ensures no player ever achieves perfect consistency, maintaining engagement indefinitely.
+                        Experience the thrill of <a
+                            href="https://basket-randoms.github.io/game/random-basketball-unblocked/"><strong>random
+                                basketball unblocked</strong></a> gameplay that never gets stale!</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h2>Game Details</h2>
+                <table class="features-table">
+                    <tr>
+                        <td><strong>Name:</strong></td>
+                        <td>Basket Random Unblocked</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Category:</strong></td>
+                        <td>Sports Game, Physics Game, Multiplayer Browser Game</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Developer:</strong></td>
+                        <td>Basket Random Studios</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Release:</strong></td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Platforms:</strong></td>
+                        <td>Web Browser, Mobile, Tablet</td>
+                    </tr>
+                    <tr>
+                        <td><strong>File Size:</strong></td>
+                        <td>Instant Play (No Download)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Price:</strong></td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rating:</strong></td>
+                        <td>⭐⭐⭐⭐⭐ (4.8/5 based on player reviews)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Last Updated:</strong></td>
+                        <td>August 2025</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="box">
+                <h2><strong>Common Questions About Basket Random Unblocked</strong></h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Q: Is Basket Random Unblocked completely free to play?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">A: Yes! The complete game is free with no hidden costs, premium
+                                features, or pay-to-win mechanics. Every player gets the full experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Q: What devices can run Basketball Random Unblocked smoothly?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">A: Any device with a modern web browser runs the game perfectly
+                                – computers, tablets, smartphones, and Chromebooks all provide excellent performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Q: How does Random Basketball compare to other physics-based sports games?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">A: The physics system is more refined and responsive than
+                                competitors, creating better balance between skill and chaos while maintaining
+                                consistent entertainment value.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Q: What age group is Basketball Random Unblocked designed for?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">A: The game appeals to all ages from 8 to adult, with simple
+                                controls that anyone can learn but physics mechanics that provide depth for experienced
+                                gamers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Q: Can I play Basket Random offline?</h3>
+                            <span class="faq-toggle">
+                                <svg class="chevron-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z"
+                                        fill="#fffafa"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p style="text-align: left;">A: The game requires an internet connection for initial loading
+                                but runs smoothly on slower connections once started.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="box">
+                <h2><strong>More Random Sports Games Like Basket Random</strong></h2>
+                <p>If you love the dynamic gameplay of <strong>basket random unblocked</strong>, explore other
+                    physics-based sports games that use similar mechanics. Start with simpler physics games to
+                    understand movement patterns, then progress to more complex multi-player variations. These games
+                    share the same balance of skill and chaos that makes <a
+                        href="https://basket-randoms.github.io/game/basketball-random-unblocked-66/"><strong>basketball
+                            random unblocked 66</strong></a> so addictive, offering different sports contexts with the
+                    same engaging variability that keeps players coming back for more.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="fag-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-inn">
+                            <div class="footer-logo">
+                                <a href="/index.html">
+                                    <img src="https://basket-randoms.github.io/assets/img/logo.webp" alt="site logo" />
+                                </a>
+                            </div>
+                            <div class="footer-logo" style="padding-top: 10px;">
+                                Wants to advertise on our Website? <a href="/contact.html" target="_blank"
+                                    style="font-size: 20px;"><Strong> Contact us!</Strong></a>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; Copyrights 2025 Basket Random - Powered by Sarkar Games 💖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+
+    <!--Jquery js-->
+    <script src="https://basket-randoms.github.io/assets/js/jquery.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="https://basket-randoms.github.io/assets/js/bootstrap.bundle.min.js"></script>
+    <!--Owl-Carousel js-->
+    <script src="https://basket-randoms.github.io/assets/js/owl.carousel.min.js"></script>
+    <!--Magnific js-->
+    <script src="https://basket-randoms.github.io/assets/js/jquery.magnific-popup.min.js"></script>
+    <!--wNumb js-->
+    <script src="https://basket-randoms.github.io/assets/js/wNumb.js"></script>
+    <!--NoUiSlider js-->
+    <script src="https://basket-randoms.github.io/assets/js/nouislider.min.js"></script>
+    <!-- Isotop Js -->
+    <script src="https://basket-randoms.github.io/assets/js/isotope.pkgd.min.js"></script>
+    <script src="https://basket-randoms.github.io/assets/js/custom-isotop.js"></script>
+    <!--Main js-->
+    <script src="https://basket-randoms.github.io/assets/js/main.js"></script>
+    <script>
+        function loadMainGame() {
+            var html = `<iframe class="game-iframe iframeloader" id="game-area" src="https://basket-randoms.github.io/game/iframe/basket-random/index.html" width="500" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;
+            document.getElementById("loadgame").innerHTML = html;
+            document.getElementById('loadgame').scrollIntoView();
+        }
+        function open_fullscreen() {
+            let game = document.getElementById("game-area");
+            if (game.requestFullscreen) {
+                game.requestFullscreen();
+            } else if (game.mozRequestFullScreen) { /* Firefox */
+                game.mozRequestFullScreen();
+            } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                game.webkitRequestFullscreen();
+            } else if (game.msRequestFullscreen) { /* IE/Edge */
+                game.msRequestFullscreen();
+            }
+        };
+    </script>
+    <!-- ...existing code... -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- ...existing code... -->
+    <script>particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#000000" },
+                shape: { type: "circle" },
+                opacity: { value: 1.1 },
+                size: { value: 5 },
+                line_linked: { enable: true, distance: 150, color: "#000000", opacity: 1.1, width: 1 },
+                move: { enable: true, speed: 4 }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                modes: { repulse: { distance: 200 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });</script>
+    <script type='text/javascript'
+        src='//pl27301091.profitableratecpm.com/6a/af/75/6aaf75f328883f4a7ad5358ace854077.js'></script>
+</body>
+
+</html>

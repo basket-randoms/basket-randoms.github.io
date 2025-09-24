@@ -1114,7 +1114,18 @@
     <script src="../assets/js/isotope.pkgd.min.js"></script>
     <script src="../assets/js/custom-isotop.js"></script>
     <!--Main js-->
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script><script src="../assets/js/script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+        }
+    </script>
     <script>
         function loadMainGame() {
             var html = `<iframe class="game-iframe iframeloader" id="game-area" src="https://app-177574.games.s3.yandex.net/177574/g4purrxyz4o815ei5y8n5xukms0dpdcr/index.html?sdk=%2Fsdk%2F_%2Fv2.3813254d78b866c11d3c.js#origin=https%3A%2F%2Fplayhop.com&app-id=177574&device-type=desktop" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen="" tabindex="0"></iframe>`;
