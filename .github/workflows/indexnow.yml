@@ -40,7 +40,7 @@ jobs:
 
           endpoint = "https://api.indexnow.org/indexnow"
           payload = {
-              "host": "pizza-editions.github.io",
+              "host": "basket-randoms.github.io/",
               "key": key,
               "keyLocation": f"https://basket-randoms.github.io/{key}.txt",
               "urlList": urls
