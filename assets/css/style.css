@@ -74,26 +74,7 @@ html {
     overflow-x: hidden
 }
 
-#searchContainer {
-    position: relative;
-    margin: 20px 0;
-}
-
-#gameSearch {
-    padding: 10px;
-    font-size: 16px;
-    border: 5px solid #000;
-    border-radius: 15px;
-}
-
-#gameSearch::placeholder {
-    color: #999;
-}
-
-#gameSearch:focus {
-    outline: none;
-    border-color: #aaa;
-}
+ 
 
 #gameList {
     max-height: 250px;
@@ -633,52 +614,251 @@ li {
 }
 
 /* Style the search box container */
-.search-container {
-    text-align: center;
-}
+.fag-header {
+            background: #2b2d42;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-/* Style the search input field */
-.search-input {
-    width: 60%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #aaa;
-    transition: width 0.4s ease-in-out;
-}
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
 
-/* Style the search button */
-.search-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 5px;
-    box-shadow: 0px 0px 5px #aaa;
-    transition: background-color 0.3s ease;
-}
+        /* Search Container */
+        .search-container {
+            position: relative;
+            max-width: 350px;
+        }
 
-/* Hover effect for search button */
-.search-button:hover {
-    background-color: #0056b3;
-}
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
 
-/* Responsive design for smaller screens */
-@media screen and (max-width: 600px) {
-    .search-input {
-        width: 80%;
-    }
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            color: #94a3b8;
+            font-size: 1rem;
+            pointer-events: none;
+            z-index: 1;
+        }
 
-    .search-button {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
+        .search-container input {
+            width: 100%;
+            padding: 0.6rem 1rem 0.6rem 45px;
+            border: 2px solid #8d99ae;
+            border-radius: 25px;
+            background: #fff;
+            color: #2b2d42;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
 
+        .search-container input:focus {
+            outline: none;
+            border-color: #ef233c;
+            background: #fff;
+        }
+
+        .search-container input:focus ~ .search-icon {
+            color: #ef233c;
+        }
+
+        .search-container input::placeholder {
+            color: #8d99ae;
+        }
+
+        #gameList {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #3a3a3a;
+            border-radius: 10px;
+            margin-top: 0.5rem;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Mobile Search Icon Button */
+        .mobile-search-btn {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            margin-right: 0.5rem;
+        }
+
+        .mobile-search-btn:hover {
+            color: #ef233c;
+        }
+
+        /* Navigation Menu */
+        .header_menu {
+            display: flex;
+            align-items: center;
+            gap: 0.1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header_menu .nav-link {
+            color: #fff !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        .header_menu .nav-link:hover {
+             transform: translateY(-2px);
+        }
+ 
+        /* Dropdown Styles */
+        .dropdown-menu {
+            background: #2b2d42;
+            border: none;
+            border-radius: 10px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .dropdown-item {
+            color: #fff;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background: #ef233c;
+            color: #fff;
+        }
+
+        /* Hamburger Menu */
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .menu-toggle {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu-toggle::before,
+        .menu-toggle::after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .menu-toggle::before {
+            top: -8px;
+        }
+
+        .menu-toggle::after {
+            top: 8px;
+        }
+
+        /* Desktop Layout: Logo | Search | Menu */
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                display: flex !important;
+                align-items: center;
+            }
+
+            /* Show search on desktop */
+            .search-container {
+                order: 1;
+                margin: 0 2rem;
+                flex: 1;
+            }
+
+            .header_menu {
+                order: 2;
+                flex-direction: row;
+            }
+
+            .mobile-search-btn {
+                display: none !important;
+            }
+        }
+
+        /* Tablet & Mobile: Show Search in collapsed menu */
+        @media (max-width: 991px) {
+            .mobile-search-btn {
+                display: block;
+            }
+
+            .navbar-collapse {
+                margin-top: 1rem;
+            }
+
+            .search-container {
+                display: block;
+                max-width: 100%;
+                margin: 1rem 0;
+            }
+
+            .header_menu {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.3rem;
+                margin-top: 0.5rem;
+            }
+
+            .header_menu .nav-item {
+                width: 100%;
+            }
+
+            .header_menu .nav-link {
+                display: block;
+                text-align: center;
+            }
+
+            .dropdown-menu {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                height: 40px;
+            }
+
+            .search-container input {
+                font-size: 0.9rem;
+                padding: 0.5rem 0.8rem 0.5rem 40px;
+            }
+
+            .search-icon {
+                left: 12px;
+                font-size: 0.9rem;
+            }
+        }
 
 /*================================================
 03 - PAGINATION CSS

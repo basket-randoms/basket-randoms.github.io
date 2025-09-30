@@ -195,32 +195,50 @@
     <!-- Header Area Start -->
     <nav class="fag-header navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Basket Random" /></a>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.webp" alt="Basket Randoms" />
+            </a>
+            
+            <!-- Mobile Search Icon - Only visible on mobile -->
+            <button class="mobile-search-btn d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+
+            <!-- Hamburger Menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="menu-toggle"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="header_menu  mr-auto">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Search Bar - Center on desktop, in menu on mobile -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="gameSearch" placeholder="Search games here" oninput="searchGames()">
+                    </div>
+                    <div id="gameList"></div>
+                </div>
+
+                <!-- Categories Menu - Right side -->
+                <ul class="header_menu">
                     <li class="nav-item active">
-                        <a href="../index.html" class="nav-link">Home</a>
+                        <a href="../index.html" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../action/index.html" class="nav-link">Action</a>
+                        <a href="../action/index.html" class="nav-link">ACTION</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../adventure/index.html" class="nav-link">Adventure</a>
+                        <a href="../adventure/index.html" class="nav-link">ADVENTURE</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="../game/1v1lol.html" class="nav-link">1v1 lol Unblocked</a>
-                    </li>
-                    <!-- More Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">MORE</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../bike/index.html">Bike</a></li>
                             <li><a class="dropdown-item" href="../car/index.html">Car</a></li>
+                            <li><a class="dropdown-item" href="../game/1v1lol.html">1v1 lol Unblocked</a></li>
                             <li><a class="dropdown-item" href="../idle/index.html">Idle</a></li>
                             <li><a class="dropdown-item" href="../shooting/index.html">Shooting</a></li>
                             <li><a class="dropdown-item" href="../skill/index.html">Skill</a></li>
@@ -231,10 +249,6 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="search-container">
-                    <input type="text" id="gameSearch" placeholder="Search  games here" oninput="searchGames()">
-                    <div id="gameList"></div>
-                </div>
             </div>
         </div>
     </nav>
